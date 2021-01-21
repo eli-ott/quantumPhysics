@@ -1,0 +1,21 @@
+:root{
+    --backgoundColor: #fcffeb;
+    --color: #242424;
+    --orange: #F28123;
+    --lightBlue: #8AC4FF;
+    --darkBlue: #4D7EA8;
+}
+@font-face{
+    font-family: header;
+    src: url(../font/Anton-Regular.ttf);
+}
+@font-face{
+    font-family: content;
+    src: url(../font/HeptaSlab-Light.ttf);
+}
+body{
+    font-family: content, 'Courier New', Courier, monospace;
+
+    margin: 0;
+    padding: 0;
+}
