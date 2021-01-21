@@ -26,3 +26,10 @@ const lightMode = () => {
     //we set a localStorage to remember the prefered theme by the user
     localStorage.setItem("theme", "light");
 }
+
+//we check if the user has already choose between the dark and light mode to swith
+if(localStorage.getItem("theme") == "dark"){
+    darkMode();
+} else{
+    lightMode();
+}
