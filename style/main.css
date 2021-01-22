@@ -25,8 +25,7 @@ html{
     margin: 0;
     padding: 0;
 
-    background: var(--backgroundColor);
-    color: var(--color);
+    background-color: var(--backgroundColor);
 }
 img.themeIcon{
     position: absolute;
@@ -40,10 +39,15 @@ svg#burger{
     position: absolute;
     background: none;
     cursor: pointer;
-
+    
     height: 4vh;
     width: 4vh;
     right: 1vh;
     top: 0;
     margin: 1vh;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
