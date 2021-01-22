@@ -2,7 +2,7 @@
     --backgroundColor: #fcffeb;
     --color: #242424;
     --orange: #F28123;
-    --lightBlue: #8AC4FF;
+    --lightBlue: #59acff;
     --darkBlue: #4D7EA8;
 
     transition: 0.5s;
@@ -101,10 +101,48 @@ div#linksParent a{
     outline: none;
     text-decoration: none;
     cursor: pointer;
-
+    
     width: 60%;
+    opacity: 0;
     padding: 1vh;
-
-    border: solid var(--color) 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    
     color: var(--color);
+}
+div#linksParent a::after{
+    content: "\A0";
+    position: absolute;
+    background: none;
+    
+    width: 64%;
+    height: 5vh;
+    margin-left: -17.75vh;
+    margin-top: -1vh;
+
+    border-bottom: solid var(--color) 2px;      
+}
+div#linksParent a::before{
+    content: "\A0";
+    position: absolute;
+    background: none;
+    
+    z-index: 9999;
+    width: 0;
+    height: 5vh;
+    margin-left: -1.2vh;
+    margin-top: -1vh;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+
+    border-bottom: solid var(--lightBlue) 2px;
+}
+div#linksParent a:hover::before{
+    width: 64%;
 }

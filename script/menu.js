@@ -32,6 +32,11 @@ $("#burger").on("click", () => {
 
         //we change the size of the background menu and it's border radius
         $("#menuCircle").css({width: "100%", height: "100%", borderRadius: 0});
+
+        //we make the button appear
+        setTimeout(() => {
+            $("div#linksParent a").css("opacity", "1");
+        }, 500);
     } else{
         $("#burger").attr("class", "retract");
 
@@ -59,5 +64,8 @@ $("#burger").on("click", () => {
 
         //we change the size of the background menu and it's border radius
         $("#menuCircle").css({width: 0, height: 0, borderRadius: "10vh 0 10vh 50vh"});
+
+        //we make the button disapeaer
+            $("div#linksParent a").css("opacity", "0");
     }
 });
