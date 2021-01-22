@@ -10,12 +10,25 @@
     src: url(../font/Anton-Regular.ttf);
 }
 @font-face{
-    font-family: content;
+    font-family: contentFont;
     src: url(../font/HeptaSlab-Light.ttf);
 }
 body{
-    font-family: content, 'Courier New', Courier, monospace;
+    font-family: contentFont, 'Courier New', Courier, monospace;
 
     margin: 0;
     padding: 0;
+
+    background: var(--backgoundColor);
+    color: var(--color);
+}
+svg#burger{
+    position: absolute;
+    background: none;
+    cursor: pointer;
+
+    height: 5vh;
+    width: 5vh;
+    right: 2vh;
+    top: 1vh;
 }
