@@ -28,8 +28,4 @@ const lightMode = () => {
 }
 
 //we check if the user has already choose between the dark and light mode to swith
-if(localStorage.getItem("theme") == "dark"){
-    darkMode();
-} else{
-    lightMode();
-}
+localStorage.getItem("theme") == "dark"? darkMode(): lightMode();

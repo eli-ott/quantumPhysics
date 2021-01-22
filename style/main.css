@@ -44,5 +44,6 @@ svg#burger{
     height: 4vh;
     width: 4vh;
     right: 1vh;
+    top: 0;
     margin: 1vh;
 }
