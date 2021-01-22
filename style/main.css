@@ -4,7 +4,7 @@
     --orange: #F28123;
     --lightBlue: #8AC4FF;
     --darkBlue: #4D7EA8;
-    
+
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -19,15 +19,16 @@
     font-family: contentFont;
     src: url(../font/HeptaSlab-Light.ttf);
 }
-body{
+html{
     font-family: contentFont, 'Courier New', Courier, monospace;
     overflow-x: hidden;
 
-    margin: 0;
-    padding: 0;
-
     background-color: var(--backgroundColor);
     color: var(--color);
+}
+body{
+    margin: 0;
+    padding: 0;
 }
 img.themeIcon{
     position: absolute;
