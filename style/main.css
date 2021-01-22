@@ -21,6 +21,7 @@
 }
 body{
     font-family: contentFont, 'Courier New', Courier, monospace;
+    overflow-x: hidden;
 
     margin: 0;
     padding: 0;
@@ -51,4 +52,11 @@ svg#burger{
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+}
+img#menuCircle{
+    position: absolute;
+
+    right: -42vh;
+    top: -41vh;
+    width: 50vh;
 }
