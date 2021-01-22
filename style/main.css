@@ -4,6 +4,12 @@
     --orange: #F28123;
     --lightBlue: #8AC4FF;
     --darkBlue: #4D7EA8;
+    
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 @font-face{
     font-family: header;
@@ -13,7 +19,7 @@
     font-family: contentFont;
     src: url(../font/HeptaSlab-Light.ttf);
 }
-body{
+html{
     font-family: contentFont, 'Courier New', Courier, monospace;
 
     margin: 0;
@@ -22,13 +28,21 @@ body{
     background: var(--backgoundColor);
     color: var(--color);
 }
+img.themeIcon{
+    position: absolute;
+    cursor: pointer;
+    background: none;
+
+    width: 3.5vh;
+    margin: 1vh;
+}
 svg#burger{
     position: absolute;
     background: none;
     cursor: pointer;
 
-    height: 5vh;
-    width: 5vh;
-    right: 2vh;
-    top: 1vh;
+    height: 4vh;
+    width: 4vh;
+    right: 1vh;
+    margin: 1vh;
 }

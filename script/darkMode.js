@@ -1,7 +1,7 @@
 const darkMode = () => {
     //we change the variable of the background color and the main color
-    document.documentElement.style.setProperty("--backgroundColor", "");
-    document.documentElement.style.setProperty("--color", "");
+    document.documentElement.style.setProperty('--backgroundColor', '#fcffeb');
+    document.documentElement.style.setProperty("--color", "#242424");
 
     //we change the moon icon for the sun
     $("#moon").fadeOut(250);
@@ -14,8 +14,8 @@ const darkMode = () => {
 }
 const lightMode = () => {
     //we change the css variable that refer to the background color and the color
-    document.documentElement.style.setProperty('--backgroundColor', '#F1F1F1');
-    document.documentElement.style.setProperty('--color', '#181818');
+    document.documentElement.style.setProperty('--backgroundColor', '#fcffeb');
+    document.documentElement.style.setProperty('--color', '#242424');
 
     //we chhange the sun icon for a moon icon 
     $("#sun").fadeOut(250);
