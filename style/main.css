@@ -116,7 +116,7 @@ div#linksParent a{
     text-decoration: none;
     cursor: pointer;
     
-    width: 35%;
+    width: 42%;
     opacity: 0;
     padding: 1vh;
     margin-left: 30%;
@@ -127,26 +127,10 @@ div#linksParent a{
     -o-transition: 0.5s;
     
     color: #242424;
+    border-bottom: solid #242424 2px;
 }
 div#linksParent a:hover{
     color: var(--backgroundColor);
-}
-div#linksParent a::after{
-    content: "\A0";
-    position: absolute;
-    background: none;
-
-    width: 45%;
-    height: 5vh;
-    margin-left: -17.75vh;
-    margin-top: -1vh;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-
-    border-bottom: solid #242424 2px;
 }
 div#linksParent a::before{
     content: "\A0";
@@ -157,7 +141,7 @@ div#linksParent a::before{
     width: 0;
     height: 5vh;
     margin-left: -1.2vh;
-    margin-top: -1vh;
+    margin-top: -1.12vh;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
