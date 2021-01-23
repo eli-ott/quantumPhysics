@@ -6,6 +6,7 @@ let x2 = 23;
 $("#burger").on("click", () => {
     if($("#burger").attr("class") != "display"){
         $("#burger").attr("class", "display");
+        $("div#linksParent a").css("display", "unset");
 
         //we decrease the y2 position of the top line
         let topYInterval = setInterval(() => {
@@ -71,6 +72,7 @@ $("#burger").on("click", () => {
 
         //we make the button disapeaer
         $("div#linksParent a").css("opacity", "0");
+        $("div#linksParent a").css("display", "none");
         $("#linksParent").css("border-left", "none");
         $("#atom").fadeOut(150);
     }
