@@ -51,17 +51,20 @@
     <!-- menu -->
     <nav>
         <div id="menuBg"></div>
+        <!-- atom design -->
         <svg id="atom" height="500" width="500">
-            <circle class="orbits" cx="250" cy="250" r="200" stroke="#242424" stroke-width="1" fill="none"></circle>
-            <circle class="orbits" cx="250" cy="250" r="100" stroke="#242424" stroke-width="1" fill="none"></circle>
-            <circle class="orbits" cx="250" cy="250" r="25" stroke="#242424" stroke-width="1" fill="none"></circle>
-            <circle class="core" cx="250" cy="250" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
-            <circle class="largeOrbitAtom" cx="50" cy="250" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
-            <circle class="largeOrbitAtom" cx="450" cy="250" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
-            <circle class="largeOrbitAtom" cx="250" cy="50" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
-            <circle class="largeOrbitAtom" cx="250" cy="450" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
-            <circle id="smallOrbitAtom1" class="smallOrbitAtom" cx="180" cy="320" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
-            <circle id="smallOrbitAtom2" class="smallOrbitAtom" cx="320" cy="180" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
+            <!-- large orbit and it's atoms -->
+                <circle class="orbits" cx="250" cy="250" r="200" stroke="#242424" stroke-width="1" fill="none"></circle>
+                <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="50" cy="250" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
+                <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="450" cy="250" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
+                <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="250" cy="50" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
+                <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="250" cy="450" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
+            <!-- medium orbit and it's atoms -->
+                <circle class="orbits" cx="250" cy="250" r="100" stroke="#242424" stroke-width="1" fill="none"></circle>
+                <circle transform="rotate(0, 250, 250)" class="mediumOrbitAtom" cx="180" cy="320" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle>
+                <circle transform="rotate(0, 250, 250)" class="mediumOrbitAtom" cx="320" cy="180" r="7" stroke="#242424" stroke-width="1" fill="#242424"></circle> 
+            <!-- core of the atom -->
+                <circle class="core" cx="250" cy="250" r="10" stroke="#242424" stroke-width="1" fill="#242424"></circle>
         </svg>
         <div id="linksParent">
             <a href="#">Lorem Ipsum</a>
