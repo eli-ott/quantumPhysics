@@ -31,12 +31,16 @@ $("#burger").on("click", () => {
         $("#middleLine").fadeOut(200);
 
         //we change the size of the background menu and it's border radius
-        $("#menuCircle").css({width: "100%", height: "100%", borderRadius: 0});
+        $("#menuBg").css({width: "100%", height: "100%", borderRadius: 0});
 
         //we make the button appear
         setTimeout(() => {
             $("div#linksParent a").css("opacity", "1");
+            $("#linksParent").css("border-left", "solid #242424 2px");
         }, 500);
+        setTimeout(() => {
+            $("#atom").fadeIn(500)
+        }, 750)
     } else{
         $("#burger").attr("class", "retract");
 
@@ -63,9 +67,11 @@ $("#burger").on("click", () => {
         $("#middleLine").fadeIn(200)
 
         //we change the size of the background menu and it's border radius
-        $("#menuCircle").css({width: 0, height: 0, borderRadius: "10vh 0 10vh 50vh"});
+        $("#menuBg").css({width: 0, height: 0, borderRadius: "10vh 0 10vh 50vh"});
 
         //we make the button disapeaer
-            $("div#linksParent a").css("opacity", "0");
+        $("div#linksParent a").css("opacity", "0");
+        $("#linksParent").css("border-left", "none");
+        $("#atom").fadeOut(150);
     }
 });
