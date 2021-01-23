@@ -9,7 +9,7 @@ const darkMode = () => {
 
     //we change the moon icon for the sun
     $("#moon").fadeOut(250);
-    setTimeout(() => { $("#moon").attr("src", "../pics/sun.svg"); }, 250);
+    setTimeout(() => { $("#moon").attr("src", "pics/sun.svg"); }, 250);
     $("#moon").fadeIn(250);
     setTimeout(() => { $("#moon").attr("onclick", "lightMode()"); $("#moon").attr("id", "sun");}, 770);
 
@@ -28,7 +28,7 @@ const lightMode = () => {
 
     //we chhange the sun icon for a moon icon 
     $("#sun").fadeOut(250);
-    setTimeout(() => { $("#sun").attr("src", "../pics/moon.svg"); }, 250);
+    setTimeout(() => { $("#sun").attr("src", "pics/moon.svg"); }, 250);
     $("#sun").fadeIn(250);
     setTimeout(() => { $("#sun").attr("onclick", "darkMode()"); $("#sun").attr("id", "moon"); }, 770);
 
