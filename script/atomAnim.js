@@ -22,6 +22,7 @@ $(window).on("scroll", () => {
         $("#atom").css("left", 389.2 + -yOffset);
     }
 
+    //we create the rotation of the atom when the user scroll
     if(previousYOffset < yOffset){
         $(".largeOrbitAtom").attr("transform", `rotate(${yOffset / 4.5}, 250, 250)`);
         $(".mediumOrbitAtom").attr("transform", `rotate(${yOffset / 2}, 250, 250)`);
@@ -30,6 +31,7 @@ $(window).on("scroll", () => {
         $(".mediumOrbitAtom").attr("transform", `rotate(${-yOffset / -2}, 250, 250)`);
     }
 
+    //we check if the atom is at 0px from the left to stop it
     $("#atom").css("left") <= "0px" ? slideAtom = false: slideAtom = true;
 
     //we check if the user is on the top of the page to animate the atom
