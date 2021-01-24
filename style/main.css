@@ -11,6 +11,9 @@
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 @font-face{
     font-family: header;
     src: url(../font/Anton-Regular.ttf);
@@ -32,7 +35,7 @@ body{
     padding: 0;
 }
 img.themeIcon{
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     background: none;
 
@@ -41,7 +44,7 @@ img.themeIcon{
     margin: 1vh;
 }
 svg#burger{
-    position: absolute;
+    position: fixed;
     background: none;
     cursor: pointer;
     
@@ -58,7 +61,7 @@ svg#burger{
     -o-transition: .5s;
 }
 div#menuBg{
-    position: absolute;
+    position: fixed;
     
     right: 0;
     top: 0;
@@ -78,18 +81,20 @@ div#menuBg{
     background: var(--orange);
 }
 nav{
-    position: absolute;
+    position: fixed;
     
     z-index: 9000;
     width: 100%;
     height: 100%;
 }
-svg#atom{
+img#menuAtom{
     position: absolute;
     display: none;
 
-    left: 9vh;
-    top: 12vh;
+    left: 53vh;
+    top: 3.5vh;
+    z-index: 9990;
+    width: 40vh;
 }
 div#linksParent{
     position: absolute;
@@ -114,6 +119,7 @@ div#linksParent a{
     background: none;
     outline: none;
     text-decoration: none;
+    display: none;
     cursor: pointer;
     
     width: 42%;

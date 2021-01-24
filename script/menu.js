@@ -40,7 +40,7 @@ $("#burger").on("click", () => {
             $("#linksParent").css("border-left", "solid #242424 2px");
         }, 500);
         setTimeout(() => {
-            $("#atom").fadeIn(500)
+            $("#menuAtom").fadeIn(500)
         }, 750)
     } else{
         $("#burger").attr("class", "retract");
@@ -74,6 +74,6 @@ $("#burger").on("click", () => {
         $("div#linksParent a").css("opacity", "0");
         $("div#linksParent a").css("display", "none");
         $("#linksParent").css("border-left", "none");
-        $("#atom").fadeOut(150);
+        $("#menuAtom").fadeOut(150);
     }
 });

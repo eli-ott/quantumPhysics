@@ -7,6 +7,10 @@ const darkMode = () => {
     $("#topLine").css("stroke", "#fcffeb");
     $("#bottomLine").css("stroke", "#fcffeb");
 
+    //we change the color of the atom and the arrow from the landing page
+    $("circle").attr("stroke", "#fcffeb");
+    $("#arrowInstruction").css("filter", "invert(100%)");
+
     //we change the moon icon for the sun
     $("#moon").fadeOut(250);
     setTimeout(() => { $("#moon").attr("src", "pics/sun.svg"); }, 250);
@@ -26,7 +30,11 @@ const lightMode = () => {
     $("#topLine").css("stroke", "#242424");
     $("#bottomLine").css("stroke", "#242424");
 
-    //we chhange the sun icon for a moon icon 
+    //we change the color of the atom and the arrow from the landing page
+    $("circle").attr("stroke", "#242424");
+    $("#arrowInstruction").css("filter", "invert(0%)");
+
+    //we change the sun icon for a moon icon 
     $("#sun").fadeOut(250);
     setTimeout(() => { $("#sun").attr("src", "pics/moon.svg"); }, 250);
     $("#sun").fadeIn(250);
