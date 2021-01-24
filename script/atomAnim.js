@@ -7,14 +7,6 @@ let slideAtom = true;
 $(window).on("scroll", () => {
     let yOffset = window.pageYOffset;
 
-    //we clear the timeout when the user scroll
-    clearTimeout(scrollTimeout)
-
-    //we check is the user stop scrolling
-    scrollTimeout = setTimeout(() => {
-        previousYOffset = yOffset;
-    }, 25);
-
     //we slide the atom to the left or to the right
     if(previousYOffset < yOffset && slideAtom){
         $("#atom").css("left", 389.2 - yOffset);
