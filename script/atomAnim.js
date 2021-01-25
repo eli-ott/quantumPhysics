@@ -7,11 +7,20 @@ let slideAtom = true;
 $(window).on("scroll", () => {
     let yOffset = window.pageYOffset;
 
+    //we remove the little arrow from the left of the page when the user scroll
+    if(yOffset != 0){
+        $("#arrowInstruction").css("opacity", "0");
+    } else{
+        $("#arrowInstruction").css("opacity", "1");
+    }
+
     //we slide the atom to the left or to the right
     if(previousYOffset < yOffset && slideAtom){
         $("#atom").css("left", 389.2 - yOffset);
-    } else if(yOffset < 389.2){
+        console.log("sliding");
+    } else if(yOffset < 389.2 && slideAtom){
         $("#atom").css("left", 389.2 + -yOffset);
+        console.log("sliding minus");
     }
 
     //we create the rotation of the atom when the user scroll
@@ -23,8 +32,11 @@ $(window).on("scroll", () => {
         $(".mediumOrbitAtom").attr("transform", `rotate(${-yOffset / -2}, 250, 250)`);
     }
 
-    //we check if the atom is at 0px from the left to stop it
-    $("#atom").css("left") <= "0px" ? slideAtom = false: slideAtom = true;
+    //we check if the user scroll  to the top enough to slide the atom again
+    yOffset < 300 ? slideAtom = true: slideAtom = false;
+
+    //we check if the atom is at 250px from the left to stop it
+    //parseFloat($("#atom").css("left")) <= 100.0 ? slideAtom = false: slideAtom = true;
 
     //we check if the user is on the top of the page to animate the atom
     if(window.pageYOffset == 0){
@@ -32,6 +44,7 @@ $(window).on("scroll", () => {
     } else{
         noScroll = false;
     }
+    console.log(parseFloat($("#atom").css("left")));
     electronsRotation();
 }); 
 
