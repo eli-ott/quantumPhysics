@@ -17,10 +17,8 @@ $(window).on("scroll", () => {
     //we slide the atom to the left or to the right
     if(previousYOffset < yOffset && slideAtom){
         $("#atom").css("left", 389.2 - yOffset);
-        console.log("sliding");
     } else if(yOffset < 389.2 && slideAtom){
         $("#atom").css("left", 389.2 + -yOffset);
-        console.log("sliding minus");
     }
 
     //we create the rotation of the atom when the user scroll

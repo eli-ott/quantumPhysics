@@ -1,7 +1,7 @@
 :root{
     --backgroundColor: #fcffeb;
     --color: #242424;
-    --orange: #F28123;
+    --orange: #ff913d;
     --lightBlue: #59acff;
     --darkBlue: #4D7EA8;
 
@@ -26,6 +26,9 @@
 html{
     font-family: contentFont, 'Courier New', Courier, monospace;
     overflow-x: hidden;
+
+    padding: 0;
+    margin: 0;
 
     background-color: var(--backgroundColor);
     color: var(--color);
@@ -78,7 +81,7 @@ div#menuBg{
     -ms-border-radius: 10vh 0 10vh 50vh;
     -o-border-radius: 10vh 0 10vh 50vh;
 
-    background: var(--orange);
+    background: var(--lightBlue);
 }
 nav{
     position: fixed;
@@ -124,6 +127,7 @@ div#linksParent a{
     
     width: 42%;
     opacity: 0;
+    font-size: 650;
     padding: 1vh;
     margin-left: 30%;
     transition: 0.5s;
@@ -136,7 +140,7 @@ div#linksParent a{
     border-bottom: solid #242424 2px;
 }
 div#linksParent a:hover{
-    color: var(--backgroundColor);
+    color: var(--orange);
 }
 div#linksParent a::before{
     content: "\A0";
@@ -154,8 +158,20 @@ div#linksParent a::before{
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 
-    border-bottom: solid var(--backgroundColor) 2px;
+    border-bottom: solid var(--orange) 2px;
 }
 div#linksParent a:hover::before{
     width: 45%;
+}
+footer{
+    position: absolute;
+
+    z-index: -1;
+    width: 100%;
+    margin: 0;
+    margin-top: 5vh;
+    top: 200%;
+}
+footer img#wave{
+    margin-bottom: -1vh;
 }
