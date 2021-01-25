@@ -94,13 +94,13 @@ img#menuAtom{
     position: absolute;
     display: none;
 
-    left: 53vh;
+    right: 52.8%;
     top: 3.5vh;
     z-index: 9990;
     width: 40vh;
 }
 div#linksParent{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -170,7 +170,7 @@ footer{
     width: 100%;
     margin: 0;
     margin-top: 5vh;
-    top: 200%;
+    top: 100%;
 }
 footer img#wave{
     margin-bottom: -1vh;

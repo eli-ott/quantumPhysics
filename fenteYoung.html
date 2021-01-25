@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/landingPage.css">
+    <link rel="stylesheet" href="style/fentesYoung.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <title>Physique Quantique</title>
 </head>
@@ -35,46 +35,40 @@
         <img id="menuAtom" src="pics/atom.svg" alt="half atom">
         <!-- menu links to other pages -->
         <div id="linksParent">
+            <a href="index.html">Accueil</a>
             <a href="modelAtome.html">Modèle de l'atome</a>
             <a href="#">Les grandes figures</a>
             <a href="#">Principe d'incertitude</a>
-            <a href="fenteYoung.html">Fentes d'Young</a>
             <a href="#">Dualité onde-corpuscule</a>
             <a href="#">Formules célèbres</a>
         </div>
     </nav>
-    <section id="intro">
-        <p id="topLeftHeader">
-            Physique
-        </p>
-        <!-- atom design -->
-        <svg id="atom" height="500" width="500">
-            <!-- large orbit and it's atoms  -->
-            <circle class="orbits" cx="250" cy="250" r="200" stroke-width="1" fill="none"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="50" cy="250" r="7" stroke-width="1" fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="450" cy="250" r="7" stroke-width="1" fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="250" cy="50" r="7" stroke-width="1" fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="250" cy="450" r="7" stroke-width="1" fill="#242424"></circle>
-            <!-- medium orbit and it's atoms --> 
-            <circle class="orbits" cx="250" cy="250" r="100" stroke-width="1" fill="none"></circle>
-            <circle transform="rotate(0, 250, 250)" class="mediumOrbitAtom" cx="180" cy="320" r="7" stroke-width="1" fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="mediumOrbitAtom" cx="320" cy="180" r="7" stroke-width="1" fill="#242424"></circle> 
-            <!-- core of the atom --> 
-            <circle id="core" cx="250" cy="250" r="10" stroke-width="1" fill="#242424"></circle>
-        </svg>
-        <p id="bottomRightHeader">
-            Quantique
-        </p>
-    </section>
-    <section id="content">
-        <p>
-            faire le parralax pour l'atome et le changer de place au scroll
-        </p>
-    </section>
-    <img src="pics/arrow-down.svg" alt="arrow down icon" id="arrowInstruction">
+    <!-- Young's slits schema -->
+    <svg height="500" width="750" id="fentes">
+        <!-- screen -->
+        <line x1="400" y1="0" x2="700" y2="100" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="400" y1="0" x2="400" y2="250" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="400" y1="250" x2="415" y2="257" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="495" y1="288" x2="695" y2="365" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="700" y1="100" x2="695" y2="365" style="stroke: #242424; stroke-width: 2;"></line>
+        <!-- left wall -->
+        <line x1="200" y1="100" x2="275" y2="129" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="200" y1="350" x2="275" y2="380" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="200" y1="100" x2="200" y2="350" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="275" y1="128" x2="275" y2="380" style="stroke: #242424; stroke-width: 2;"></line>
+        <!-- middle wall -->
+        <line x1="300" y1="140" x2="385" y2="172" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="300" y1="390" x2="385" y2="425" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="300" y1="140" x2="300" y2="390" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="384" y1="170" x2="385" y2="425" style="stroke: #242424; stroke-width: 2;"></line>
+        <!-- right wall -->
+        <line x1="415" y1="185" x2="495" y2="217" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="415" y1="435" x2="495" y2="470" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="415" y1="185" x2="415" y2="435" style="stroke: #242424; stroke-width: 2;"></line>
+        <line x1="495" y1="215" x2="495" y2="470" style="stroke: #242424; stroke-width: 2;"></line>
+    </svg>
 <script type="text/javascript" src="script/darkMode.js"></script>
 <script type="text/javascript" src="script/menu.js"></script>
-<script type="text/javascript" src="script/atomAnim.js"></script>
 </body>
 <footer>
     <img src="pics/footerWave.svg" alt="image de vague" id="wave">
