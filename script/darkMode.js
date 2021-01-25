@@ -9,6 +9,9 @@ const darkMode = () => {
 
     //we change the color of the atom and the arrow from the landing page
     $("circle").attr("stroke", "#fcffeb");
+    $(".largeOrbitAtom").attr("fill", "#fcffeb");
+    $(".mediumOrbitAtom").attr("fill", "#fcffeb");
+    $("#core").attr("fill", "#fcffeb");
     $("#arrowInstruction").css("filter", "invert(100%)");
 
     //we change the moon icon for the sun
@@ -32,6 +35,9 @@ const lightMode = () => {
 
     //we change the color of the atom and the arrow from the landing page
     $("circle").attr("stroke", "#242424");
+    $(".largeOrbitAtom").attr("fill", "#242424");
+    $(".mediumOrbitAtom").attr("fill", "#242424");
+    $("#core").attr("fill", "#242424");
     $("#arrowInstruction").css("filter", "invert(0%)");
 
     //we change the sun icon for a moon icon 
