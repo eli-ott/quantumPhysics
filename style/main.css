@@ -163,6 +163,12 @@ div#linksParent a::before{
 div#linksParent a:hover::before{
     width: 45%;
 }
+p#mainContent{
+    background: none;
+
+    line-height: 5vh;
+    font-size: 2.5vh;
+}
 footer{
     position: absolute;
 
@@ -170,7 +176,6 @@ footer{
     width: 100%;
     margin: 0;
     margin-top: 5vh;
-    top: 100%;
 }
 footer img#wave{
     margin-bottom: -1vh;
