@@ -28,7 +28,6 @@ p#bottomRightHeader{
 section#content{
     position: absolute;
 
-    height: 100%;
     width: 50%;
     margin-top: 55%;
     right: 0;
