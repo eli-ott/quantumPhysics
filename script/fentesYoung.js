@@ -68,15 +68,19 @@ $(".themeIcon").on("click", () => {
     if(localStorage.getItem("theme") == 'dark'){
         $("line").attr('style', 'stroke: #fcffeb; stroke-width: 2;');
         $("circle").attr('style', 'fill: #fcffeb;');
+        $("#middleLine").attr("style", "stroke: #59acff;stroke-width:2.20299;stroke-opacity:1");
     } else if(localStorage.getItem("theme") == 'light'){
         $("line").attr('style', 'stroke: #242424; stroke-width: 2;');
         $("circle").attr('style', 'fill: #242424;');
+        $("#middleLine").attr("style", "stroke: #59acff;stroke-width:2.20299;stroke-opacity:1");
     }
 });
 if(localStorage.getItem("theme") == 'dark'){
-        $("line").attr('style', 'stroke: #fcffeb; stroke-width: 2;');
-        $("circle").attr('style', 'fill: #fcffeb;');
-    } else if(localStorage.getItem("theme") == 'light'){
-        $("line").attr('style', 'stroke: #242424; stroke-width: 2;');
-        $("circle").attr('style', 'fill: #242424;');
-    }
+    $("line").attr('style', 'stroke: #fcffeb; stroke-width: 2;');
+    $("circle").attr('style', 'fill: #fcffeb;');
+    $("#middleLine").attr("style", "stroke: #59acff;stroke-width:2.20299;stroke-opacity:1");
+} else if(localStorage.getItem("theme") == 'light'){
+    $("line").attr('style', 'stroke: #242424; stroke-width: 2;');
+    $("circle").attr('style', 'fill: #242424;');
+    $("#middleLine").attr("style", "stroke: #59acff;stroke-width:2.20299;stroke-opacity:1");
+}
