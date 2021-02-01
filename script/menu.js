@@ -5,6 +5,7 @@ let x2 = 23;
 
 $("#burger").on("click", () => {
     if($("#burger").attr("class") != "display"){
+        $("nav").css({opacity: '1', zIndex: '9000'});
         $("#burger").attr("class", "display");
         $("div#linksParent a").css("display", "unset");
 
@@ -75,5 +76,8 @@ $("#burger").on("click", () => {
         $("div#linksParent a").css("display", "none");
         $("#linksParent").css("border-left", "none");
         $("#menuAtom").fadeOut(150);
+        setTimeout(() => {
+            $("nav").css({opacity: '0', zIndex: '-1'});
+        }, 750);
     }
 });
