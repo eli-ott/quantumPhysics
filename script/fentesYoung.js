@@ -11,7 +11,7 @@ $("#startAnimation").on("click", () => {
         let electronsDisplay = setInterval(() => {
             circleIndex == $(".electrons").length ? clearInterval(electronsDisplay): circleIndex++;; 
             $(`#circle${circleIndex}`).css("display", "unset");
-        }, 50);
+        }, 35);
         animationIsActive = true;
 
         //we desactive the start animation button when the animation is running
@@ -22,7 +22,7 @@ $("#startAnimation").on("click", () => {
         setTimeout(() => {
             $("#restartAnimation").css({color: 'var(--color)', borderColor: 'var(--color)', cursor: 'pointer'});
             isButtonsActive = true;
-        }, 4650);
+        }, 3290);
         }
 });
 
