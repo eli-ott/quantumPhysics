@@ -183,6 +183,11 @@ footer{
     margin: 0;
     margin-top: 5vh;
 }
+footer #creators{
+    z-index: 9999   ;
+    margin-bottom: -17%;
+}
 footer img#wave{
+    z-index: -1;
     margin-bottom: -1vh;
 }

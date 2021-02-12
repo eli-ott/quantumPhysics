@@ -5,6 +5,9 @@ svg#fentes{
 circle.electrons{
     display: none;
 }
+circle.shootingElectrons{
+    display: none;
+}
 section#buttons{
     position: absolute;
     display: flex;

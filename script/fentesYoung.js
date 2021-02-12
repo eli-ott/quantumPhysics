@@ -9,10 +9,20 @@ $("#startAnimation").on("click", () => {
     if(isButtonsActive){
         //we display all the electrons one by one
         let electronsDisplay = setInterval(() => {
-            circleIndex == $(".electrons").length ? clearInterval(electronsDisplay): circleIndex++;; 
+            circleIndex == $(".electrons").length ? clearInterval(electronsDisplay): circleIndex++; 
             $(`#circle${circleIndex}`).css("display", "unset");
         }, 35);
         animationIsActive = true;
+
+        //we choose a random number between 1 and 14 
+        let shootingElectronsDisplay = setInterval(() => {
+            let randomElectrons = Math.ceil(Math.random() * 14);
+            $(`#electrons${randomElectrons}`).css("display", "unset");
+                setTimeout(() => {
+                    $(`#electrons${randomElectrons}`).css("display", "none");
+                }, 17.5);
+                circleIndex == $(".electrons").length ? clearInterval(shootingElectronsDisplay): null;
+            }, 35);
 
         //we desactive the start animation button when the animation is running
         isButtonsActive = false;
