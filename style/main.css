@@ -1,7 +1,7 @@
 :root{
     --backgroundColor: #fcffeb;
     --color: #242424;
-    --orange: #ff913d;
+    --orange: #ff934b;
     --lightBlue: #59acff;
     --darkBlue: #4D7EA8;
 
@@ -183,11 +183,26 @@ footer{
     margin: 0;
     margin-top: 5vh;
 }
-footer #creators{
-    z-index: 9999   ;
-    margin-bottom: -17%;
-}
-footer img#wave{
+footer #wave{
     z-index: -1;
     margin-bottom: -1vh;
+}
+footer svg text{
+    font-family: contentFont;
+
+    z-index: 9999;
+
+    fill: var(--color);
+}
+footer svg text.links{
+
+    fill: var(--orange);
+}
+footer svg text#footerHeader{
+    font-family: header;
+    text-decoration: underline;
+    
+    font-size: 4vh;
+
+    fill: var(--color);
 }

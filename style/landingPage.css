@@ -13,6 +13,7 @@ p#topLeftHeader{
 svg#atom{
     position: fixed;
 
+    z-index: -1;
     top: 15vh;
     left: 56vh;
 }
