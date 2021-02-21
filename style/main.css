@@ -206,7 +206,7 @@ footer svg .links{
 footer svg .links:hover{
     text-decoration: underline;
 }
-footer svg text#footerHeader{
+footer svg text.footerHeader{
     font-family: header;
     text-decoration: underline;
     

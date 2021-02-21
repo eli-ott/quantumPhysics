@@ -37,16 +37,30 @@ const allText = {
 $("#frenchFlag").on("click", () => {
     localStorage.setItem("language", "french");
 
-    $("#topLeftHeader").html("Physique");
-    $("#bottomRightHeader").html("Quantique");
+    //we change the footer language
+    $(".footerHeader")[0].innerHTML = "CREATEURS";
+    $(".footerHeader")[1].innerHTML = "CONTACTEZ-NOUS";
+    $(".footerHeader")[2].innerHTML = "LANGAGE";
+    $("text")[1].innerHTML = "Ce site a été créé par";
+    $("text")[3].innerHTML = "et <a class='links' href='https://github.com/eli-ott'>@eli-ott</a>";
+    $("text")[5].innerHTML = "Vous voulez partager votre opinion ";
+    $("text")[6].innerHTML = "à propos de se site, contactez-nous : ";
+    $("text")[9].innerHTML = "Choisissez un langage : ";
 
     changeLanguage();
 });
 $("#englishFlag").on("click", () => {
     localStorage.setItem("language", "english");
 
-    $("#topLeftHeader").html("Quantum");
-    $("#bottomRightHeader").html("Physics")
+    //we change the footer language
+    $(".footerHeader")[0].innerHTML = "CREATORS";
+    $(".footerHeader")[1].innerHTML = "CONTACT-US";
+    $(".footerHeader")[2].innerHTML = "LANGUAGE";
+    $("text")[1].innerHTML = "This site was created by";
+    $("text")[3].innerHTML = "and <a class='links' href='https://github.com/eli-ott'>@eli-ott</a>";
+    $("text")[5].innerHTML = "you want to share your opinion ";
+    $("text")[6].innerHTML = "about this site, contact-us : ";
+    $("text")[9].innerHTML = "Choose a language : ";
 
     changeLanguage();
 });
@@ -55,7 +69,17 @@ $("#englishFlag").on("click", () => {
 const changeLanguage = () => {
     switch(window.location.pathname){
         case "/index.html":
-            localStorage.getItem("language") === "french" ? $("#mainContent").html(allText.homePage.french): $("#mainContent").html(allText.homePage.english);
+            if(localStorage.getItem("language") === "french"){
+                $("#mainContent").html(allText.homePage.french);
+                $("#topLeftHeader").html("Physique");
+                $("#bottomRightHeader").html("Quantique");
+                $("#frenchFlag").trigger("click");
+            } else{
+                $("#mainContent").html(allText.homePage.english);
+                $("#topLeftHeader").html("Quantum");
+                $("#bottomRightHeader").html("Physics");
+                $("#englishFlag").trigger("click");
+            }
         break;
     }
 }
