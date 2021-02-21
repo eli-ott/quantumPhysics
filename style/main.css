@@ -1,7 +1,7 @@
 :root{
     --backgroundColor: #fcffeb;
     --color: #242424;
-    --orange: #ff9c4b;
+    --orange: #ffc64b;
     --lightBlue: #59acff;
     --darkBlue: #4D7EA8;
 
@@ -192,11 +192,19 @@ footer svg text{
 
     z-index: 9999;
 
-    fill: var(--color);
+    fill: #242424;
 }
-footer svg text.links{
+footer svg .links{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 
     fill: var(--orange);
+}
+footer svg .links:hover{
+    text-decoration: underline;
 }
 footer svg text#footerHeader{
     font-family: header;
@@ -204,5 +212,8 @@ footer svg text#footerHeader{
     
     font-size: 4vh;
 
-    fill: var(--color);
+    fill: #242424;
+}
+footer svg.flags{
+    cursor: pointer;
 }
