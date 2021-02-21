@@ -14,7 +14,7 @@ $("#burger").on("click", () => {
             topY == 18 ? clearInterval(topYInterval): topY++;
             $("#topLine").attr("y2", topY);
         }, 25);
-
+        
         //we decrease the y2 position of the bottom line
         let bottomYInterval = setInterval(() => {
             bottomY == 6 ? clearInterval(bottomYInterval): bottomY--;
