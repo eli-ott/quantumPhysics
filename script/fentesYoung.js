@@ -1,3 +1,15 @@
+$(window).on("scroll", () => {
+    let yOffset = window.pageYOffset;
+    
+    //we remove the little arrow from the left of the page when the user scroll
+    if(yOffset != 0){
+        $("#arrowInstruction").css("opacity", "0");
+    } else{
+        $("#arrowInstruction").css("opacity", "1");
+    }
+});
+
+
 let isButtonsActive = true;
 let animationIsActive = false;
 

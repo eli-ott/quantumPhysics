@@ -1,7 +1,7 @@
 :root{
     --backgroundColor: #fcffeb;
     --color: #242424;
-    --orange: #ffc64b;
+    --orange: #ffab4b;
     --lightBlue: #59acff;
     --darkBlue: #4D7EA8;
 
@@ -146,7 +146,7 @@ div#linksParent a{
     border-bottom: solid #242424 2px;
 }
 div#linksParent a:hover{
-    color: var(--orange);
+    color: var(--backgroundColor);
 }
 div#linksParent a::before{
     content: "\A0";
@@ -164,7 +164,7 @@ div#linksParent a::before{
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 
-    border-bottom: solid var(--orange) 2px;
+    border-bottom: solid var(--backgroundColor) 2px;
 }
 div#linksParent a:hover::before{
     width: 45%;
@@ -201,7 +201,7 @@ footer svg .links{
     -ms-transition: .5s;
     -o-transition: .5s;
 
-    fill: var(--orange);
+    fill: var(--backgroundColor);
 }
 footer svg .links:hover{
     text-decoration: underline;

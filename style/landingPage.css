@@ -50,7 +50,7 @@ img#arrowInstruction{
     -moz-transform: scaleY(1.1);
     -ms-transform: scaleY(1.1);
     -o-transform: scaleY(1.1);
-    
+
     animation: bounceArrow 2s ease infinite;
     -webkit-animation: bounceArrow 2s ease infinite;
 }
