@@ -60,6 +60,14 @@ const allText = {
         völlig unbekannt. Zum Beispiel Atomkraft oder sogar eine ganz neue Technologie,
         Quantencomputer. Diese beiden Beispiele hätten ohne genaues Wissen niemals existiert
         auf Atome und ihre Funktionsweise.`
+    },
+    youngSlits: {
+        french: `Les fentes de Young (ou interférences de Young) désignent en physique une expérience qui 
+        consiste à faire interférer deux faisceaux de lumière issus d'une même source, en les faisant passer 
+        par deux petits trous percés dans un plan opaque. Cette expérience fut réalisée pour la première fois 
+        par Thomas Young en 1801 et permit de comprendre le comportement et la nature de la lumière. Sur un 
+        écran disposé en face des fentes de Young, on observe un motif de diffraction qui est une zone où 
+        s'alternent des franges sombres et illuminées.`
     }
 }
 
@@ -128,7 +136,74 @@ $("#germanFlag").on("click", () => {
 //we check which language is choose by the user
 const changeLanguage = () => {
     switch(window.location.pathname){
-        case "/" || "/index.html":
+        case "/":
+            if(localStorage.getItem("language") === "french"){
+                $("#mainContent").html(allText.homePage.french);
+
+                //we change the header text
+                $("#topLeftHeader").html("Physique");
+                $("#bottomRightHeader").html("Quantique");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Modèle de l'atome";
+                $("#linksParent a")[1].innerHTML = "Les grandes figures";
+                $("#linksParent a")[2].innerHTML = "Principe d'incertitude";
+                $("#linksParent a")[3].innerHTML = "Fentes d'Young";
+                $("#linksParent a")[4].innerHTML = "Dualité onde-corpuscule";
+                $("#linksParent a")[5].innerHTML = "Formule célèbres";
+
+                $("#frenchFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "english"){
+                $("#mainContent").html(allText.homePage.english);
+
+                //we change the header text
+                $("#topLeftHeader").html("Quantum");
+                $("#bottomRightHeader").html("Physics");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Atom model";
+                $("#linksParent a")[1].innerHTML = "The great figures";
+                $("#linksParent a")[2].innerHTML = "Uncertainty principle";
+                $("#linksParent a")[3].innerHTML = "Young's slits";
+                $("#linksParent a")[4].innerHTML = "Wave-particle duality";
+                $("#linksParent a")[5].innerHTML = "Famous formula";
+
+                $("#englishFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "spanish"){
+                $("#mainContent").html(allText.homePage.spanish);
+
+                //we change the header text
+                $("#topLeftHeader").html("Física");
+                $("#bottomRightHeader").html("Cuántica");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Modelo de átomo";
+                $("#linksParent a")[1].innerHTML = "Las grandes figuras";
+                $("#linksParent a")[2].innerHTML = "Principio de incertidumbre";
+                $("#linksParent a")[3].innerHTML = "Hendiduras de Young";
+                $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
+                $("#linksParent a")[5].innerHTML = "Fórmula famosa";
+
+                $("#spanishFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "german"){
+                $("#mainContent").html(allText.homePage.german);
+
+                //we change the header text
+                $("#topLeftHeader").html("");
+                $("#bottomRightHeader").html("Quantenphysik");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Atommodell";
+                $("#linksParent a")[1].innerHTML = "die großen Figuren";
+                $("#linksParent a")[2].innerHTML = "Unschärferelation";
+                $("#linksParent a")[3].innerHTML = "Schlitze von Young";
+                $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
+                $("#linksParent a")[5].innerHTML = "Berühmte Formel";
+
+                $("#germanFlag").trigger("click");
+            }
+        break;
+        case "/index.html":
             if(localStorage.getItem("language") === "french"){
                 $("#mainContent").html(allText.homePage.french);
 

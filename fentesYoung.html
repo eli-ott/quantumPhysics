@@ -138,11 +138,74 @@
         <a class="animButtons" id="startAnimation" type="button">Lancer L'animation</a>
         <a class="animButtons" id="restartAnimation" type="button">Effacer L'animation</a>
     </section>
+    <section id="content">
+        <p id="mainContent">
+            Les fentes de Young (ou interférences de Young) désignent en physique une expérience qui 
+        consiste à faire interférer deux faisceaux de lumière issus d'une même source, en les faisant passer 
+        par deux petits trous percés dans un plan opaque. 
+        <br> <br>
+        Cette expérience fut réalisée pour la première fois 
+        par Thomas Young en 1801 et permit de comprendre le comportement et la nature de la lumière. 
+        <br> <br>
+        Sur un écran disposé en face des fentes de Young, on observe un motif de diffraction qui est une zone 
+        où s'alternent des franges sombres et illuminées.
+        </p>
+    </section>
 <script type="text/javascript" src="script/darkMode.js"></script>
 <script type="text/javascript" src="script/menu.js"></script>
 <script type="text/javascript" src="script/fentesYoung.js"></script>
 </body>
 <footer>
-    <img src="pics/footerWave.svg" alt="image de vague" id="wave">
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#59acff" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,112C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+    <text class="footerHeader" x="150" y="170">CREATEURS</text>
+    <text x="150" y="200">Ce site a été créé par</text>
+    <a href="https://github.com/jujutagad333">
+        <text class="links" x="150" y="225">@jujutagad333</text>
+    </a>
+    <text x="150" y="250">
+        et <a class="links" href="https://github.com/eli-ott">@eli-ott</a>
+    </text>
+
+    <text class="footerHeader" x="650" y="170">CONTACTEZ-NOUS</text>
+    <text x="650" y ="200">Vous voulez partager votre opinion </text>
+    <text x="650" y="225">à propos de se site, contactez-nous : </text>
+    <a href="mailto:eliottbidault@gmail.com">
+        <text class="links" x="650" y="250">eliottbidault@gmail.com</text>
+    </a>
+
+    <text class="footerHeader" x="1150" y="170">LANGAGE</text>
+    <text x="1150" y="200">Choissisez un langage : </text>
+    <!-- french flag -->
+    <svg id="frenchFlag" class="flags">
+        <rect x="1150" y="225" width="30" height="21" fill="#ED2939"/>
+        <rect x="1150" y="225" width="20" height="21" fill="#fff"/>
+        <rect x="1150" y="225" width="10" height="21" fill="#002395"/>
+    </svg>
+    <!-- english flag -->
+    <svg id="englishFlag" class="flags" x="1200" y="225" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40" width="31.333" height="21.333">
+        <defs><clipPath id="t"><path d="M30,15H60V30zM30,15V30H0zM30,15H0V0zM30,15V0H60z"/></clipPath></defs>
+        <rect width="60" height="40" style="fill:#00247d"/>
+        <g style="stroke:#ffffff;stroke-width:6.93225527;fill:none">
+            <path d="M0,0L60,40M60,0L0,40"/>
+            <path d="M0,0L60,30M60,0L0,30" style="stroke:#cf142b;stroke-width:4" clip-path="url(#t)" transform="scale(1,1.3333333)"/>
+            <path d="M30,0V40M0,20H60" style="stroke-width:11.55375878"/>
+            <path d="M30,0V40M0,20H60" style="stroke:#cf142b"/>
+        </g>
+    </svg>
+    <!-- spanish flag -->
+    <svg id="spanishFlag" class="flags" x="1250" y="225">
+        <rect width="33.333" height="7.111" y="0" fill="#c60b1e"/>
+        <rect width="33.333" height="8.111" y="6.111" fill="#ffc400"/>
+        <rect width="33.333" height="7.111" y="14.222" fill="#c60b1e"/>
+    </svg>
+    <!-- german flag -->
+    <svg id="germanFlag" class="flags" x="1300" y="225" width="33.333" height="25" viewBox="0 0 5 3">
+        <rect id="black_stripe" width="5" height="3" y="0" x="0" fill="#000"/>
+        <rect id="red_stripe" width="5" height="2" y="1" x="0" fill="#D00"/>
+        <rect id="gold_stripe" width="5" height="1" y="2" x="0" fill="#FFCE00"/>
+    </svg>    
+</svg>
+<script type="text/javascript" src="script/translation.js"></script>
 </footer>
 </html>
