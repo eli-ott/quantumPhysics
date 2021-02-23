@@ -64,10 +64,44 @@ const allText = {
     youngSlits: {
         french: `Les fentes de Young (ou interférences de Young) désignent en physique une expérience qui 
         consiste à faire interférer deux faisceaux de lumière issus d'une même source, en les faisant passer 
-        par deux petits trous percés dans un plan opaque. Cette expérience fut réalisée pour la première fois 
-        par Thomas Young en 1801 et permit de comprendre le comportement et la nature de la lumière. Sur un 
-        écran disposé en face des fentes de Young, on observe un motif de diffraction qui est une zone où 
-        s'alternent des franges sombres et illuminées.`
+        par deux petits trous percés dans un plan opaque. 
+        <br> <br>
+        Cette expérience fut réalisée pour la première fois par Thomas Young en 1801 et permit de 
+        comprendre le comportement et la nature de la lumière. 
+        <br> <br>
+        Sur un écran disposé en face des fentes de Young, on observe un motif de diffraction qui est une zone 
+        où s'alternent des franges sombres et illuminées. Le creux des vagues représente les parties somrbres,
+        et les pics représente les parties illuminées.`,
+        english: `Young's slits (or Young's interferences) designate in physics an experiment which
+        consists of interfering with two beams of light coming from the same source, by passing them
+        by two small holes drilled in an opaque plane.
+        <br> <br>
+        This experiment was carried out for the first time by Thomas Young in 1801 and allowed to
+        understand the behavior and nature of light.
+        <br> <br>
+        On a screen placed in front of Young's slits, we observe a diffraction pattern which is a zone
+        where dark and illuminated fringes alternate. The hollows of the waves represent the dark parts,
+        and the peaks represent the illuminated parts.`,
+        spanish: `Las rendijas de Young (o las interferencias de Young) designan en física un experimento que
+        consiste en interferir con dos haces de luz provenientes de la misma fuente, haciéndolos pasar
+        por dos pequeños agujeros perforados en un plano opaco.
+        <br> <br>
+        Este experimento fue llevado a cabo por primera vez por Thomas Young en 1801 y permitió
+        comprender el comportamiento y la naturaleza de la luz.
+        <br> <br>
+        En una pantalla colocada frente a las rendijas de Young, observamos un diagrama de difracción que es una zona
+        donde se alternan franjas oscuras y brillantes. Los huecos de las olas representan las partes oscuras,
+        y los picos representan las partes iluminadas.`,
+        german: `Youngs Schlitze (oder Youngs Interferenzen) beziehen sich auf ein physikalisches Experiment, das
+        besteht darin, zwei Lichtstrahlen, die von derselben Quelle kommen, zu stören und sie durchzulassen
+        durch zwei kleine Löcher in einer undurchsichtigen Ebene gebohrt.
+        <br> <br>
+        Dieses Experiment wurde erstmals 1801 von Thomas Young durchgeführt und erlaubt
+        das Verhalten und die Natur des Lichts verstehen.
+        <br> <br>
+        Auf einem Bildschirm vor Youngs Schlitzen beobachten wir ein Beugungsdiagramm, das eine Zone ist
+        wo sich dunkle und helle Streifen abwechseln. Die Vertiefungen der Wellen repräsentieren die dunklen Teile,
+        und die Spitzen repräsentieren die beleuchteten Teile.`
     }
 }
 
@@ -268,6 +302,43 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Berühmte Formel";
 
                 $("#germanFlag").trigger("click");
+            }
+        break;
+        case "/fentesYoung.html":
+            if(localStorage.getItem("language") === "french"){
+                $("#mainContent").html(allText.youngSlits.french);
+
+                //we change the buttons language
+                $(".animButtons")[0].innerHTML = "Lancer l'animation";
+                $(".animButtons")[1].innerHTML = "Effacer l'animation";
+                $("#warning p").html("Cette animation n'est pas représentative de la réalité.");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Accueil";
+                $("#linksParent a")[1].innerHTML = "Modèle de l'atome";
+                $("#linksParent a")[2].innerHTML = "Les grandes figures";
+                $("#linksParent a")[3].innerHTML = "Principe d'incertitude";
+                $("#linksParent a")[4].innerHTML = "Dualité onde-corpuscule";
+                $("#linksParent a")[5].innerHTML = "Formules célèbres";
+
+                $("#frenchFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "english"){
+                $("#mainContent").html(allText.youngSlits.english);
+
+                //we change the buttons language
+                $(".animButtons")[0].innerHTML = "Launch the animation";
+                $(".animButtons")[1].innerHTML = "Erase the animation";
+                $("#warning p").html("This animation is not representative of the reality.");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Home";
+                $("#linksParent a")[1].innerHTML = "Atom model";
+                $("#linksParent a")[2].innerHTML = "The great figures";
+                $("#linksParent a")[3].innerHTML = "Uncertainty principle";
+                $("#linksParent a")[4].innerHTML = "Wave-particle duality";
+                $("#linksParent a")[5].innerHTML = "Famous formula";
+
+                $("#englishFalg").trigger("click");
             }
         break;
     }

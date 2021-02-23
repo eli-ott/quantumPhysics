@@ -65,7 +65,6 @@ $("#restartAnimation").on("click", () => {
 
 //we create the hover changes
 $("#startAnimation").hover(() => {
-    console.log("hovering");
     if(isButtonsActive && !animationIsActive){
         $("#startAnimation").css({color: "var(--orange)", borderColor: "var(--orange)", cursor: "pointer"});
     }
@@ -75,7 +74,6 @@ $("#startAnimation").hover(() => {
     }
 });
 $("#restartAnimation").hover(() => {
-    console.log("hovering");
     if(isButtonsActive && animationIsActive){
         $("#restartAnimation").css({color: "var(--orange)", borderColor: "var(--orange)", cursor: "pointer"});
     }
