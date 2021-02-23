@@ -339,8 +339,42 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Famous formula";
 
                 $("#englishFalg").trigger("click");
+            } else if(localStorage.getItem("language") === "spanish"){
+                $("#mainContent").html(allText.youngSlits.spanish);
+                
+                //we change the buttons language
+                $(".animButtons")[0].innerHTML = "Iniciar animación";
+                $(".animButtons")[1].innerHTML = "Animación clara";
+                $("#warning p").html("Esta animación no es representativa de la realidad.");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Hogar";
+                $("#linksParent a")[1].innerHTML = "Modelo de átomo";
+                $("#linksParent a")[2].innerHTML = "Las grandes figuras";
+                $("#linksParent a")[3].innerHTML = "Principio de incertidumbre";
+                $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
+                $("#linksParent a")[5].innerHTML = "Fórmula famosa";
+
+                $("#spanishFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "german"){
+                $("#mainContent").html(allText.youngSlits.german);
+
+                //we change the buttons language
+                $(".animButtons")[0].innerHTML = "Animation starten";
+                $(".animButtons")[1].innerHTML = "Animation löschen";
+                $("#warning p").html("Diese Animation ist nicht repräsentativ für die Realität");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Zuhause";
+                $("#linksParent a")[1].innerHTML = "Atommodell";
+                $("#linksParent a")[2].innerHTML = "Die tollen Figuren";
+                $("#linksParent a")[3].innerHTML = "Prinzip der Unsicherheit";
+                $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
+                $("#linksParent a")[5].innerHTML = "Berühmte Formeln";
+
+                $("#germanFlag").trigger("click");
             }
-        break;
+        break; 
     }
 }
 changeLanguage();

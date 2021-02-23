@@ -1,77 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="100%"
-   height="100%"
-   viewBox="-25 -140 527 305"
-   id="svg933"
-   sodipodi:docname="waveYoung.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
-  <metadata
-     id="metadata937">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="100%" height="100%" viewBox="-25 -140 527 305" id="svg933" sodipodi:docname="waveYoung.svg" inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata id="metadata937">
     <rdf:RDF>
-      <cc:Work
-         rdf:about="">
+      <cc:Work rdf:about="">
         <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="745"
-     id="namedview935"
-     showgrid="false"
-     inkscape:zoom="1.0224201"
-     inkscape:cx="284.94101"
-     inkscape:cy="212.89096"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg933"
-     inkscape:document-rotation="0" />
-  <title
-     id="title886">Wave Characteristics</title>
-  <defs
-     id="defs894">
-    <marker
-       id="EndArrow"
-       viewBox="0 0 10 10"
-       refX="10"
-       refY="5"
-       markerUnits="strokeWidth"
-       orient="auto"
-       markerWidth="10"
-       markerHeight="10">
-      <polyline
-         points="10,5 0,10 4,5 0,0 10,5"
-         fill="black"
-         id="polyline888" />
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="745" id="namedview935" showgrid="false" inkscape:zoom="1.0224201" inkscape:cx="284.94101" inkscape:cy="212.89096" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg933" inkscape:document-rotation="0" />
+  <title id="title886">Wave Characteristics</title>
+  <defs id="defs894">
+    <marker id="EndArrow" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" orient="auto" markerWidth="10" markerHeight="10">
+      <polyline points="10,5 0,10 4,5 0,0 10,5" fill="black" id="polyline888" />
     </marker>
     <marker id="StartArrow" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="strokeWidth" orient="auto" markerWidth="10" markerHeight="10">
-      <polyline
-         points="0,5 10,0 6,5 10,10 0,5"
-         fill="black"
-         id="polyline891" />
+      <polyline points="0,5 10,0 6,5 10,10 0,5" fill="black" id="polyline891" />
       </marker>
-   </defs>
-   <path d="m 134.2638,116.44729 c 13.90049,-241.06813 27.80098,-232.02791 41.70148,0 3.69884,61.74127 38.94142,61.83876 41.70148,0 14.6098,-327.33157 27.99516,-354.44604 41.70148,0 2.39245,61.86918 38.37662,61.78353 41.70148,0 16.48507,-306.33032 30.35961,-148.550296 41.70147,0" style="fill:none;stroke:#59acff;stroke-width:0.990203;stroke-opacity:1" id="path915" sodipodi:nodetypes="cssssc" />
-   <path d="m -32.617079,116.27296 c 15.958861,-19.028325 29.056721,-27.16909 41.701481,0 25.25147,54.2564 36.40607,61.50977 41.70147,0 13.90049,-161.463895 27.80099,-172.793401 41.70149,0 4.95275,61.56646 38.120418,61.75506 41.701478,0 11.9143,-205.461673 25.18629,-265.4905 41.70147,0" style="fill:none;stroke:#59acff;stroke-width:0.990203;stroke-opacity:1" id="path915-5" sodipodi:nodetypes="cssssc" />
-   <path d="m 508.89717,117.05014 c -7.72067,-9.02853 -25.35878,-36.333486 -41.70148,0 -23.93386,53.21033 -36.03941,61.44486 -41.70147,0 -15.56242,-168.88367 -29.2111,-152.201155 -41.70148,0 -5.05115,61.55059 -37.67018,61.69991 -41.70148,0 -19.13557,-292.87426 -32.0168,-170.476335 -41.70148,0" style="fill:none;stroke:#59acff;stroke-width:0.990203;stroke-opacity:1" id="path915-1" sodipodi:nodetypes="cssssc" />
+  </defs>
+  <path d="m 134.2638,116.44729 c 13.90049,-241.06813 27.80098,-232.02791 41.70148,0 3.69884,61.74127 38.94142,61.83876 41.70148,0 14.6098,-327.33157 27.99516,-354.44604 41.70148,0 2.39245,61.86918 38.37662,61.78353 41.70148,0 16.48507,-306.33032 30.35961,-148.550296 41.70147,0" style="fill:none;stroke:#ffab4b;stroke-width:3;stroke-opacity:2" id="path915" sodipodi:nodetypes="cssssc" />
+  <path d="m -32.617079,116.27296 c 15.958861,-19.028325 29.056721,-27.16909 41.701481,0 25.25147,54.2564 36.40607,61.50977 41.70147,0 13.90049,-161.463895 27.80099,-172.793401 41.70149,0 4.95275,61.56646 38.120418,61.75506 41.701478,0 11.9143,-205.461673 25.18629,-265.4905 41.70147,0" style="fill:none;stroke:#ffab4b;stroke-width:3;stroke-opacity:2" id="path915-5" sodipodi:nodetypes="cssssc" />
+  <path d="m 508.89717,117.05014 c -7.72067,-9.02853 -25.35878,-36.333486 -41.70148,0 -23.93386,53.21033 -36.03941,61.44486 -41.70147,0 -15.56242,-168.88367 -29.2111,-152.201155 -41.70148,0 -5.05115,61.55059 -37.67018,61.69991 -41.70148,0 -19.13557,-292.87426 -32.0168,-170.476335 -41.70148,0" style="fill:none;stroke:#ffab4b;stroke-width:3;stroke-opacity:2" id="path915-1" sodipodi:nodetypes="cssssc" />
 </svg>

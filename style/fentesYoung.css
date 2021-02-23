@@ -1,5 +1,16 @@
+p#title{
+    position: absolute;
+    font-family: header;
+    cursor: default;
+    text-decoration: underline var(--lightBlue);
+
+    letter-spacing: .35vh;
+    font-size: 8vh;
+    top: 0;
+    right: 25vh;
+}
 svg#fentes{
-    margin: 10vh;
+    margin: 17vh 0 25vh 10vh;
     margin-right: 0;
     margin-bottom: 25vh;
 }
@@ -87,7 +98,7 @@ section#warning{
     -ms-border-radius: 5px 0 0 5px;
     -o-border-radius: 5px 0 0 5px;
 
-    border: solid var(--orange) 1px;
+    border: solid var(--lightBlue) 1px;
 }
 section#warning p{
     padding-left: 2vh;
@@ -97,8 +108,9 @@ section#content{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-gap: 15vh;
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(2, 0%);
 
+    z-index: -1;
     height: 50%;
     width: 100%;
 }
@@ -111,14 +123,11 @@ p#mainContent{
 }
 section#content img[src = "pics/waveYoung.svg"]{
     grid-column: 2/2;
-    grid-row: 1/2;
-    width: 50%;
-    margin-left: 15vh;
-}
-section#content img[src = "pics/illustrationFentes.jpg"]{
-    grid-column: 2/2;
     grid-row: 2/2;
     width: 50%;
     margin-left: 15vh;
-    margin-top: -25vh;
+}
+footer{
+    z-index: 1;
+    top: 180%;
 }
