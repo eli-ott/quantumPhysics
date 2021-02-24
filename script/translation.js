@@ -113,7 +113,7 @@ $("#frenchFlag").on("click", () => {
     $(".footerHeader")[0].innerHTML = "CREATEURS";
     $(".footerHeader")[1].innerHTML = "CONTACTEZ-NOUS";
     $(".footerHeader")[2].innerHTML = "LANGAGE";
-    $("text")[1].innerHTML = "Ce site web a été créé par";
+    $("text")[1].innerHTML = "Ce site a été créé par";
     $("text")[3].innerHTML = "et <a class='links' href='https://github.com/eli-ott'>@eli-ott</a>";
     $("text")[5].innerHTML = "Vous voulez partager votre opinion ";
     $("text")[6].innerHTML = "à propos de se site, contactez-nous : ";
