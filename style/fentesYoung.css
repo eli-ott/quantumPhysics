@@ -103,6 +103,7 @@ section#warning{
 section#warning p{
     padding-left: 2vh;
     padding-right: 2vh;
+    font-size: 2vh;
 }
 section#content{
     display: grid;
