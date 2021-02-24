@@ -83,7 +83,7 @@ $("#restartAnimation").hover(() => {
     }
 });
 
-//we change the color of the young's slit
+//we change the color of the young's slit depending on the prefered theme
 $(".themeIcon").on("click", () => {
     if(localStorage.getItem("theme") == 'dark'){
         $("line").attr('style', 'stroke: #fcffeb; stroke-width: 2;');

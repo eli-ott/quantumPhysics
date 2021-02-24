@@ -312,6 +312,7 @@ const changeLanguage = () => {
                 $(".animButtons")[0].innerHTML = "Lancer l'animation";
                 $(".animButtons")[1].innerHTML = "Effacer l'animation";
                 $("#warning p").html("Cette animation n'est pas représentative de la réalité.");
+                $("#title").html("Fentes d'Young");
 
                 //we change the menu language
                 $("#linksParent a")[0].innerHTML = "Accueil";
@@ -329,6 +330,7 @@ const changeLanguage = () => {
                 $(".animButtons")[0].innerHTML = "Launch the animation";
                 $(".animButtons")[1].innerHTML = "Erase the animation";
                 $("#warning p").html("This animation is not representative of the reality.");
+                $("#title").html("Young's slits");
 
                 //we change the menu language
                 $("#linksParent a")[0].innerHTML = "Home";
@@ -346,6 +348,7 @@ const changeLanguage = () => {
                 $(".animButtons")[0].innerHTML = "Iniciar animación";
                 $(".animButtons")[1].innerHTML = "Animación clara";
                 $("#warning p").html("Esta animación no es representativa de la realidad.");
+                $("#title").html("Hendiduras de Young");
 
                 //we change the menu language
                 $("#linksParent a")[0].innerHTML = "Hogar";
@@ -359,10 +362,11 @@ const changeLanguage = () => {
             } else if(localStorage.getItem("language") === "german"){
                 $("#mainContent").html(allText.youngSlits.german);
 
-                //we change the buttons language
+                //we change the buttons and title language
                 $(".animButtons")[0].innerHTML = "Animation starten";
                 $(".animButtons")[1].innerHTML = "Animation löschen";
                 $("#warning p").html("Diese Animation ist nicht repräsentativ für die Realität");
+                $("#title").html("Youngs Schlitze");
 
                 //we change the menu language
                 $("#linksParent a")[0].innerHTML = "Zuhause";
