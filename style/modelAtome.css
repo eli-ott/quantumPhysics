@@ -1,0 +1,61 @@
+p#title{
+    position: absolute;
+    font-family: header;
+    cursor: default;
+    text-decoration: underline var(--lightBlue);
+
+    letter-spacing: .35vh;
+    font-size: 8vh;
+    top: 0;
+    left: 25vh;
+}
+section#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin: 0;
+    margin-top: 15%;
+}
+div.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+p.content{
+    line-height: 4vh;
+    width: 50%;
+    margin: 5vh;
+}
+hr{
+    border: none;
+
+    width: 75vh;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+    height: 1px;
+
+    background: var(--color);
+}
+hr::after{
+    position: absolute;
+
+    margin-top: -17.5px;
+    margin-left: 36vh;
+    width: 35px;
+
+    background: var(--backgroundColor);
+    content: url(../pics/atomHr.svg);
+}
+footer{
+    top: 400%;
+}
