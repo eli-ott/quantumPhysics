@@ -7,12 +7,15 @@ const darkMode = () => {
     $("#topLine").css("stroke", "#fcffeb");
     $("#bottomLine").css("stroke", "#fcffeb");
 
-    //we change the color of the atom and the arrow from the landing page
+    //we change the color of the atom and the arrow
     $("circle").attr("stroke", "#fcffeb");
     $(".largeOrbitAtom").attr("fill", "#fcffeb");
     $(".mediumOrbitAtom").attr("fill", "#fcffeb");
     $("#core").attr("fill", "#fcffeb");
     $("#arrowInstruction").css("filter", "invert(100%)");
+
+    //we change the color of the little atom in the hr
+    $("hr").css("filter", "invert");
 
     //we change the moon icon for the sun
     $("#moon").fadeOut(250);
