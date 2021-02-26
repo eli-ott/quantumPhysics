@@ -61,6 +61,140 @@ const allText = {
         Quantencomputer. Diese beiden Beispiele hätten ohne genaues Wissen niemals existiert
         auf Atome und ihre Funktionsweise.`
     },
+    atomModel: {
+        democrite: {
+            french: `Démocrite est à l’origine du premier modèle atomique en -400 avant J.C. <br> Selon lui la matière 
+            est constituée de minuscules particules et sont séparées par du vide. <br> Il nomme ces particules 
+            atomes du grec atomos qui signifie « indivisible ». Ce modèle est appelé modèle de la 
+            discontinuité.`,
+            english: `Democritus is at the origin of the first atomic model in -400 BC <br> According to him matter
+            is made up of tiny particles and is separated by a vacuum. <br> He names these particles
+            atoms from the Greek atomos which means "indivisible". This model is called the model of the
+            discontinuity.`,
+            spanish: `Demócrito está en el origen del primer modelo atómico en -400 aC <br> Según él la materia
+            está formado por partículas diminutas y está separado por un vacío. <br> Él nombra estas partículas
+            átomos del griego átomos que significa "indivisible". Este modelo se llama modelo de
+            discontinuidad.`,
+            german: `Demokrit ist der Ursprung des ersten Atommodells in -400 v. Chr. <br> Ihm zufolge Materie
+            besteht aus winzigen Partikeln und ist durch ein Vakuum getrennt. <br> Er nennt diese Partikel
+            Atome aus dem griechischen Atomos, was "unteilbar" bedeutet. Dieses Modell heißt das Modell von
+            Diskontinuität.`
+        },
+        aristote: {
+            french: `Aristote, en -300 avant J.C. dit qu’il n’y a pas de vide dans la matière. <br> Il affirmait que la matière était divisible 
+            à l’infini contrairement à Démocrite qui disait qu’il existait des particules indivisibles, 
+            les atomes. <br> Aristote pensait que la matière était constituée de quatre éléments : l’eau, 
+            la terre, le feu et l’air. A l’époque la théorie d’Aristote était la plus acceptée.`,
+            english: `Aristotle, in -300 BC said that there is no vacuum in matter. <br> He claimed that matter was divisible
+            to infinity unlike Democritus who said that there were indivisible particles,
+            atoms. <br> Aristotle thought that matter was made up of four elements: water,
+            earth, fire and air. At the time, Aristotle's theory was the most accepted.`,
+            spanish: `Aristóteles, en -300 AC dijo que no hay vacío en la materia. <br> Afirmó que la materia era divisible
+            al infinito, a diferencia de Demócrito, quien dijo que había partículas indivisibles,
+            átomos. <br> Aristóteles pensaba que la materia estaba formada por cuatro elementos: agua,
+            tierra, fuego y aire. En ese momento, la teoría de Aristóteles fue la más aceptada.`,
+            german: `Aristoteles sagte 300 v. Chr., Dass es in der Materie kein Vakuum gibt. <br> Er behauptete, die Materie sei teilbar
+            bis unendlich im Gegensatz zu Demokrit, der sagte, dass es unteilbare Teilchen gab,
+            Atome. <br> Aristoteles dachte, dass Materie aus vier Elementen besteht: Wasser,
+            Erde, Feuer und Luft. Zu dieser Zeit wurde Aristoteles 'Theorie am meisten akzeptiert.`
+        },
+        dalton: {
+            french: `Le modèle de Dalton, élaboré en 1805, contrairement à celui de Démocrite et Aristote, 
+            est basée sur des expérimentations scientifiques effectuées par lui-même ou par d’autres 
+            scientifiques. <br> Selon Dalton la matière est composée d’atomes et ces atomes sont identiques 
+            dans un même élément. Ils ont aussi la même masse. <br> Selon lui les atomes peuvent se 
+            combiner pour former d’autres atomes avec de nouvelles propriétés.`,
+            english: `Dalton's model, developed in 1805, unlike that of Democritus and Aristotle,
+            is based on scientific experiments carried out by himself or by others
+            scientists. <br> According to Dalton, matter is made up of atoms and these atoms are identical
+            in the same element. They also have the same mass. <br> According to him atoms can be
+            combine to form other atoms with new properties.`,
+            spanish: `El modelo de Dalton, desarrollado en 1805, a diferencia del de Demócrito y Aristóteles,
+            se basa en experimentos científicos realizados por él mismo o por otros
+            científicos. <br> Según Dalton, la materia está formada por átomos y estos átomos son idénticos
+            en el mismo elemento. También tienen la misma masa. <br> Según él, los átomos pueden ser
+            se combinan para formar otros átomos con nuevas propiedades.`,
+            german: `Daltons Modell, das 1805 entwickelt wurde, im Gegensatz zu dem von Demokrit und Aristoteles,
+            basiert auf wissenschaftlichen Experimenten, die von ihm selbst oder von anderen durchgeführt wurden
+            Wissenschaftler. <br> Nach Dalton besteht Materie aus Atomen und diese Atome sind identisch
+            im gleichen Element. Sie haben auch die gleiche Masse. <br> Ihm zufolge können Atome sein
+            kombinieren, um andere Atome mit neuen Eigenschaften zu bilden.`
+        },
+        thomson: {
+            french: `En 1904 Thomson décrivit l’atome comme étant divisible car on peut lui enlever ses électrons. 
+            <br> Selon lui il serait sous la forme d’une petite boule chargé positivement. Cette charge 
+            positive serait contrebalancée par les électrons (ronds bleus) qui eux ont une charge négative, ce qui 
+            donne un atome neutre. <br> Son modèle est souvent comparé à un pudding.`,
+            english: `In 1904 Thomson described the atom as being divisible because it can be stripped of its electrons.
+            <br> According to him it is in the form of a small positively charged ball. This load
+            positive would be counterbalanced by the electrons (blue circles) which have a negative charge, which
+            gives a neutral atom. <br> Its model is often compared to a pudding.`,
+            spanish: `En 1904, Thomson describió el átomo como divisible porque puede ser despojado de sus electrones.
+            <br> Según él, tiene la forma de una pequeña bola cargada positivamente. Esta carga
+            positivo sería compensado por los electrones (círculos azules) que tienen una carga negativa, que
+            da un átomo neutro. <br> Su modelo a menudo se compara con un pudín.`,
+            german: `1904 beschrieb Thomson das Atom als teilbar, weil es von seinen Elektronen befreit werden kann.
+            <br> Ihm zufolge ist es in Form eines kleinen positiv geladenen Balls. Diese Last
+            positiv würden durch die Elektronen (blaue Kreise) ausgeglichen, die eine negative Ladung haben, die
+            ergibt ein neutrales Atom. <br> Sein Modell wird oft mit einem Pudding verglichen.`
+        },
+        rutherford: {
+            french: `Rutherford, en 1911, en s’intéressant à la radioactivité, va se rendre compte que, 
+            contrairement à l’atome de Thomson, l’atome est majoritairement constitué de vide. Il va 
+            affirmer que l’atome possède un noyau petit et dense, ce noyau est composé d’une toute 
+            nouvelle particule, le proton (ronds gris). Ce proton possède une charge positive. 
+            Un atome possède autant de protons que d’électrons (ronds bleus).`,
+            english: `Rutherford, in 1911, looking at radioactivity, realized that,
+            Unlike Thomson's atom, the atom is mostly made up of vacuum. he goes
+            assert that the atom has a small and dense nucleus, this nucleus is composed of a whole
+            new particle, the proton (gray circles). This proton has a positive charge.
+            An atom has as many protons as electrons (blue circles).`,
+            spanish: `Rutherford, en 1911, al observar la radiactividad, se dio cuenta de que,
+            A diferencia del átomo de Thomson, el átomo se compone principalmente de vacío. El va
+            afirman que el átomo tiene un núcleo pequeño y denso, este núcleo está compuesto por un conjunto
+            nueva partícula, el protón (círculos grises). Este protón tiene carga positiva.
+            Un átomo tiene tantos protones como electrones (círculos azules).`,
+            german: `Rutherford erkannte 1911 bei der Untersuchung der Radioaktivität, dass
+            Im Gegensatz zu Thomsons Atom besteht das Atom hauptsächlich aus Vakuum. er geht
+            behaupten, dass das Atom einen kleinen und dichten Kern hat, dieser Kern besteht aus einem Ganzen
+            neues Teilchen, das Proton (graue Kreise). Dieses Proton ist positiv geladen.
+            Ein Atom hat so viele Protonen wie Elektronen (blaue Kreise).`
+        },
+        bohr: {
+            french: `Le modèle de Bohr vient ajouter des précisions au modèle de Rutherford en 1913. Selon 
+            Bohr les électrons gravitent autour du noyau sur des couches électroniques. Chaque couche 
+            correspond à un niveau d’énergie bine défini. Plus l’électron se situe sur on couche 
+            électronique éloignée du noyau, plus il possède d’énergie. Les électrons peuvent se déplacer 
+            d’une couche à une autre s’ils reçoivent de l’énergie. Mais ces électrons ne restent pas 
+            sur la couche supérieure. Les électrons ayant monté d’une couche redescendent toujours 
+            vers leur couche de départ. Quand il descende d’une couche ils émettent un photon 
+            (de la lumière). La couleur émise varie selon le niveau de départ et d’arrivé de l’électron.`,
+            english: `Bohr's model adds precision to Rutherford's model in 1913. According to
+            Bohr electrons revolve around the nucleus on electronic shells. Each layer
+            corresponds to a defined bine energy level. The more the electron is on one layer
+            electronics further from the nucleus, the more energy it has. Electrons can move
+            from layer to layer if they are receiving energy. But these electrons don't stay
+            on the top layer. Electrons that have gone up in a layer always come down
+            towards their starting layer. When it descends from a layer they emit a photon
+            (light). The color emitted varies depending on the starting and ending level of the electron.`,
+            spanish: `El modelo de Bohr agrega precisión al modelo de Rutherford en 1913. Según
+            Los electrones de Bohr giran alrededor del núcleo en capas electrónicas. Cada capa
+            corresponde a un nivel de energía bine definido. Cuanto más el electrón está en una capa
+            electrónica más alejada del núcleo, más energía tiene. Los electrones pueden moverse
+            de capa a capa si están recibiendo energía. Pero estos electrones no se quedan
+            en la capa superior. Los electrones que han subido en una capa siempre bajan
+            hacia su capa inicial. Cuando desciende de una capa emiten un fotón
+            (ligero). El color emitido varía según el nivel inicial y final del electrón.`,
+            german: `Bohrs Modell fügt Rutherfords Modell 1913 Präzision hinzu
+            Bohr-Elektronen drehen sich auf elektronischen Schalen um den Kern. Jede Schicht
+            entspricht einem definierten Bine-Energieniveau. Je mehr sich das Elektron auf einer Schicht befindet
+            Elektronik weiter vom Kern entfernt, je mehr Energie sie hat. Elektronen können sich bewegen
+            von Schicht zu Schicht, wenn sie Energie erhalten. Aber diese Elektronen bleiben nicht
+            auf der obersten Schicht. Elektronen, die in einer Schicht aufgestiegen sind, fallen immer ab
+            in Richtung ihrer Startschicht. Wenn es von einer Schicht herabsteigt, emittieren sie ein Photon
+            (Licht). Die emittierte Farbe variiert je nach Start- und Endniveau des Elektrons.`
+        }
+    },
     youngSlits: {
         french: `Les fentes de Young (ou interférences de Young) désignent en physique une expérience qui 
         consiste à faire interférer deux faisceaux de lumière issus d'une même source, en les faisant passer 
@@ -378,7 +512,90 @@ const changeLanguage = () => {
 
                 $("#germanFlag").trigger("click");
             }
-        break; 
+        break;
+        case "/modelAtome.html":
+            if(localStorage.getItem("language") === "french"){
+                $("#democrite").html(allText.atomModel.democrite.french);
+                $("#aristote").html(allText.atomModel.aristote.french);
+                $("#dalton").html(allText.atomModel.dalton.french);
+                $("#thomson").html(allText.atomModel.thomson.french);
+                $("#rutherford").html(allText.atomModel.rutherford.french);
+                $("#bohr").html(allText.atomModel.bohr.french);
+
+                //we change the title language
+                $("#title").html("Modèle de l'atome");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Accueil";
+                $("#linksParent a")[1].innerHTML = "Les grandes figures";
+                $("#linksParent a")[2].innerHTML = "Principe d'incertitude";
+                $("#linksParent a")[3].innerHTML = "Fentes d'Young";
+                $("#linksParent a")[4].innerHTML = "Dualité onde-corpuscule";
+                $("#linksParent a")[5].innerHTML = "Formules célèbres";
+
+                $("#frenchFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "english"){
+                $("#democrite").html(allText.atomModel.democrite.english);
+                $("#aristote").html(allText.atomModel.aristote.english);
+                $("#dalton").html(allText.atomModel.dalton.english);
+                $("#thomson").html(allText.atomModel.thomson.english);
+                $("#rutherford").html(allText.atomModel.rutherford.english);
+                $("#bohr").html(allText.atomModel.bohr.english);
+
+                //we change the title language
+                $("#title").html("Atom model");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Home";
+                $("#linksParent a")[1].innerHTML = "The great figures";
+                $("#linksParent a")[2].innerHTML = "Uncertainty principle";
+                $("#linksParent a")[3].innerHTML = "Young's slits";
+                $("#linksParent a")[4].innerHTML = "Wave-particle duality";
+                $("#linksParent a")[5].innerHTML = "Famous formula";
+
+                $("#englishFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "spanish"){
+                $("#democrite").html(allText.atomModel.democrite.spanish);
+                $("#aristote").html(allText.atomModel.aristote.spanish);
+                $("#dalton").html(allText.atomModel.dalton.spanish);
+                $("#thomson").html(allText.atomModel.thomson.spanish);
+                $("#rutherford").html(allText.atomModel.rutherford.spanish);
+                $("#bohr").html(allText.atomModel.bohr.spanish);
+
+                //we change the title language
+                $("#title").html("Modelo de átomo");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Hogar";
+                $("#linksParent a")[1].innerHTML = "Las grandes figuras";
+                $("#linksParent a")[2].innerHTML = "Principio de incertidumbre";
+                $("#linksParent a")[3].innerHTML = "Hendiduras de Young";
+                $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
+                $("#linksParent a")[5].innerHTML = "Fórmulas famosas";
+
+                $("#spanishFlag").trigger("click");
+            } else if(localStorage.getItem("language") === "german"){
+                $("#democrite").html(allText.atomModel.democrite.german);
+                $("#aristote").html(allText.atomModel.aristote.german);
+                $("#dalton").html(allText.atomModel.dalton.german);
+                $("#thomson").html(allText.atomModel.thomson.german);
+                $("#rutherford").html(allText.atomModel.rutherford.german);
+                $("#bohr").html(allText.atomModel.bohr.german);
+
+                //we change the title language
+                $("#title").html("Atommodell");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Zuhause";
+                $("#linksParent a")[1].innerHTML = "Die tollen Figuren";
+                $("#linksParent a")[2].innerHTML = "Prinzip der Unsicherheit";
+                $("#linksParent a")[3].innerHTML = "Youngs Schlitze";
+                $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
+                $("#linksParent a")[5].innerHTML = "Berühmte Formeln";
+
+                $("#germanFlag").trigger("click");
+            }
+        break;
     }
 }
 changeLanguage();

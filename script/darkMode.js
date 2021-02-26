@@ -14,9 +14,6 @@ const darkMode = () => {
     $("#core").attr("fill", "#fcffeb");
     $("#arrowInstruction").css("filter", "invert(100%)");
 
-    //we change the color of the little atom in the hr
-    $("hr").css("filter", "invert");
-
     //we change the moon icon for the sun
     $("#moon").fadeOut(250);
     setTimeout(() => { $("#moon").attr("src", "pics/sun.svg"); }, 250);
