@@ -46,6 +46,18 @@ img.themeIcon{
     width: 3.5vh;
     margin: 1vh;
 }
+div#progress{
+    position: fixed;
+    cursor: default;
+
+    z-index: 9980;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+
+    background: var(--lightBlue);
+}
 svg#burger{
     position: fixed;
     background: none;
