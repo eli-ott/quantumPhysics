@@ -1,5 +1,5 @@
 //we define the heaight page when it's ready
-$(window).ready(() => {
+$(() => {
     window.contentHeight =  parseInt($("footer").css("top")) - $("footer").height() - 100;
 });
 
