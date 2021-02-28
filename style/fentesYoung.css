@@ -2,12 +2,13 @@ p#title{
     position: absolute;
     font-family: header;
     cursor: default;
-    text-decoration: underline var(--lightBlue);
-
+    
     letter-spacing: .35vh;
     font-size: 8vh;
     top: 0;
     right: 25vh;
+    
+    text-decoration: underline var(--lightBlue);
 }
 svg#fentes{
     margin: 17vh 0 25vh 10vh;

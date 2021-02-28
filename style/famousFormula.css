@@ -1,0 +1,15 @@
+p#title{
+    position: absolute;
+    cursor: default;
+    font-family: header;
+
+    letter-spacing: .35vh;
+    font-size: 8vh;
+    top: 0;
+    left: 25vh;
+
+    text-decoration: underline var(--lightBlue);
+}
+footer{
+    top: 200%;
+}
