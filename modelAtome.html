@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/landingPage.css">
-    <link rel="stylesheet" href="style/modelAtome.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/landingPage.css">
+    <link rel="stylesheet" href="./style/modelAtome.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <title>Physique Quantique</title>
 </head>
+
 <body>
     <div id="progress"></div>
     <img src="pics/moon.svg" alt="moon icon" id="moon" class="themeIcon" onclick="darkMode()">
 
     <!-- humburger icon -->
-    <svg id="burger" class="retract" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="menu.svg" version="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#4A6FA5" fill="none" viewBox="0 0 24 24"
-    height="24"
-    width="24">
-    <metadata> 
-        <rdf:RDF>
-            <cc:Workrdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            </cc:Work>
-        </rdf:RDF>
-    </metadata>
-    <defs/>
-        <sodipodi:namedview inkscape:current-layer="svg8" inkscape:window-maximized="1" inkscape:window-y="-8" inkscape:window-x="-8" inkscape:cy="21.213733" inkscape:cx="18.014686" inkscape:zoom="8.5147442" showgrid="false" inkscape:window-height="745" inkscape:window-width="1366" inkscape:pageshadow="2" inkscape:pageopacity="0" guidetolerance="10" gridtolerance="10" objecttolerance="10" borderopacity="1" bordercolor="#666666" pagecolor="#fcffeb" />
-        <line id="topLine" style="stroke:#242424;stroke-opacity:1" y2="6" x2="23" y1="6" x1="1"/>
-        <line id="middleLine" style="stroke:#59acff;stroke-width:2.20299;stroke-opacity:1" y2="12" x2="21" y1="12" x1="3"/>
-        <line id="bottomLine" style="stroke:#242424;stroke-opacity:1" y2="18" x2="23" y1="18" x1="1"/>
+    <svg id="burger" class="retract" xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+        sodipodi:docname="menu.svg" version="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+        stroke="#4A6FA5" fill="none" viewBox="0 0 24 24" height="24" width="24">
+        <metadata>
+            <rdf:RDF>
+                <cc:Workrdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    </cc:Work>
+            </rdf:RDF>
+        </metadata>
+        <defs />
+        <sodipodi:namedview inkscape:current-layer="svg8" inkscape:window-maximized="1" inkscape:window-y="-8"
+            inkscape:window-x="-8" inkscape:cy="21.213733" inkscape:cx="18.014686" inkscape:zoom="8.5147442"
+            showgrid="false" inkscape:window-height="745" inkscape:window-width="1366" inkscape:pageshadow="2"
+            inkscape:pageopacity="0" guidetolerance="10" gridtolerance="10" objecttolerance="10" borderopacity="1"
+            bordercolor="#666666" pagecolor="#fcffeb" />
+        <line id="topLine" style="stroke:#242424;stroke-opacity:1" y2="6" x2="23" y1="6" x1="1" />
+        <line id="middleLine" style="stroke:#59acff;stroke-width:2.20299;stroke-opacity:1" y2="12" x2="21" y1="12"
+            x1="3" />
+        <line id="bottomLine" style="stroke:#242424;stroke-opacity:1" y2="18" x2="23" y1="18" x1="1" />
     </svg>
     <!-- menu -->
     <nav>
@@ -52,71 +63,128 @@
         <div class="right" style="margin-bottom: -13vh;">
             <svg width="300" height="300">
                 <rect x="25" y="25" height="150" width="250" stroke="var(--color)" stroke-width="2" fill="none"></rect>
-                <svg x="30" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                <svg x="80" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
-                <svg x="135" y="33" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect></svg>
-                <svg x="80" y="80" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                <svg x="130" y="80" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
-                <svg x="35" y="83" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect></svg>
-                <svg x="130" y="130" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                <svg x="30" y="130" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
-                <svg x="85" y="133" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect></svg>
-                <svg x="180" y="130" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
-                <svg x="235" y="133" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect></svg>
-                <svg x="230" y="80" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
-                <svg x="185" y="83" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect></svg>
-                <svg x="230" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                <svg x="180" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
+                <svg x="30" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                </svg>
+                <svg x="80" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                    </path>
+                </svg>
+                <svg x="135" y="33" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect>
+                </svg>
+                <svg x="80" y="80" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                </svg>
+                <svg x="130" y="80" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                    </path>
+                </svg>
+                <svg x="35" y="83" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect>
+                </svg>
+                <svg x="130" y="130" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                </svg>
+                <svg x="30" y="130" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                    </path>
+                </svg>
+                <svg x="85" y="133" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect>
+                </svg>
+                <svg x="180" y="130" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                    </path>
+                </svg>
+                <svg x="235" y="133" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect>
+                </svg>
+                <svg x="230" y="80" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                    </path>
+                </svg>
+                <svg x="185" y="83" width="35" height="37" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <rect height="30" width="30" fill="#505050" stroke="var(--color)"></rect>
+                </svg>
+                <svg x="230" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                </svg>
+                <svg x="180" y="30" width="45" height="45" viewBox="0 0 24 24" fill="#505050" stroke="var(--color)">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                    </path>
+                </svg>
             </svg>
             <p id="democrite" class="content">
-                Démocrite est à l’origine du premier modèle atomique en -400 avant J.C. <br> Selon lui la matière 
-                est constituée de minuscules particules et sont séparées par du vide. <br> Il nomme ces particules 
-                atomes du grec atomos qui signifie « indivisible ». Ce modèle est appelé modèle de la 
-                discontinuité. 
+                Démocrite est à l’origine du premier modèle atomique en -400 avant J.C. <br> Selon lui la matière
+                est constituée de minuscules particules et sont séparées par du vide. <br> Il nomme ces particules
+                atomes du grec atomos qui signifie « indivisible ». Ce modèle est appelé modèle de la
+                discontinuité.
             </p>
         </div>
         <hr>
-            <div class="left">
-            <svg>
-                <rect x="25" y="25" height="150" width="250" stroke="var(--color)" stroke-width="3" fill="#505050"></rect>
-            </svg>
+        <div class="left">
+            <canvas id="aristoteAtom"></canvas>
             <p id="aristote" class="content">
-                Aristote, en -300 avant J.C. dit qu’il n’y a pas de vide dans la matière. <br> Il affirmait que la matière était divisible 
-                à l’infini contrairement à Démocrite qui disait qu’il existait des particules indivisibles, 
-                les atomes. <br> Aristote pensait que la matière était constituée de quatre éléments : l’eau, 
+                Aristote, en -300 avant J.C. dit qu’il n’y a pas de vide dans la matière. <br> Il affirmait que la
+                matière était divisible
+                à l’infini contrairement à Démocrite qui disait qu’il existait des particules indivisibles,
+                les atomes. <br> Aristote pensait que la matière était constituée de quatre éléments : l’eau,
                 la terre, le feu et l’air. A l’époque la théorie d’Aristote était la plus acceptée.
             </p>
         </div>
         <hr>
-            <div class="right">
-            <svg>
-                <circle cx="80" cy="135" r="75" stroke="#242424" stroke-width="2" fill="#505050"></circle>
-            </svg>
+        <div class="right">
+            <canvas id="daltonAtom"></canvas>
             <p id="dalton" class="content">
-                Le modèle de Dalton, élaboré en 1805, contrairement à celui de Démocrite et Aristote, 
-                est basée sur des expérimentations scientifiques effectuées par lui-même ou par d’autres 
-                scientifiques. <br> Selon Dalton la matière est composée d’atomes et ces atomes sont identiques 
-                dans un même élément. Ils ont aussi la même masse. <br> Selon lui les atomes peuvent se 
+                Le modèle de Dalton, élaboré en 1805, contrairement à celui de Démocrite et Aristote,
+                est basée sur des expérimentations scientifiques effectuées par lui-même ou par d’autres
+                scientifiques. <br> Selon Dalton la matière est composée d’atomes et ces atomes sont identiques
+                dans un même élément. Ils ont aussi la même masse. <br> Selon lui les atomes peuvent se
                 combiner pour former d’autres atomes avec de nouvelles propriétés.
             </p>
         </div>
         <hr>
-            <div class="left">
+        <div class="left">
             <svg>
                 <circle cx="150" cy="115" r="75" stroke="#242424" stroke-width="2" fill="#505050"></circle>
-                <svg x="115" y="65" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424" stroke-width="2"><line x1="6" y1="10" x2="22" y2="10"></line><line x1="14" y1="2" x2="14" y2="18"></line></svg>
-                <svg x="145" y="145" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424" stroke-width="2"><line x1="6" y1="10" x2="22" y2="10"></line><line x1="14" y1="2" x2="14" y2="18"></line></svg>
-                <svg x="185" y="95" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424" stroke-width="2"><line x1="6" y1="10" x2="22" y2="10"></line><line x1="14" y1="2" x2="14" y2="18"></line></svg>
-                <svg x="85" y="125" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424" stroke-width="2"><line x1="6" y1="10" x2="22" y2="10"></line><line x1="14" y1="2" x2="14" y2="18"></line></svg>
+                <svg x="115" y="65" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424"
+                    stroke-width="2">
+                    <line x1="6" y1="10" x2="22" y2="10"></line>
+                    <line x1="14" y1="2" x2="14" y2="18"></line>
+                </svg>
+                <svg x="145" y="145" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424"
+                    stroke-width="2">
+                    <line x1="6" y1="10" x2="22" y2="10"></line>
+                    <line x1="14" y1="2" x2="14" y2="18"></line>
+                </svg>
+                <svg x="185" y="95" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424"
+                    stroke-width="2">
+                    <line x1="6" y1="10" x2="22" y2="10"></line>
+                    <line x1="14" y1="2" x2="14" y2="18"></line>
+                </svg>
+                <svg x="85" y="125" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#242424"
+                    stroke-width="2">
+                    <line x1="6" y1="10" x2="22" y2="10"></line>
+                    <line x1="14" y1="2" x2="14" y2="18"></line>
+                </svg>
                 <circle cx="95" cy="105" r="9" stroke="none" fill="#59acff"></circle>
                 <circle cx="185" cy="75" r="9" stroke="none" fill="#59acff"></circle>
                 <circle cx="140" cy="135" r="9" stroke="none" fill="#59acff"></circle>
                 <circle cx="195" cy="155" r="9" stroke="none" fill="#59acff"></circle>
             </svg>
             <p id="thomson" class="content">
-                En 1904 Thomson décrivit l’atome comme étant divisible car on peut lui enlever ses électrons. 
-                <br> Selon lui il serait sous la forme d’une petite boule chargé positivement. Cette charge 
-                positive serait contrebalancée par les électrons (ronds bleus) qui eux ont une charge négative, ce qui 
+                En 1904 Thomson décrivit l’atome comme étant divisible car on peut lui enlever ses électrons.
+                <br> Selon lui il serait sous la forme d’une petite boule chargé positivement. Cette charge
+                positive serait contrebalancée par les électrons (ronds bleus) qui eux ont une charge négative, ce qui
                 donne un atome neutre. <br> Son modèle est souvent comparé à un pudding.
             </p>
         </div>
@@ -133,15 +201,15 @@
                 <circle cx="140" cy="123" r="9" stroke="none" fill="#505050"></circle>
             </svg>
             <p id="rutherford" class="content">
-                Rutherford, en 1911, en s’intéressant à la radioactivité, va se rendre compte que, 
-                contrairement à l’atome de Thomson, l’atome est majoritairement constitué de vide. Il va 
-                affirmer que l’atome possède un noyau petit et dense, ce noyau est composé d’une toute 
-                nouvelle particule, le proton (ronds gris). Ce proton possède une charge positive. 
+                Rutherford, en 1911, en s’intéressant à la radioactivité, va se rendre compte que,
+                contrairement à l’atome de Thomson, l’atome est majoritairement constitué de vide. Il va
+                affirmer que l’atome possède un noyau petit et dense, ce noyau est composé d’une toute
+                nouvelle particule, le proton (ronds gris). Ce proton possède une charge positive.
                 Un atome possède autant de protons que d’électrons (ronds bleus).
             </p>
         </div>
         <hr>
-            <div class="left">
+        <div class="left">
             <svg>
                 <circle cx="150" cy="180" r="5" fill="#505050" stroke-width="0"></circle>
                 <circle cx="155" cy="175" r="5" fill="#505050" stroke-width="0"></circle>
@@ -159,73 +227,83 @@
                 <circle cx="185" cy="145" r="7" fill="#59acff"></circle>
             </svg>
             <p id="bohr" class="content">
-                Le modèle de Bohr vient ajouter des précisions au modèle de Rutherford en 1913. Selon 
-                Bohr les électrons gravitent autour du noyau sur des couches électroniques. Chaque couche 
-                correspond à un niveau d’énergie bine défini. Plus l’électron se situe sur on couche 
-                électronique éloignée du noyau, plus il possède d’énergie. Les électrons peuvent se déplacer 
-                d’une couche à une autre s’ils reçoivent de l’énergie. Mais ces électrons ne restent pas 
-                sur la couche supérieure. Les électrons ayant monté d’une couche redescendent toujours 
-                vers leur couche de départ. Quand il descende d’une couche ils émettent un photon 
-                (de la lumière). La couleur émise varie selon le niveau de départ et d’arrivé de l’électron. 
+                Le modèle de Bohr vient ajouter des précisions au modèle de Rutherford en 1913. Selon
+                Bohr les électrons gravitent autour du noyau sur des couches électroniques. Chaque couche
+                correspond à un niveau d’énergie bine défini. Plus l’électron se situe sur on couche
+                électronique éloignée du noyau, plus il possède d’énergie. Les électrons peuvent se déplacer
+                d’une couche à une autre s’ils reçoivent de l’énergie. Mais ces électrons ne restent pas
+                sur la couche supérieure. Les électrons ayant monté d’une couche redescendent toujours
+                vers leur couche de départ. Quand il descende d’une couche ils émettent un photon
+                (de la lumière). La couleur émise varie selon le niveau de départ et d’arrivé de l’électron.
             </p>
         </div>
     </section>
-<script type="text/javascript" src="script/darkMode.js"></script>
-<script type="text/javascript" src="script/menu.js"></script>
-<script type="text/javascript" src="script/atomAnim.js"></script>
-<script type="text/javascript" src="script/scroll.js"></script>
+    <script type="text/javascript" src="./script/darkMode.js"></script>
+    <script type="text/javascript" src="./script/menu.js"></script>
+    <script type="text/javascript" src="./script/atomAnim.js"></script>
+    <script type="text/javascript" src="./script/scroll.js"></script>
+    <script type="module" src="./script/atomModel.js"></script>
 </body>
 <footer>
     <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#59acff" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,112C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-    <text class="footerHeader" x="150" y="170">CREATEURS</text>
-    <text x="150" y="200">Ce site a été créé par</text>
-    <a href="https://github.com/jujutagad333">
-        <text class="links" x="150" y="225">@jujutagad333</text>
-    </a>
-    <text x="150" y="250">
-        et <a class="links" href="https://github.com/eli-ott">@eli-ott</a>
-    </text>
+        <path fill="#59acff" fill-opacity="1"
+            d="M0,64L120,74.7C240,85,480,107,720,112C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+        </path>
+        <text class="footerHeader" x="150" y="170">CREATEURS</text>
+        <text x="150" y="200">Ce site a été créé par</text>
+        <a href="https://github.com/jujutagad333">
+            <text class="links" x="150" y="225">@jujutagad333</text>
+        </a>
+        <text x="150" y="250">
+            et <a class="links" href="https://github.com/eli-ott">@eli-ott</a>
+        </text>
 
-    <text class="footerHeader" x="650" y="170">CONTACTEZ-NOUS</text>
-    <text x="650" y ="200">Vous voulez partager votre opinion </text>
-    <text x="650" y="225">à propos de se site, contactez-nous : </text>
-    <a href="mailto:eliottbidault@gmail.com">
-        <text class="links" x="650" y="250">eliottbidault@gmail.com</text>
-    </a>
+        <text class="footerHeader" x="650" y="170">CONTACTEZ-NOUS</text>
+        <text x="650" y="200">Vous voulez partager votre opinion </text>
+        <text x="650" y="225">à propos de se site, contactez-nous : </text>
+        <a href="mailto:eliottbidault@gmail.com">
+            <text class="links" x="650" y="250">eliottbidault@gmail.com</text>
+        </a>
 
-    <text class="footerHeader" x="1150" y="170">LANGAGE</text>
-    <text x="1150" y="200">Choissisez un langage : </text>
-    <!-- french flag -->
-    <svg id="frenchFlag" class="flags">
-        <rect x="1150" y="225" width="30" height="21" fill="#ED2939"/>
-        <rect x="1150" y="225" width="20" height="21" fill="#fff"/>
-        <rect x="1150" y="225" width="10" height="21" fill="#002395"/>
+        <text class="footerHeader" x="1150" y="170">LANGAGE</text>
+        <text x="1150" y="200">Choissisez un langage : </text>
+        <!-- french flag -->
+        <svg id="frenchFlag" class="flags">
+            <rect x="1150" y="225" width="30" height="21" fill="#ED2939" />
+            <rect x="1150" y="225" width="20" height="21" fill="#fff" />
+            <rect x="1150" y="225" width="10" height="21" fill="#002395" />
+        </svg>
+        <!-- english flag -->
+        <svg id="englishFlag" class="flags" x="1200" y="225" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40" width="31.333" height="21.333">
+            <defs>
+                <clipPath id="t">
+                    <path d="M30,15H60V30zM30,15V30H0zM30,15H0V0zM30,15V0H60z" />
+                </clipPath>
+            </defs>
+            <rect width="60" height="40" style="fill:#00247d" />
+            <g style="stroke:#ffffff;stroke-width:6.93225527;fill:none">
+                <path d="M0,0L60,40M60,0L0,40" />
+                <path d="M0,0L60,30M60,0L0,30" style="stroke:#cf142b;stroke-width:4" clip-path="url(#t)"
+                    transform="scale(1,1.3333333)" />
+                <path d="M30,0V40M0,20H60" style="stroke-width:11.55375878" />
+                <path d="M30,0V40M0,20H60" style="stroke:#cf142b" />
+            </g>
+        </svg>
+        <!-- spanish flag -->
+        <svg id="spanishFlag" class="flags" x="1250" y="225">
+            <rect width="33.333" height="7.111" y="0" fill="#c60b1e" />
+            <rect width="33.333" height="8.111" y="6.111" fill="#ffc400" />
+            <rect width="33.333" height="7.111" y="14.222" fill="#c60b1e" />
+        </svg>
+        <!-- german flag -->
+        <svg id="germanFlag" class="flags" x="1300" y="225" width="33.333" height="25" viewBox="0 0 5 3">
+            <rect id="black_stripe" width="5" height="3" y="0" x="0" fill="#000" />
+            <rect id="red_stripe" width="5" height="2" y="1" x="0" fill="#D00" />
+            <rect id="gold_stripe" width="5" height="1" y="2" x="0" fill="#FFCE00" />
+        </svg>
     </svg>
-    <!-- english flag -->
-    <svg id="englishFlag" class="flags" x="1200" y="225" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40" width="31.333" height="21.333">
-        <defs><clipPath id="t"><path d="M30,15H60V30zM30,15V30H0zM30,15H0V0zM30,15V0H60z"/></clipPath></defs>
-        <rect width="60" height="40" style="fill:#00247d"/>
-        <g style="stroke:#ffffff;stroke-width:6.93225527;fill:none">
-            <path d="M0,0L60,40M60,0L0,40"/>
-            <path d="M0,0L60,30M60,0L0,30" style="stroke:#cf142b;stroke-width:4" clip-path="url(#t)" transform="scale(1,1.3333333)"/>
-            <path d="M30,0V40M0,20H60" style="stroke-width:11.55375878"/>
-            <path d="M30,0V40M0,20H60" style="stroke:#cf142b"/>
-        </g>
-    </svg>
-    <!-- spanish flag -->
-    <svg id="spanishFlag" class="flags" x="1250" y="225">
-        <rect width="33.333" height="7.111" y="0" fill="#c60b1e"/>
-        <rect width="33.333" height="8.111" y="6.111" fill="#ffc400"/>
-        <rect width="33.333" height="7.111" y="14.222" fill="#c60b1e"/>
-    </svg>
-    <!-- german flag -->
-    <svg id="germanFlag" class="flags" x="1300" y="225" width="33.333" height="25" viewBox="0 0 5 3">
-        <rect id="black_stripe" width="5" height="3" y="0" x="0" fill="#000"/>
-        <rect id="red_stripe" width="5" height="2" y="1" x="0" fill="#D00"/>
-        <rect id="gold_stripe" width="5" height="1" y="2" x="0" fill="#FFCE00"/>
-    </svg>    
-</svg>
-<script type="text/javascript" src="script/translation.js"></script>
+    <script type="text/javascript" src="./script/translation.js"></script>
 </footer>
+
 </html>

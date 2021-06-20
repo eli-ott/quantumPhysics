@@ -1,9 +1,9 @@
-:root{
+:root {
     --backgroundColor: #fcffeb;
     --color: #242424;
     --orange: #ffab4b;
     --lightBlue: #59acff;
-    --darkBlue: #4D7EA8;
+    --darkBlue: #4d7ea8;
 
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -11,20 +11,20 @@
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
-@font-face{
+@font-face {
     font-family: header;
     src: url(../font/Anton-Regular.ttf);
 }
-@font-face{
+@font-face {
     font-family: contentFont;
     src: url(../font/HeptaSlab-VariableFont_wght.ttf);
     font-weight: 450;
 }
-html{
-    font-family: contentFont, 'Courier New', Courier, monospace;
+html {
+    font-family: contentFont, "Courier New", Courier, monospace;
     overflow-x: hidden;
 
     padding: 0;
@@ -33,20 +33,32 @@ html{
     background-color: var(--backgroundColor);
     color: var(--color);
 }
-body{
+body {
     margin: 0;
     padding: 0;
 }
-img.themeIcon{
+img.themeIcon {
     position: fixed;
     cursor: pointer;
     background: none;
-
+    
     z-index: 9999;
     width: 3.5vh;
     margin: 1vh;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
-div#progress{
+img.themeIcon:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+div#progress {
     position: fixed;
     cursor: default;
 
@@ -58,35 +70,35 @@ div#progress{
 
     background: var(--lightBlue);
 }
-svg#burger{
+svg#burger {
     position: fixed;
     background: none;
     cursor: pointer;
-    
+
     z-index: 9999;
     height: 4vh;
     width: 4vh;
     right: 1vh;
     top: 0;
     margin: 1vh;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
-div#menuBg{
+div#menuBg {
     position: fixed;
-    
+
     right: 0;
     top: 0;
     width: 0;
     height: 0;
-    transition: .75s ease;
-    -webkit-transition: .75s ease;
-    -moz-transition: .75s ease;
-    -ms-transition: .75s ease;
-    -o-transition: .75s ease;
+    transition: 0.75s ease;
+    -webkit-transition: 0.75s ease;
+    -moz-transition: 0.75s ease;
+    -ms-transition: 0.75s ease;
+    -o-transition: 0.75s ease;
     border-radius: 10vh 0 10vh 50vh;
     -webkit-border-radius: 10vh 0 10vh 50vh;
     -moz-border-radius: 10vh 0 10vh 50vh;
@@ -95,9 +107,9 @@ div#menuBg{
 
     background: var(--lightBlue);
 }
-nav{
+nav {
     position: fixed;
-    
+
     opacity: 0;
     z-index: -1;
     width: 100%;
@@ -108,7 +120,7 @@ nav{
     -ms-transition: 1s;
     -o-transition: 1s;
 }
-img#menuAtom{
+img#menuAtom {
     position: absolute;
     display: none;
 
@@ -117,13 +129,13 @@ img#menuAtom{
     z-index: 9990;
     width: 40vh;
 }
-div#linksParent{
+div#linksParent {
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+
     z-index: 9998;
     height: 100%;
     width: 40%;
@@ -136,13 +148,13 @@ div#linksParent{
 
     border-left: none;
 }
-div#linksParent a{
+div#linksParent a {
     background: none;
     outline: none;
     text-decoration: none;
     display: none;
     cursor: pointer;
-    
+
     width: 42%;
     opacity: 0;
     font-size: 650;
@@ -153,18 +165,18 @@ div#linksParent a{
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-    
+
     color: #242424;
     border-bottom: solid #242424 2px;
 }
-div#linksParent a:hover{
+div#linksParent a:hover {
     color: var(--backgroundColor);
 }
-div#linksParent a::before{
+div#linksParent a::before {
     content: "\A0";
     position: absolute;
     background: none;
-    
+
     z-index: 9999;
     width: 0;
     height: 5vh;
@@ -178,16 +190,16 @@ div#linksParent a::before{
 
     border-bottom: solid var(--backgroundColor) 2px;
 }
-div#linksParent a:hover::before{
+div#linksParent a:hover::before {
     width: 45%;
 }
-p#mainContent{
+p#mainContent {
     background: none;
 
     line-height: 5vh;
     font-size: 2.5vh;
 }
-footer{
+footer {
     position: absolute;
 
     z-index: -1;
@@ -195,37 +207,38 @@ footer{
     margin: 0;
     margin-top: 5vh;
 }
-footer #wave{
+footer #wave {
     z-index: -1;
     margin-bottom: -1vh;
 }
-footer svg text{
+footer svg text {
     font-family: contentFont;
 
     z-index: 9999;
+    font-size: 1.35vh;
 
     fill: #242424;
 }
-footer svg .links{
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+footer svg .links {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 
     fill: var(--backgroundColor);
 }
-footer svg .links:hover{
+footer svg .links:hover {
     text-decoration: underline;
 }
-footer svg text.footerHeader{
+footer svg text.footerHeader {
     font-family: header;
     text-decoration: underline;
-    
-    font-size: 4vh;
+
+    font-size: 3.5vh;
 
     fill: #242424;
 }
-footer svg.flags{
+footer svg.flags {
     cursor: pointer;
 }
