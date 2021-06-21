@@ -7,24 +7,24 @@ p#topLeftHeader{
     font-family: header, 'Courier New', Courier, monospace;
 
     font-size: 15vh;
-    top: -5vh;
-    left: 15vh;
-}
-svg#atom{
-    position: fixed;
-
-    z-index: -1;
-    top: 15vh;
-    left: 56vh;
+    top: 10vh;
+    right: 25vw;
 }
 p#bottomRightHeader{
     position: absolute;
     font-style: italic;
     text-decoration: underline var(--lightBlue);
-
+    
     font-size: 10vh;
-    top: 60vh;
-    right: 25vh;
+    top: 35vh;
+    right: 10vw;
+}
+svg#atom{
+    position: fixed;
+
+    z-index: -1;
+    top: 20vh;
+    left: 10vw;
 }
 section#content{
     position: absolute;
@@ -32,6 +32,10 @@ section#content{
     width: 50%;
     margin-top: 55%;
     right: 0;
+}
+section#content > p#mainContent {
+    font-family: contentFont;
+    font-size: 2vh;
 }
 img#arrowInstruction{
     position: absolute;

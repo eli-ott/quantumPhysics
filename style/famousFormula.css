@@ -1,33 +1,79 @@
-img#moon{
+img#moon {
     position: absolute;
-    
+
     top: 0;
     left: 0;
     margin: 1vh;
 }
-p#title{
+p#title {
     position: absolute;
     cursor: default;
     font-family: header;
 
-    letter-spacing: .35vh;
+    letter-spacing: 0.35vh;
     font-size: 8vh;
     top: 0;
     left: 25vh;
 
     text-decoration: underline var(--lightBlue);
 }
-div.left{
+div.left {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
 
+    margin-top: 15vh;
+}
+div.left:nth-of-type(1) {
     margin-top: 35vh;
 }
-img#planckFormula{
+div.right {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 15vh;
+}
+p.descriptions {
+    width: 50vw;
+    font-size: 2vh;
+}
+img#planckFormula {
     width: 40vh;
 }
-footer{
+img#schrodingerFormula {
+    width: 60vh;
+}
+img#incertitudeEquation {
+    width: 20vh;
+}
+hr{
+    border: none;
+
+    width: 75vh;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+    height: 1px;
+
+    background: var(--color);
+}
+hr::after{
+    position: absolute;
+
+    margin-top: -17.5px;
+    margin-left: 36vh;
+    width: 35px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+    background: var(--backgroundColor);
+    content: url(../pics/atomHr.svg);
+}
+footer {
     top: 200%;
 }

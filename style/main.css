@@ -41,7 +41,6 @@ img.themeIcon {
     position: fixed;
     cursor: pointer;
     background: none;
-    
     z-index: 9999;
     width: 3.5vh;
     margin: 1vh;
@@ -50,6 +49,11 @@ img.themeIcon {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
 }
 img.themeIcon:hover {
     transform: rotate(360deg);
@@ -88,8 +92,9 @@ svg#burger {
     -o-transition: 0.5s;
 }
 div#menuBg {
-    position: fixed;
+    position: absolute;
 
+    z-index: -1;
     right: 0;
     top: 0;
     width: 0;
@@ -109,89 +114,91 @@ div#menuBg {
 }
 nav {
     position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
 
     opacity: 0;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
 }
-img#menuAtom {
-    position: absolute;
-    display: none;
-
-    right: 52.8%;
-    top: 3.5vh;
-    z-index: 9990;
-    width: 40vh;
-}
-div#linksParent {
-    position: fixed;
+nav > div#menuLogo {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 
-    z-index: 9998;
-    height: 100%;
-    width: 40%;
-    right: 25vh;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-
-    border-left: none;
+    height: 100vh;
+    width: 49vw;
 }
-div#linksParent a {
-    background: none;
-    outline: none;
-    text-decoration: none;
-    display: none;
-    cursor: pointer;
+nav > div#menuLogo > img { 
+    width: 20vh; 
+}
 
-    width: 42%;
-    opacity: 0;
-    font-size: 650;
-    padding: 1vh;
-    margin-left: 30%;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+nav > div#linksParent {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: left;
+
+    height: 100vh;
+    width: 50vw;
+}
+nav > div#linksParent > a {
+    text-decoration: none;
+    background: none;
+    
+    width: 20vw;
+    height: 2vh;
+    padding-bottom: .5vh;
+    margin-left: 5vw;
+    font-size: 1.8vh;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 
     color: #242424;
-    border-bottom: solid #242424 2px;
+    border-bottom: solid 2px #242424;
 }
-div#linksParent a:hover {
-    color: var(--backgroundColor);
+nav > div#linksParent > a:hover {
+    color: #fcffeb;
 }
-div#linksParent a::before {
-    content: "\A0";
+nav > div#linksParent > a::before {
+    content: '\A0';
     position: absolute;
-    background: none;
+    transform-origin: left;
+    
+    height: 2px;
+    width: 20vw;
+    margin-top: 2.5vh;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 
-    z-index: 9999;
-    width: 0;
-    height: 5vh;
-    margin-left: -1.2vh;
-    margin-top: -1.12vh;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-
-    border-bottom: solid var(--backgroundColor) 2px;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    background: #fcffeb;
 }
-div#linksParent a:hover::before {
-    width: 45%;
+nav > div#linksParent > a:hover::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
 }
 p#mainContent {
     background: none;

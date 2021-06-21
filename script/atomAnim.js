@@ -14,13 +14,6 @@ $(window).on("scroll", () => {
         $("#arrowInstruction").css("opacity", "1");
     }
 
-    //we slide the atom to the left or to the right
-    if(previousYOffset < yOffset && slideAtom){
-        $("#atom").css("left", 389.2 - yOffset);
-    } else if(yOffset < 389.2 && slideAtom){
-        $("#atom").css("left", 389.2 + -yOffset);
-    }
-
     //we create the rotation of the atom when the user scroll
     if(previousYOffset < yOffset){
         $(".largeOrbitAtom").attr("transform", `rotate(${yOffset / 4.5}, 250, 250)`);
@@ -30,15 +23,13 @@ $(window).on("scroll", () => {
         $(".mediumOrbitAtom").attr("transform", `rotate(${-yOffset / -2}, 250, 250)`);
     }
 
-    //we check if the user scroll  to the top enough to slide the atom again
-    yOffset < 300 ? slideAtom = true: slideAtom = false;
-
     //we check if the user is on the top of the page to animate the atom
     if(window.pageYOffset == 0){
         noScroll = true;
     } else{
         noScroll = false;
     }
+    
     electronsRotation();
 }); 
 

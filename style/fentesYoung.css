@@ -41,10 +41,10 @@ a.animButtons{
     cursor: pointer;
     pointer-events: visible;
     
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 550;
-    width: 60%;
-    height: 3%;
+    width: 17vw;
+    height: 2vh;
     padding: 2vh;
     margin: -30vh 0 -30vh 10vh;
     border-radius: 5px;
@@ -99,12 +99,12 @@ section#warning{
     -ms-border-radius: 5px 0 0 5px;
     -o-border-radius: 5px 0 0 5px;
 
-    border: solid var(--lightBlue) 1px;
+    border: solid var(--color) 1px;
 }
 section#warning p{
     padding-left: 2vh;
     padding-right: 2vh;
-    font-size: 2vh;
+    font-size: 1.5vh;
 }
 section#content{
     display: grid;
