@@ -249,69 +249,191 @@ const thomson = () => {
 thomson();
 
 const rutherford = () => {
-  const canvas = document.querySelector('#rutherfordAtom');
-  const renderer = new THREE.WebGLRenderer({
-    canvas,
-    alpha: true,
-    antialias: true
-  });
-  renderer.setClearColor(0xfcffeb, 1);
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(500, 250);
+    const canvas = document.querySelector('#rutherfordAtom');
+    const renderer = new THREE.WebGLRenderer({
+        canvas,
+        alpha: true,
+        antialias: true
+    });
+    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(500, 250);
 
-  const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 5);
-  camera.position.z = 1.8;
+    const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 5);
+    camera.position.z = 1.8;
 
-  const scene = new THREE.Scene();
+    const scene = new THREE.Scene();
 
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.update();
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.update();
 
-  const light = new THREE.DirectionalLight(0xcecece, 1.5);
-  light.position.set(-1, 2, 4);
-  const ambient = new THREE.AmbientLight(0xcecece, 0.5);
-  ambient.position.set(0, 0, 5);
+    const light = new THREE.DirectionalLight(0xcecece, 1.5);
+    light.position.set(-1, 2, 4);
+    const ambient = new THREE.AmbientLight(0xcecece, 0.5);
+    ambient.position.set(0, 0, 5);
 
-  scene.add(light, ambient);
+    scene.add(light, ambient);
 
-  const group = new THREE.Group();
+    const group = new THREE.Group();
 
-  let protonGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
-  let protonMaterial = new THREE.MeshPhongMaterial({ color: 0x505050 });
-  let proton = new THREE.Mesh(protonGeometry, protonMaterial);
-  proton.position.set(-0.1, 0.01, 0);
-  let proton2 = proton.clone()
-  proton2.position.set(-0.05, -0.05, -0.075);
-  let proton3 = proton.clone()
-  proton3.position.set(0.1, -0.05, 0);
-  let proton4 = proton.clone()
-  proton4.position.set(0.05, 0.01, 0.075);
-  group.add(proton, proton2, proton3, proton4);
+    let protonGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
+    let protonMaterial = new THREE.MeshPhongMaterial({ color: 0x505050 });
+    let proton = new THREE.Mesh(protonGeometry, protonMaterial);
+    proton.position.set(-0.1, 0.01, 0);
+    let proton2 = proton.clone()
+    proton2.position.set(-0.05, -0.05, -0.075);
+    let proton3 = proton.clone()
+    proton3.position.set(0.1, -0.05, 0);
+    let proton4 = proton.clone()
+    proton4.position.set(0.05, 0.01, 0.075);
+    group.add(proton, proton2, proton3, proton4);
 
-  let electronsGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
-  let electronsMaterial = new THREE.MeshPhongMaterial({ color: 0x59acff });
-  let electron = new THREE.Mesh(electronsGeometry, electronsMaterial);
-  electron.position.set(-0.5, 0.5, -0.2);
-  let electron2 = electron.clone();
-  electron2.position.set(0.75, -0.35, 0.15);
-  let electron3 = electron.clone();
-  electron3.position.set(-0.35, -0.6, 0.3);
-  let electron4 = electron.clone();
-  electron4.position.set(0.15, 0.75, 0);
-  group.add(electron, electron2, electron3, electron4);
+    let electronsGroup1 = new THREE.Group();
+    let electronsGroup2 = new THREE.Group();
 
-  scene.add(group);
+    let electronsGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
+    let electronsMaterial = new THREE.MeshPhongMaterial({ color: 0x59acff });
+    let electron = new THREE.Mesh(electronsGeometry, electronsMaterial);
+    electron.position.set(-0.5, 0.5, -0.2);
+    let electron2 = electron.clone();
+    electron2.position.set(0.75, -0.35, 0.15);
+    let electron3 = electron.clone();
+    electron3.position.set(-0.35, -0.45, 0.3);
+    let electron4 = electron.clone();
+    electron4.position.set(0.15, 0.75, 0);
+    electronsGroup1.add(electron, electron2);
+    electronsGroup2.add(electron3, electron4);
 
-  function render(time) {
-    time *= 0.0001;
+    group.add(electronsGroup1, electronsGroup2);
 
-    group.rotation.x = time;
-    group.rotation.y = time;
+    scene.add(group);
 
-    renderer.render(scene, camera);
+    function groupAnim(time) {
+        time *= 0.0001;
 
-    requestAnimationFrame(render);
-  }
-  requestAnimationFrame(render);
+        group.rotation.x = time;
+        group.rotation.y = time;
+
+        renderer.render(scene, camera);
+
+        requestAnimationFrame(groupAnim);
+    }
+    requestAnimationFrame(groupAnim);
+
+    function electronsAnim(time) {
+        time *= 0.0025;
+
+        electronsGroup1.rotation.z = time;
+        electronsGroup2.rotation.x = -time;
+
+        renderer.render(scene, camera);
+
+        requestAnimationFrame(electronsAnim);
+    }
+    requestAnimationFrame(electronsAnim);
 }
 rutherford();
+
+const bohr = () => {
+    const canvas = document.querySelector('#bohrAtom');
+    const renderer = new THREE.WebGLRenderer({
+        canvas,
+        alpha: true,
+        antialias: true
+    });
+    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(500, 250);
+
+    const camera = new THREE.PerspectiveCamera(75, 2, 0.1, 5);
+    camera.position.z = 1.8;
+
+    const scene = new THREE.Scene();
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.update();
+
+    const light = new THREE.DirectionalLight(0xcecece, 1.5);
+    light.position.set(-1, 2, 4);
+
+    const ambient = new THREE.AmbientLight(0xcecece, 0.5);
+    ambient.position.set(0, 0, 5);
+    scene.add(light, ambient);
+
+    let group = new THREE.Group();
+
+    let protonGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
+    let protonMaterial = new THREE.MeshPhongMaterial({ color: 0x505050 });
+    let proton = new THREE.Mesh(protonGeometry, protonMaterial);
+    proton.position.set(-0.1, 0.01, 0);
+    let proton2 = proton.clone();
+    proton2.position.set(-0.05, -0.05, -0.075);
+    let proton3 = proton.clone();
+    proton3.position.set(0.1, -0.05, 0);
+    let proton4 = proton.clone();
+    proton4.position.set(0.05, 0.01, 0.075);
+    let proton5 = proton.clone();
+    proton5.position.set(-0.05, 0.05, -0.05);
+    let proton6 = proton.clone();
+    proton6.position.set(0.05, 0.05, -0.05);
+    group.add(proton, proton2, proton3, proton4, proton5, proton6);
+
+    let heartElectron = new THREE.Group();
+    let electronValence = new THREE.Group();
+
+    let electronsGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
+    let electronsMaterial = new THREE.MeshPhongMaterial({ color: 0x59acff });
+    let electron = new THREE.Mesh(electronsGeometry, electronsMaterial);
+    electron.position.set(-1.1, 0, 0);
+    let electron2 = electron.clone();
+    electron2.position.set(1.1, 0, 0);
+    let electron3 = electron.clone();
+    electron3.position.set(0, 1.1, 0);
+    let electron4 = electron.clone();
+    electron4.position.set(0, -1.1, 0);
+    let electron5 = electron.clone();
+    electron5.position.set(-0.35, -0.35, 0);
+    let electron6 = electron.clone();
+    electron6.position.set(0.35, 0.35, 0);
+    heartElectron.add(electron5, electron6);
+    electronValence.add(electron, electron2, electron3, electron4);
+
+    group.add(heartElectron, electronValence);
+
+    scene.add(group);
+
+    function groupAnim(time) {
+        time *= 0.0001;
+
+        group.rotation.x = time;
+        group.rotation.y = time;
+
+        renderer.render(scene, camera);
+
+        requestAnimationFrame(groupAnim);
+    }
+    requestAnimationFrame(groupAnim);
+
+    function heartElectronAnim(time) {
+        time *= 0.0025;
+
+        electronValence.rotation.z = time;
+
+        renderer.render(scene, camera);
+
+        requestAnimationFrame(heartElectronAnim);
+    }
+    requestAnimationFrame(heartElectronAnim);
+
+    function valenceElectronsAnim(time) {
+        time *= 0.001;
+
+        heartElectron.rotation.z = -time;
+
+        renderer.render(scene, camera);
+
+        requestAnimationFrame(valenceElectronsAnim);
+    }
+    requestAnimationFrame(valenceElectronsAnim);
+}
+bohr();
