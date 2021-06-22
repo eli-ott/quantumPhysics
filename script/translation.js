@@ -1,5 +1,5 @@
 const allText = {
-    homePage: {
+    landingPage: {
         french: `La physique quantique est l'appellation générale d'un ensemble de théories physiques nées au XXe 
         siècle qui décrivent le comportement des atomes et des particules et permettent d'élucider 
         certaines propriétés du rayonnement électromagnétique. 
@@ -61,7 +61,7 @@ const allText = {
         Quantencomputer. Diese beiden Beispiele hätten ohne genaues Wissen niemals existiert
         auf Atome und ihre Funktionsweise.`
     },
-    atomModel: {
+    modelAtome: {
         democrite: {
             french: `Démocrite est à l’origine du premier modèle atomique en -400 avant J.C. <br> Selon lui la matière 
             est constituée de minuscules particules et sont séparées par du vide. <br> Il nomme ces particules 
@@ -195,7 +195,7 @@ const allText = {
             (Licht). Die emittierte Farbe variiert je nach Start- und Endniveau des Elektrons.`
         }
     },
-    youngSlits: {
+    fentesYoung: {
         french: `Les fentes de Young (ou interférences de Young) désignent en physique une expérience qui 
         consiste à faire interférer deux faisceaux de lumière issus d'une même source, en les faisant passer 
         par deux petits trous percés dans un plan opaque. 
@@ -236,6 +236,64 @@ const allText = {
         Auf einem Bildschirm vor Youngs Schlitzen beobachten wir ein Beugungsdiagramm, das eine Zone ist
         wo sich dunkle und helle Streifen abwechseln. Die Vertiefungen der Wellen repräsentieren die dunklen Teile,
         und die Spitzen repräsentieren die beleuchteten Teile.`
+    },
+    famousFormula: {
+        french: {
+            planck: `La constante de planck décrit les phénomènes de quantification qui se
+            produisent avec les particules. <br> <br>
+            Cette constante vaut 6,62607004 x 10^-34 J/s.`,
+            schrodinger: `L'équation de Schrödinger, créée en 1925 par Erwin Schrödinger, est une équation fondamentale en mécanique quantique.
+            <br> <br>
+            Elle décrit l'évolution dans le temps d'une particule massive non relativiste.
+            Cette formule permet de calculer la fonction d'onde d'une particule.`,
+            heisenberg: `L'équation du principe d'incertitude de Heisenberg nous explique que plus nous 
+            connaissons la position d'une particule, moins nous connaissons sa quantité de mouvement et réciproquement.`,
+            superposition: `L'équation de la superposition quantique nous montre qu'il est possible pour une particule d'être à deux endroits différents simultanément.
+            <br> <br>
+            Mais cela peut aussi marcher pour son état (excité et non-excité), son spin, etc.`
+        },
+        english: {
+            planck: `The planck constant describes the quantization phenomena that occur
+            produce with the particles. <br> <br>
+            This constant is 6.62607004 x 10 ^ -34 J / s.`,
+            schrodinger: `The Schrödinger equation, created in 1925 by Erwin Schrödinger, is a fundamental equation in quantum mechanics.
+            <br> <br>
+            It describes the evolution over time of a massive non-relativistic particle.
+            This formula calculates the wave function of a particle.`,
+            heisenberg: `The Heisenberg uncertainty principle equation explains to us that the more we
+            we know the position of a particle, the less we know its momentum and vice versa.`,
+            superposition: `The quantum superposition equation shows us that it is possible for a particle to be in two different places simultaneously.
+            <br> <br>
+            But it can also work for its state (excited and non-excited), its spin, etc.`
+        },
+        spanish: {
+            planck: `La constante de Planck describe los fenómenos de cuantificación que ocurren
+            producir con las partículas. <br> <br>
+            Esta constante es 6.62607004 x 10 ^ -34 J / s.`,
+            schrodinger: `La ecuación de Schrödinger, creada en 1925 por Erwin Schrödinger, es una ecuación fundamental en la mecánica cuántica.
+            <br> <br>
+            Describe la evolución en el tiempo de una partícula masiva no relativista.
+            Esta fórmula permite calcular la función de onda de una partícula.`,
+            heisenberg: `La ecuación del principio de incertidumbre de Heisenberg nos explica que cuanto más
+            conocemos la posición de una partícula, menos conocemos su impulso y viceversa.`,
+            superposition: `La ecuación de superposición cuántica nos muestra que es posible que una partícula esté en dos lugares diferentes simultáneamente.
+            <br> <br>
+            Pero también puede funcionar por su estado (excitado y no excitado), su giro, etc.`
+        },
+        german: {
+            planck: `Die Planck-Konstante beschreibt die auftretenden Quantisierungsphänomene
+            mit den Partikeln herstellen. <br> <br>
+            Diese Konstante beträgt 6.62607004 x 10 ^ -34 J / s.`,
+            schrodinger: `Die 1925 von Erwin Schrödinger aufgestellte Schrödinger-Gleichung ist eine grundlegende Gleichung der Quantenmechanik.
+            <br> <br>
+            Es beschreibt die zeitliche Entwicklung eines massiven nicht-relativistischen Teilchens.
+            Diese Formel ermöglicht es, die Wellenfunktion eines Teilchens zu berechnen.`,
+            heisenberg: `Die Heisenbergsche Unschärferelation erklärt uns, dass je mehr wir
+            wir die Position eines Teilchens kennen, desto weniger kennen wir seinen Impuls und umgekehrt.`,
+            superposition: `Die Quantensuperpositionsgleichung zeigt uns, dass ein Teilchen gleichzeitig an zwei verschiedenen Orten sein kann.
+            <br> <br>
+            Es kann aber auch für seinen Zustand (erregt und nicht erregt), seinen Spin usw.`
+        }
     }
 }
 
@@ -244,14 +302,15 @@ $("#frenchFlag").on("click", () => {
     localStorage.setItem("language", "french");
 
     //we change the footer language
-    $(".footerHeader")[0].innerHTML = "CREATEURS";
-    $(".footerHeader")[1].innerHTML = "CONTACTEZ-NOUS";
-    $(".footerHeader")[2].innerHTML = "LANGAGE";
-    $("text")[1].innerHTML = "Ce site a été créé par";
-    $("text")[3].innerHTML = "et <a class='links' href='https://github.com/eli-ott'>@eli-ott</a>";
-    $("text")[5].innerHTML = "Vous voulez partager votre opinion ";
-    $("text")[6].innerHTML = "à propos de se site, contactez-nous : ";
-    $("text")[9].innerHTML = "Choisissez un langage : ";
+    $(".footerHeader").eq(0).html('Créateurs : ');
+    $(".footerText").eq(0).html(`Ce site a été créé par <br> <a href="https://github.com/eli-ott">@eli-ott</a> et <a
+    href="https://github.com/jujutagad333">@jujutagad333</a>`);
+    $(".footerHeader").eq(1).html('Contactez-nous : ');
+    $(".footerText").eq(1).html(`Pour plus d'information sur ce site ou pour un contact profesionnel
+    vous pouvez envoyer un mail à l'adresse suivante : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+    $(".footerHeader").eq(2).html("Langue :");
+    $(".footerText").eq(2).html("Changer la langue : ");
 
     changeLanguage();
 });
@@ -259,14 +318,14 @@ $("#englishFlag").on("click", () => {
     localStorage.setItem("language", "english");
 
     //we change the footer language
-    $(".footerHeader")[0].innerHTML = "CREATORS";
-    $(".footerHeader")[1].innerHTML = "CONTACT-US";
-    $(".footerHeader")[2].innerHTML = "LANGUAGE";
-    $("text")[1].innerHTML = "This website was created by";
-    $("text")[3].innerHTML = "and <a class='links' href='https://github.com/eli-ott'>@eli-ott</a>";
-    $("text")[5].innerHTML = "You want to share your opinion ";
-    $("text")[6].innerHTML = "about this website, contact-us : ";
-    $("text")[9].innerHTML = "Choose a language : ";
+    $(".footerHeader").eq(0).html('Creators : ');
+    $(".footerText").eq(0).html(`This site was created by <br> <a href="https://github.com/eli-ott">@eli-ott</a> and <a
+    href="https://github.com/jujutagad333">@jujutagad333</a>`);
+    $(".footerHeader").eq(1).html('Contact us : ');
+    $(".footerText").eq(1).html(`For more information about this site or for a professional contact you can send an email to the following address : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+    $(".footerHeader").eq(2).html("Language :");
+    $(".footerText").eq(2).html("Change the language : ");
 
     changeLanguage();
 });
@@ -274,14 +333,15 @@ $("#spanishFlag").on("click", () => {
     localStorage.setItem("language", "spanish");
 
     //we change the footer language
-    $(".footerHeader")[0].innerHTML = "CREADORES";
-    $(".footerHeader")[1].innerHTML = "CONTÁCTENOS";
-    $(".footerHeader")[2].innerHTML = "IDIOMA";
-    $("text")[1].innerHTML = "Este sitio web fue creado por";
-    $("text")[3].innerHTML = "y <a class='links' href='https://github.com/eli-ott'>@eli-ott</a>";
-    $("text")[5].innerHTML = "quieres compartir tu opinion ";
-    $("text")[6].innerHTML = "sobre este sitio web, contáctanos";
-    $("text")[9].innerHTML = "Elige un iodioma : ";
+    $(".footerHeader").eq(0).html("Creadores : ");
+    $(".footerText").eq(0).html(`Este sitio fue creado por <br> <a href="https://github.com/eli-ott">@eli-ott</a> y <a
+    href="https://github.com/jujutagad333">@jujutagad333</a>`);
+    $(".footerHeader").eq(1).html('Contáctenos : ');
+    $(".footerText").eq(1).html(`Para obtener más información sobre este sitio o para un contacto profesional
+    puede enviar un correo electrónico a la siguiente dirección : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+    $(".footerHeader").eq(2).html("Idioma :");
+    $(".footerText").eq(2).html("Cambiar idioma : ");
 
     changeLanguage();
 });
@@ -289,24 +349,25 @@ $("#germanFlag").on("click", () => {
     localStorage.setItem("language", "german");
 
     //we change the footer language
-    $(".footerHeader")[0].innerHTML = "Shöpfer";
-    $(".footerHeader")[1].innerHTML = "Kontaktiere uns";
-    $(".footerHeader")[2].innerHTML = "Sprache";
-    $("text")[1].innerHTML = "Diese Website wurde erstellt von";
-    $("text")[3].innerHTML = "und <a class='links' href='https://github.com/eli-ott'>@eli-ott</a>";
-    $("text")[5].innerHTML = "Sie möchten Ihre Meinungen teilen ";
-    $("text")[6].innerHTML = "Über diese Website kontaktieren Sie uns";
-    $("text")[9].innerHTML = "Wähle eine Sprache : ";
+    $(".footerHeader").eq(0).html("Schöpfer : ");
+    $(".footerText").eq(0).html(`Diese Seite wurde erstellt von <br> <a href="https://github.com/eli-ott">@eli-ott</a> und <a
+    href="https://github.com/jujutagad333">@jujutagad333</a>`);
+    $(".footerHeader").eq(1).html('Kontaktiere uns : ');
+    $(".footerText").eq(1).html(`Für weitere Informationen auf dieser Seite oder für einen professionellen Kontakt
+    Sie können eine E-Mail an folgende Adresse senden : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+    $(".footerHeader").eq(2).html("Sprache :");
+    $(".footerText").eq(2).html("Sprache ändern : ");
 
     changeLanguage();
 });
 
 //we check which language is choose by the user
 const changeLanguage = () => {
-    switch(window.location.pathname){
+    switch (window.location.pathname) {
         case "/":
-            if(localStorage.getItem("language") === "french"){
-                $("#mainContent").html(allText.homePage.french);
+            if (localStorage.getItem("language") === "french") {
+                $("#mainContent").html(allText.landingPage.french);
 
                 //we change the header text
                 $("#topLeftHeader").html("Physique");
@@ -321,8 +382,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Formule célèbres";
 
                 $("#frenchFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "english"){
-                $("#mainContent").html(allText.homePage.english);
+            } else if (localStorage.getItem("language") === "english") {
+                $("#mainContent").html(allText.landingPage.english);
 
                 //we change the header text
                 $("#topLeftHeader").html("Quantum");
@@ -337,8 +398,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Famous formula";
 
                 $("#englishFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "spanish"){
-                $("#mainContent").html(allText.homePage.spanish);
+            } else if (localStorage.getItem("language") === "spanish") {
+                $("#mainContent").html(allText.landingPage.spanish);
 
                 //we change the header text
                 $("#topLeftHeader").html("Física");
@@ -353,8 +414,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Fórmula famosa";
 
                 $("#spanishFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "german"){
-                $("#mainContent").html(allText.homePage.german);
+            } else if (localStorage.getItem("language") === "german") {
+                $("#mainContent").html(allText.landingPage.german);
 
                 //we change the header text
                 $("#topLeftHeader").html("");
@@ -370,10 +431,10 @@ const changeLanguage = () => {
 
                 $("#germanFlag").trigger("click");
             }
-        break;
+            break;
         case "/index.html":
-            if(localStorage.getItem("language") === "french"){
-                $("#mainContent").html(allText.homePage.french);
+            if (localStorage.getItem("language") === "french") {
+                $("#mainContent").html(allText.landingPage.french);
 
                 //we change the header text
                 $("#topLeftHeader").html("Physique");
@@ -388,8 +449,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Formule célèbres";
 
                 $("#frenchFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "english"){
-                $("#mainContent").html(allText.homePage.english);
+            } else if (localStorage.getItem("language") === "english") {
+                $("#mainContent").html(allText.landingPage.english);
 
                 //we change the header text
                 $("#topLeftHeader").html("Quantum");
@@ -404,8 +465,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Famous formula";
 
                 $("#englishFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "spanish"){
-                $("#mainContent").html(allText.homePage.spanish);
+            } else if (localStorage.getItem("language") === "spanish") {
+                $("#mainContent").html(allText.landingPage.spanish);
 
                 //we change the header text
                 $("#topLeftHeader").html("Física");
@@ -420,8 +481,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Fórmula famosa";
 
                 $("#spanishFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "german"){
-                $("#mainContent").html(allText.homePage.german);
+            } else if (localStorage.getItem("language") === "german") {
+                $("#mainContent").html(allText.landingPage.german);
 
                 //we change the header text
                 $("#topLeftHeader").html("");
@@ -437,10 +498,10 @@ const changeLanguage = () => {
 
                 $("#germanFlag").trigger("click");
             }
-        break;
+            break;
         case "/fentesYoung.html":
-            if(localStorage.getItem("language") === "french"){
-                $("#mainContent").html(allText.youngSlits.french);
+            if (localStorage.getItem("language") === "french") {
+                $("#mainContent").html(allText.fentesYoung.french);
 
                 //we change the buttons language
                 $(".animButtons")[0].innerHTML = "Lancer l'animation";
@@ -457,8 +518,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Formules célèbres";
 
                 $("#frenchFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "english"){
-                $("#mainContent").html(allText.youngSlits.english);
+            } else if (localStorage.getItem("language") === "english") {
+                $("#mainContent").html(allText.fentesYoung.english);
 
                 //we change the buttons language
                 $(".animButtons")[0].innerHTML = "Launch the animation";
@@ -475,9 +536,9 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Famous formula";
 
                 $("#englishFalg").trigger("click");
-            } else if(localStorage.getItem("language") === "spanish"){
-                $("#mainContent").html(allText.youngSlits.spanish);
-                
+            } else if (localStorage.getItem("language") === "spanish") {
+                $("#mainContent").html(allText.fentesYoung.spanish);
+
                 //we change the buttons language
                 $(".animButtons")[0].innerHTML = "Iniciar animación";
                 $(".animButtons")[1].innerHTML = "Animación clara";
@@ -493,8 +554,8 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Fórmula famosa";
 
                 $("#spanishFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "german"){
-                $("#mainContent").html(allText.youngSlits.german);
+            } else if (localStorage.getItem("language") === "german") {
+                $("#mainContent").html(allText.fentesYoung.german);
 
                 //we change the buttons and title language
                 $(".animButtons")[0].innerHTML = "Animation starten";
@@ -512,17 +573,16 @@ const changeLanguage = () => {
 
                 $("#germanFlag").trigger("click");
             }
-        break;
+            break;
         case "/modelAtome.html":
-            if(localStorage.getItem("language") === "french"){
-                $("#democrite").html(allText.atomModel.democrite.french);
-                $("#aristote").html(allText.atomModel.aristote.french);
-                $("#dalton").html(allText.atomModel.dalton.french);
-                $("#thomson").html(allText.atomModel.thomson.french);
-                $("#rutherford").html(allText.atomModel.rutherford.french);
-                $("#bohr").html(allText.atomModel.bohr.french);
+            if (localStorage.getItem("language") === "french") {
+                $("#democrite").html(allText.modelAtome.democrite.french);
+                $("#aristote").html(allText.modelAtome.aristote.french);
+                $("#dalton").html(allText.modelAtome.dalton.french);
+                $("#thomson").html(allText.modelAtome.thomson.french);
+                $("#rutherford").html(allText.modelAtome.rutherford.french);
+                $("#bohr").html(allText.modelAtome.bohr.french);
 
-                //we change the title language
                 $("#title").html("Modèle de l'atome");
 
                 //we change the menu language
@@ -534,15 +594,14 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Formules célèbres";
 
                 $("#frenchFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "english"){
-                $("#democrite").html(allText.atomModel.democrite.english);
-                $("#aristote").html(allText.atomModel.aristote.english);
-                $("#dalton").html(allText.atomModel.dalton.english);
-                $("#thomson").html(allText.atomModel.thomson.english);
-                $("#rutherford").html(allText.atomModel.rutherford.english);
-                $("#bohr").html(allText.atomModel.bohr.english);
+            } else if (localStorage.getItem("language") === "english") {
+                $("#democrite").html(allText.modelAtome.democrite.english);
+                $("#aristote").html(allText.modelAtome.aristote.english);
+                $("#dalton").html(allText.modelAtome.dalton.english);
+                $("#thomson").html(allText.modelAtome.thomson.english);
+                $("#rutherford").html(allText.modelAtome.rutherford.english);
+                $("#bohr").html(allText.modelAtome.bohr.english);
 
-                //we change the title language
                 $("#title").html("Atom model");
 
                 //we change the menu language
@@ -554,15 +613,14 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Famous formula";
 
                 $("#englishFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "spanish"){
-                $("#democrite").html(allText.atomModel.democrite.spanish);
-                $("#aristote").html(allText.atomModel.aristote.spanish);
-                $("#dalton").html(allText.atomModel.dalton.spanish);
-                $("#thomson").html(allText.atomModel.thomson.spanish);
-                $("#rutherford").html(allText.atomModel.rutherford.spanish);
-                $("#bohr").html(allText.atomModel.bohr.spanish);
+            } else if (localStorage.getItem("language") === "spanish") {
+                $("#democrite").html(allText.modelAtome.democrite.spanish);
+                $("#aristote").html(allText.modelAtome.aristote.spanish);
+                $("#dalton").html(allText.modelAtome.dalton.spanish);
+                $("#thomson").html(allText.modelAtome.thomson.spanish);
+                $("#rutherford").html(allText.modelAtome.rutherford.spanish);
+                $("#bohr").html(allText.modelAtome.bohr.spanish);
 
-                //we change the title language
                 $("#title").html("Modelo de átomo");
 
                 //we change the menu language
@@ -574,15 +632,14 @@ const changeLanguage = () => {
                 $("#linksParent a")[5].innerHTML = "Fórmulas famosas";
 
                 $("#spanishFlag").trigger("click");
-            } else if(localStorage.getItem("language") === "german"){
-                $("#democrite").html(allText.atomModel.democrite.german);
-                $("#aristote").html(allText.atomModel.aristote.german);
-                $("#dalton").html(allText.atomModel.dalton.german);
-                $("#thomson").html(allText.atomModel.thomson.german);
-                $("#rutherford").html(allText.atomModel.rutherford.german);
-                $("#bohr").html(allText.atomModel.bohr.german);
+            } else if (localStorage.getItem("language") === "german") {
+                $("#democrite").html(allText.modelAtome.democrite.german);
+                $("#aristote").html(allText.modelAtome.aristote.german);
+                $("#dalton").html(allText.modelAtome.dalton.german);
+                $("#thomson").html(allText.modelAtome.thomson.german);
+                $("#rutherford").html(allText.modelAtome.rutherford.german);
+                $("#bohr").html(allText.modelAtome.bohr.german);
 
-                //we change the title language
                 $("#title").html("Atommodell");
 
                 //we change the menu language
@@ -595,7 +652,78 @@ const changeLanguage = () => {
 
                 $("#germanFlag").trigger("click");
             }
-        break;
+            break;
+        case '/famousFormula.html':
+            if (localStorage.getItem('language') === 'french') {
+                $(".descriptions").eq(0).html(allText.famousFormula.french.planck);
+                $(".descriptions").eq(1).html(allText.famousFormula.french.schrodinger);
+                $(".descriptions").eq(2).html(allText.famousFormula.french.heisenberg);
+                $(".descriptions").eq(3).html(allText.famousFormula.french.superposition);
+
+                $("#title").html("Formules Célèbres");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Accueil";
+                $("#linksParent a")[1].innerHTML = "Modèle de l'atome";
+                $("#linksParent a")[2].innerHTML = "Les grandes figures";
+                $("#linksParent a")[3].innerHTML = "Principe d'incertitude";
+                $("#linksParent a")[4].innerHTML = "Dualité onde-corpuscule";
+                $("#linksParent a")[5].innerHTML = "Formules célèbres";
+
+                $("#frenchFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "english") {
+                $(".descriptions").eq(0).html(allText.famousFormula.english.planck);
+                $(".descriptions").eq(1).html(allText.famousFormula.english.schrodinger);
+                $(".descriptions").eq(2).html(allText.famousFormula.english.heisenberg);
+                $(".descriptions").eq(3).html(allText.famousFormula.english.superposition);
+
+                $("#title").html("Famous formulas");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Home";
+                $("#linksParent a")[1].innerHTML = "Atom model";
+                $("#linksParent a")[2].innerHTML = "The great figures";
+                $("#linksParent a")[3].innerHTML = "Uncertainty principle";
+                $("#linksParent a")[4].innerHTML = "Wave-particle duality";
+                $("#linksParent a")[5].innerHTML = "Famous formula";
+
+                $("#englishFalg").trigger("click");
+            } else if (localStorage.getItem("language") === "spanish") {
+                $(".descriptions").eq(0).html(allText.famousFormula.spanish.planck);
+                $(".descriptions").eq(1).html(allText.famousFormula.spanish.schrodinger);
+                $(".descriptions").eq(2).html(allText.famousFormula.spanish.heisenberg);
+                $(".descriptions").eq(3).html(allText.famousFormula.spanish.superposition);
+
+                $("#title").html("Fórmulas famosas");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Hogar";
+                $("#linksParent a")[1].innerHTML = "Modelo de átomo";
+                $("#linksParent a")[2].innerHTML = "Las grandes figuras";
+                $("#linksParent a")[3].innerHTML = "Principio de incertidumbre";
+                $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
+                $("#linksParent a")[5].innerHTML = "Fórmula famosa";
+
+                $("#spanishFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "german") {
+                $(".descriptions").eq(0).html(allText.famousFormula.german.planck);
+                $(".descriptions").eq(1).html(allText.famousFormula.german.schrodinger);
+                $(".descriptions").eq(2).html(allText.famousFormula.german.heisenberg);
+                $(".descriptions").eq(3).html(allText.famousFormula.german.superposition);
+
+                $("#title").html("Berühmte Formeln");
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Zuhause";
+                $("#linksParent a")[1].innerHTML = "Atommodell";
+                $("#linksParent a")[2].innerHTML = "Die tollen Figuren";
+                $("#linksParent a")[3].innerHTML = "Prinzip der Unsicherheit";
+                $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
+                $("#linksParent a")[5].innerHTML = "Berühmte Formeln";
+
+                $("#germanFlag").trigger("click");
+            }
+            break;
     }
 }
 changeLanguage();

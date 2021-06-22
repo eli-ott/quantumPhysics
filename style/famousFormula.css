@@ -37,6 +37,8 @@ div.right {
     margin-top: 15vh;
 }
 p.descriptions {
+    cursor: default;
+    
     width: 50vw;
     font-size: 2vh;
 }
@@ -48,6 +50,9 @@ img#schrodingerFormula {
 }
 img#incertitudeEquation {
     width: 20vh;
+}
+img#superpositionEquation {
+    width: 70vh;
 }
 hr{
     border: none;

@@ -26,6 +26,7 @@
 html {
     font-family: contentFont, "Courier New", Courier, monospace;
     overflow-x: hidden;
+    overflow-y: scroll;
 
     padding: 0;
     margin: 0;
@@ -40,7 +41,9 @@ body {
 img.themeIcon {
     position: fixed;
     cursor: pointer;
-    background: none;
+
+    top: 0;
+    left: 0;
     z-index: 9999;
     width: 3.5vh;
     margin: 1vh;
@@ -54,6 +57,8 @@ img.themeIcon {
     -moz-border-radius: 100vh;
     -ms-border-radius: 100vh;
     -o-border-radius: 100vh;
+
+    background: var(--backgroundColor);
 }
 img.themeIcon:hover {
     transform: rotate(360deg);
@@ -76,7 +81,6 @@ div#progress {
 }
 svg#burger {
     position: fixed;
-    background: none;
     cursor: pointer;
 
     z-index: 9999;
@@ -90,162 +94,12 @@ svg#burger {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-}
-div#menuBg {
-    position: absolute;
 
-    z-index: -1;
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    transition: 0.75s ease;
-    -webkit-transition: 0.75s ease;
-    -moz-transition: 0.75s ease;
-    -ms-transition: 0.75s ease;
-    -o-transition: 0.75s ease;
-    border-radius: 10vh 0 10vh 50vh;
-    -webkit-border-radius: 10vh 0 10vh 50vh;
-    -moz-border-radius: 10vh 0 10vh 50vh;
-    -ms-border-radius: 10vh 0 10vh 50vh;
-    -o-border-radius: 10vh 0 10vh 50vh;
-
-    background: var(--lightBlue);
-}
-nav {
-    position: fixed;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-
-    opacity: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-}
-nav > div#menuLogo {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-    width: 49vw;
-}
-nav > div#menuLogo > img { 
-    width: 20vh; 
-}
-
-nav > div#linksParent {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: left;
-
-    height: 100vh;
-    width: 50vw;
-}
-nav > div#linksParent > a {
-    text-decoration: none;
-    background: none;
-    
-    width: 20vw;
-    height: 2vh;
-    padding-bottom: .5vh;
-    margin-left: 5vw;
-    font-size: 1.8vh;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-
-    color: #242424;
-    border-bottom: solid 2px #242424;
-}
-nav > div#linksParent > a:hover {
-    color: #fcffeb;
-}
-nav > div#linksParent > a::before {
-    content: '\A0';
-    position: absolute;
-    transform-origin: left;
-    
-    height: 2px;
-    width: 20vw;
-    margin-top: 2.5vh;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-
-    transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    -moz-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    -o-transform: scaleX(0);
-    background: #fcffeb;
-}
-nav > div#linksParent > a:hover::before {
-    transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
+    background: var(--backgroundColor);
 }
 p#mainContent {
     background: none;
 
     line-height: 5vh;
     font-size: 2.5vh;
-}
-footer {
-    position: absolute;
-
-    z-index: -1;
-    width: 100%;
-    margin: 0;
-    margin-top: 5vh;
-}
-footer #wave {
-    z-index: -1;
-    margin-bottom: -1vh;
-}
-footer svg text {
-    font-family: contentFont;
-
-    z-index: 9999;
-    font-size: 1.35vh;
-
-    fill: #242424;
-}
-footer svg .links {
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-
-    fill: var(--backgroundColor);
-}
-footer svg .links:hover {
-    text-decoration: underline;
-}
-footer svg text.footerHeader {
-    font-family: header;
-    text-decoration: underline;
-
-    font-size: 3.5vh;
-
-    fill: #242424;
-}
-footer svg.flags {
-    cursor: pointer;
 }

@@ -1,0 +1,81 @@
+footer {
+    position: absolute;
+    background: url(../pics/footerWave.svg) no-repeat;
+    background-size: cover;
+
+    z-index: -1;
+    width: 100vw;
+    height: 50vh;
+    margin: 0;
+    margin-top: 5vh;
+}
+footer > div#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    margin-top: 17vh;
+    width: 100vw;
+}
+footer > div#content > div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 20vw;
+}
+footer > div#content > div a {
+    text-decoration: none;
+    color: var(--backgroundColor);
+}
+footer > div#content > div a:hover {
+    text-decoration: underline;
+}
+footer > div#content p.footerHeader {
+    font-family: header;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    font-size: 3.5vh;
+
+    color: var(--color);
+}
+footer > div#content p.footerText {
+    font-family: contentFont;
+    cursor: default;
+
+    font-size: 2vh;
+
+    color: var(--color);
+}
+footer > div#content div#allFlags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+footer > div#content div#allFlags > img {
+    cursor: pointer;
+
+    width: 4vh;
+    margin: 1vh 1vh;
+}
+
+@media screen and (max-width: 769px) {
+    footer {
+        height: 100vh;
+    }
+
+    footer > div#content {
+        flex-flow: column wrap;
+        align-items: center;
+
+        margin-top: 24.5vh;
+    }
+    footer > div#content > div {
+        width: 95vw;
+        margin: 0 2.5vw;
+    }
+}

@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/fentesYoung.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/fentesYoung.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <title>Physique Quantique</title>
 </head>
+
 <body>
     <div id="progress"></div>
     <img src="pics/moon.svg" alt="moon icon" id="moon" class="themeIcon" onclick="darkMode()">
 
     <!-- humburger icon -->
-    <svg id="burger" class="retract" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="menu.svg" version="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#4A6FA5" fill="none" viewBox="0 0 24 24"
-    height="24"
-    width="24">
-    <metadata> 
-        <rdf:RDF>
-            <cc:Workrdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-            </cc:Work>
-        </rdf:RDF>
-    </metadata>
-    <defs/>
-        <sodipodi:namedview inkscape:current-layer="svg8" inkscape:window-maximized="1" inkscape:window-y="-8" inkscape:window-x="-8" inkscape:cy="21.213733" inkscape:cx="18.014686" inkscape:zoom="8.5147442" showgrid="false" inkscape:window-height="745" inkscape:window-width="1366" inkscape:pageshadow="2" inkscape:pageopacity="0" guidetolerance="10" gridtolerance="10" objecttolerance="10" borderopacity="1" bordercolor="#666666" pagecolor="#fcffeb" />
-        <line id="topLine" style="stroke:#242424;stroke-opacity:1" y2="6" x2="23" y1="6" x1="1"/>
-        <line id="middleLine" style="stroke:#59acff;stroke-width:2.20299;stroke-opacity:1" y2="12" x2="21" y1="12" x1="3"/>
-        <line id="bottomLine" style="stroke:#242424;stroke-opacity:1" y2="18" x2="23" y1="18" x1="1"/>
+    <svg id="burger" class="retract" xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+        sodipodi:docname="menu.svg" version="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+        stroke="#4A6FA5" fill="none" viewBox="0 0 24 24" height="24" width="24">
+        <metadata>
+            <rdf:RDF>
+                <cc:Workrdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    </cc:Work>
+            </rdf:RDF>
+        </metadata>
+        <defs />
+        <sodipodi:namedview inkscape:current-layer="svg8" inkscape:window-maximized="1" inkscape:window-y="-8"
+            inkscape:window-x="-8" inkscape:cy="21.213733" inkscape:cx="18.014686" inkscape:zoom="8.5147442"
+            showgrid="false" inkscape:window-height="745" inkscape:window-width="1366" inkscape:pageshadow="2"
+            inkscape:pageopacity="0" guidetolerance="10" gridtolerance="10" objecttolerance="10" borderopacity="1"
+            bordercolor="#666666" pagecolor="#fcffeb" />
+        <line id="topLine" style="stroke:#242424;stroke-opacity:1" y2="6" x2="23" y1="6" x1="1" />
+        <line id="middleLine" style="stroke:#59acff;stroke-width:2.20299;stroke-opacity:1" y2="12" x2="21" y1="12"
+            x1="3" />
+        <line id="bottomLine" style="stroke:#242424;stroke-opacity:1" y2="18" x2="23" y1="18" x1="1" />
     </svg>
     <!-- menu -->
     <nav>
@@ -83,62 +96,121 @@
         <line x1="80" y1="420" x2="102" y2="438" style="stroke: #242424; stroke-width: 2;"></line>
         <line x1="102" y1="438" x2="102" y2="470" style="stroke: #242424; stroke-width: 2;"></line>
         <!-- electrons cioming out of the cannon -->
-        <circle cx="285" cy="250" r="3" class="shootingElectrons" id="electrons1" style="stroke: #242424; stroke-width: 2;"></circle><circle cx="290" cy="285" r="3" class="shootingElectrons" id="electrons2" style="stroke: #242424; stroke-width: 2;"></circle>
-        <circle cx="167" cy="385" r="3" class="shootingElectrons" id="electrons3" style="stroke: #242424; stroke-width: 2;"></circle><circle cx="290" cy="325" r="3" class="shootingElectrons" id="electrons4" style="stroke: #242424; stroke-width: 2;"></circle>
-        <circle cx="395" cy="280" r="3" class="shootingElectrons" id="electrons5" style="stroke: #242424; stroke-width: 2;"></circle><circle cx="140" cy="425" r="3" class="shootingElectrons" id="electrons6" style="stroke: #242424; stroke-width: 2;"></circle>
-        <circle cx="273" cy="410" r="3" class="shootingElectrons" id="electrons7" style="stroke: #242424; stroke-width: 2;"></circle><circle cx="405" cy="365" r="3" class="shootingElectrons" id="electrons8" style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="285" cy="250" r="3" class="shootingElectrons" id="electrons1"
+            style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="290" cy="285" r="3" class="shootingElectrons" id="electrons2"
+            style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="167" cy="385" r="3" class="shootingElectrons" id="electrons3"
+            style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="290" cy="325" r="3" class="shootingElectrons" id="electrons4"
+            style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="395" cy="280" r="3" class="shootingElectrons" id="electrons5"
+            style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="140" cy="425" r="3" class="shootingElectrons" id="electrons6"
+            style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="273" cy="410" r="3" class="shootingElectrons" id="electrons7"
+            style="stroke: #242424; stroke-width: 2;"></circle>
+        <circle cx="405" cy="365" r="3" class="shootingElectrons" id="electrons8"
+            style="stroke: #242424; stroke-width: 2;"></circle>
         <!-- electrons on the extrem left of screen -->
-        <circle class="electrons" id="circle1" cx="410" cy="140" r="3"></circle><circle class="electrons" id="circle2" cx="422" cy="120" r="3"></circle>
-        <circle class="electrons" id="circle3" cx="418" cy="180" r="3"></circle><circle class="electrons" id="circle4" cx="421" cy="80" r="3"></circle>
-        <circle class="electrons" id="circle5" cx="415" cy="160" r="3"></circle><circle class="electrons" id="circle6" cx="410" cy="100" r="3"></circle>
-        <circle class="electrons" id="circle7" cx="410" cy="80" r="3"></circle><circle class="electrons" id="circle8" cx="415" cy="50" r="3"></circle>
-        <circle class="electrons" id="circle9" cx="420" cy="70" r="3"></circle><circle class="electrons" id="circle10" cx="415" cy="30" r="3"></circle>
-        <circle class="electrons" id="circle11" cx="425" cy="130" r="3"></circle><circle class="electrons" id="circle12" cx="415" cy="150" r="3"></circle>
-        <circle class="electrons" id="circle13" cx="410" cy="110" r="3"></circle><circle class="electrons" id="circle14" cx="415" cy="150" r="3"></circle>
+        <circle class="electrons" id="circle1" cx="410" cy="140" r="3"></circle>
+        <circle class="electrons" id="circle2" cx="422" cy="120" r="3"></circle>
+        <circle class="electrons" id="circle3" cx="418" cy="180" r="3"></circle>
+        <circle class="electrons" id="circle4" cx="421" cy="80" r="3"></circle>
+        <circle class="electrons" id="circle5" cx="415" cy="160" r="3"></circle>
+        <circle class="electrons" id="circle6" cx="410" cy="100" r="3"></circle>
+        <circle class="electrons" id="circle7" cx="410" cy="80" r="3"></circle>
+        <circle class="electrons" id="circle8" cx="415" cy="50" r="3"></circle>
+        <circle class="electrons" id="circle9" cx="420" cy="70" r="3"></circle>
+        <circle class="electrons" id="circle10" cx="415" cy="30" r="3"></circle>
+        <circle class="electrons" id="circle11" cx="425" cy="130" r="3"></circle>
+        <circle class="electrons" id="circle12" cx="415" cy="150" r="3"></circle>
+        <circle class="electrons" id="circle13" cx="410" cy="110" r="3"></circle>
+        <circle class="electrons" id="circle14" cx="415" cy="150" r="3"></circle>
         <!-- electrons on the left of the screen -->
-        <circle class="electrons" id="circle15" cx="470" cy="170" r="3"></circle><circle class="electrons" id="circle16" cx="482" cy="140" r="3"></circle>
-        <circle class="electrons" id="circle17" cx="478" cy="190" r="3"></circle><circle class="electrons" id="circle18" cx="481" cy="100" r="3"></circle>
-        <circle class="electrons" id="circle19" cx="475" cy="200" r="3"></circle><circle class="electrons" id="circle20" cx="470" cy="120" r="3"></circle>
-        <circle class="electrons" id="circle21" cx="470" cy="110" r="3"></circle><circle class="electrons" id="circle22" cx="475" cy="70" r="3"></circle>
-        <circle class="electrons" id="circle23" cx="480" cy="100" r="3"></circle><circle class="electrons" id="circle24" cx="475" cy="50" r="3"></circle>
-        <circle class="electrons" id="circle25" cx="485" cy="150" r="3"></circle><circle class="electrons" id="circle26" cx="480" cy="170" r="3"></circle>
-        <circle class="electrons" id="circle27" cx="470" cy="130" r="3"></circle><circle class="electrons" id="circle28" cx="470" cy="170" r="3"></circle>
+        <circle class="electrons" id="circle15" cx="470" cy="170" r="3"></circle>
+        <circle class="electrons" id="circle16" cx="482" cy="140" r="3"></circle>
+        <circle class="electrons" id="circle17" cx="478" cy="190" r="3"></circle>
+        <circle class="electrons" id="circle18" cx="481" cy="100" r="3"></circle>
+        <circle class="electrons" id="circle19" cx="475" cy="200" r="3"></circle>
+        <circle class="electrons" id="circle20" cx="470" cy="120" r="3"></circle>
+        <circle class="electrons" id="circle21" cx="470" cy="110" r="3"></circle>
+        <circle class="electrons" id="circle22" cx="475" cy="70" r="3"></circle>
+        <circle class="electrons" id="circle23" cx="480" cy="100" r="3"></circle>
+        <circle class="electrons" id="circle24" cx="475" cy="50" r="3"></circle>
+        <circle class="electrons" id="circle25" cx="485" cy="150" r="3"></circle>
+        <circle class="electrons" id="circle26" cx="480" cy="170" r="3"></circle>
+        <circle class="electrons" id="circle27" cx="470" cy="130" r="3"></circle>
+        <circle class="electrons" id="circle28" cx="470" cy="170" r="3"></circle>
         <!-- electrons on the middle of the screen -->
-        <circle class="electrons" id="circle29" cx="540" cy="190" r="3"></circle><circle class="electrons" id="circle30" cx="552" cy="160" r="3"></circle>
-        <circle class="electrons" id="circle31" cx="548" cy="210" r="3"></circle><circle class="electrons" id="circle32" cx="551" cy="120" r="3"></circle>
-        <circle class="electrons" id="circle33" cx="545" cy="220" r="3"></circle><circle class="electrons" id="circle34" cx="540" cy="140" r="3"></circle>
-        <circle class="electrons" id="circle35" cx="540" cy="130" r="3"></circle><circle class="electrons" id="circle36" cx="545" cy="90" r="3"></circle>
-        <circle class="electrons" id="circle37" cx="550" cy="120" r="3"></circle><circle class="electrons" id="circle38" cx="545" cy="70" r="3"></circle>
-        <circle class="electrons" id="circle39" cx="545" cy="170" r="3"></circle><circle class="electrons" id="circle40" cx="550" cy="190" r="3"></circle>
-        <circle class="electrons" id="circle41" cx="540" cy="150" r="3"></circle><circle class="electrons" id="circle42" cx="540" cy="90" r="3"></circle>
-        <circle class="electrons" id="circle43" cx="540" cy="180" r="3"></circle><circle class="electrons" id="circle44" cx="545" cy="250" r="3"></circle>
-        <circle class="electrons" id="circle45" cx="550" cy="200" r="3"></circle><circle class="electrons" id="circle46" cx="545" cy="230" r="3"></circle>
-        <circle class="electrons" id="circle47" cx="545" cy="290" r="3"></circle><circle class="electrons" id="circle48" cx="550" cy="260" r="3"></circle>
-        <circle class="electrons" id="circle49" cx="540" cy="190" r="3"></circle><circle class="electrons" id="circle50" cx="540" cy="275" r="3"></circle>
+        <circle class="electrons" id="circle29" cx="540" cy="190" r="3"></circle>
+        <circle class="electrons" id="circle30" cx="552" cy="160" r="3"></circle>
+        <circle class="electrons" id="circle31" cx="548" cy="210" r="3"></circle>
+        <circle class="electrons" id="circle32" cx="551" cy="120" r="3"></circle>
+        <circle class="electrons" id="circle33" cx="545" cy="220" r="3"></circle>
+        <circle class="electrons" id="circle34" cx="540" cy="140" r="3"></circle>
+        <circle class="electrons" id="circle35" cx="540" cy="130" r="3"></circle>
+        <circle class="electrons" id="circle36" cx="545" cy="90" r="3"></circle>
+        <circle class="electrons" id="circle37" cx="550" cy="120" r="3"></circle>
+        <circle class="electrons" id="circle38" cx="545" cy="70" r="3"></circle>
+        <circle class="electrons" id="circle39" cx="545" cy="170" r="3"></circle>
+        <circle class="electrons" id="circle40" cx="550" cy="190" r="3"></circle>
+        <circle class="electrons" id="circle41" cx="540" cy="150" r="3"></circle>
+        <circle class="electrons" id="circle42" cx="540" cy="90" r="3"></circle>
+        <circle class="electrons" id="circle43" cx="540" cy="180" r="3"></circle>
+        <circle class="electrons" id="circle44" cx="545" cy="250" r="3"></circle>
+        <circle class="electrons" id="circle45" cx="550" cy="200" r="3"></circle>
+        <circle class="electrons" id="circle46" cx="545" cy="230" r="3"></circle>
+        <circle class="electrons" id="circle47" cx="545" cy="290" r="3"></circle>
+        <circle class="electrons" id="circle48" cx="550" cy="260" r="3"></circle>
+        <circle class="electrons" id="circle49" cx="540" cy="190" r="3"></circle>
+        <circle class="electrons" id="circle50" cx="540" cy="275" r="3"></circle>
         <!-- electrons on the right of the screen -->
-        <circle class="electrons" id="circle51" cx="600" cy="220" r="3"></circle><circle class="electrons" id="circle52" cx="612" cy="190" r="3"></circle>
-        <circle class="electrons" id="circle53" cx="608" cy="240" r="3"></circle><circle class="electrons" id="circle54" cx="611" cy="150" r="3"></circle>
-        <circle class="electrons" id="circle55" cx="605" cy="250" r="3"></circle><circle class="electrons" id="circle56" cx="600" cy="170" r="3"></circle>
-        <circle class="electrons" id="circle57" cx="600" cy="160" r="3"></circle><circle class="electrons" id="circle58" cx="605" cy="120" r="3"></circle>
-        <circle class="electrons" id="circle59" cx="610" cy="150" r="3"></circle><circle class="electrons" id="circle60" cx="605" cy="100" r="3"></circle>
-        <circle class="electrons" id="circle61" cx="605" cy="200" r="3"></circle><circle class="electrons" id="circle62" cx="610" cy="220" r="3"></circle>
-        <circle class="electrons" id="circle63" cx="600" cy="180" r="3"></circle><circle class="electrons" id="circle64" cx="600" cy="120" r="3"></circle>
-        <circle class="electrons" id="circle65" cx="605" cy="210" r="3"></circle><circle class="electrons" id="circle66" cx="605" cy="280" r="3"></circle>
-        <circle class="electrons" id="circle67" cx="620" cy="230" r="3"></circle><circle class="electrons" id="circle68" cx="605" cy="260" r="3"></circle>
-        <circle class="electrons" id="circle69" cx="605" cy="320" r="3"></circle><circle class="electrons" id="circle70" cx="610" cy="310" r="3"></circle>
-        <circle class="electrons" id="circle71" cx="600" cy="220" r="3"></circle><circle class="electrons" id="circle72" cx="600" cy="305" r="3"></circle>
+        <circle class="electrons" id="circle51" cx="600" cy="220" r="3"></circle>
+        <circle class="electrons" id="circle52" cx="612" cy="190" r="3"></circle>
+        <circle class="electrons" id="circle53" cx="608" cy="240" r="3"></circle>
+        <circle class="electrons" id="circle54" cx="611" cy="150" r="3"></circle>
+        <circle class="electrons" id="circle55" cx="605" cy="250" r="3"></circle>
+        <circle class="electrons" id="circle56" cx="600" cy="170" r="3"></circle>
+        <circle class="electrons" id="circle57" cx="600" cy="160" r="3"></circle>
+        <circle class="electrons" id="circle58" cx="605" cy="120" r="3"></circle>
+        <circle class="electrons" id="circle59" cx="610" cy="150" r="3"></circle>
+        <circle class="electrons" id="circle60" cx="605" cy="100" r="3"></circle>
+        <circle class="electrons" id="circle61" cx="605" cy="200" r="3"></circle>
+        <circle class="electrons" id="circle62" cx="610" cy="220" r="3"></circle>
+        <circle class="electrons" id="circle63" cx="600" cy="180" r="3"></circle>
+        <circle class="electrons" id="circle64" cx="600" cy="120" r="3"></circle>
+        <circle class="electrons" id="circle65" cx="605" cy="210" r="3"></circle>
+        <circle class="electrons" id="circle66" cx="605" cy="280" r="3"></circle>
+        <circle class="electrons" id="circle67" cx="620" cy="230" r="3"></circle>
+        <circle class="electrons" id="circle68" cx="605" cy="260" r="3"></circle>
+        <circle class="electrons" id="circle69" cx="605" cy="320" r="3"></circle>
+        <circle class="electrons" id="circle70" cx="610" cy="310" r="3"></circle>
+        <circle class="electrons" id="circle71" cx="600" cy="220" r="3"></circle>
+        <circle class="electrons" id="circle72" cx="600" cy="305" r="3"></circle>
         <!-- electrons on the extrem right of the screen -->
-        <circle class="electrons" id="circle73" cx="670" cy="240" r="3"></circle><circle class="electrons" id="circle74" cx="682" cy="210" r="3"></circle>
-        <circle class="electrons" id="circle75" cx="678" cy="260" r="3"></circle><circle class="electrons" id="circle76" cx="681" cy="170" r="3"></circle>
-        <circle class="electrons" id="circle77" cx="675" cy="270" r="3"></circle><circle class="electrons" id="circle78" cx="670" cy="190" r="3"></circle>
-        <circle class="electrons" id="circle79" cx="670" cy="180" r="3"></circle><circle class="electrons" id="circle80" cx="675" cy="140" r="3"></circle>
-        <circle class="electrons" id="circle81" cx="680" cy="170" r="3"></circle><circle class="electrons" id="circle82" cx="675" cy="120" r="3"></circle>
-        <circle class="electrons" id="circle83" cx="675" cy="220" r="3"></circle><circle class="electrons" id="circle84" cx="680" cy="240" r="3"></circle>
-        <circle class="electrons" id="circle85" cx="670" cy="200" r="3"></circle><circle class="electrons" id="circle86" cx="670" cy="150" r="3"></circle>
-        <circle class="electrons" id="circle87" cx="670" cy="230" r="3"></circle><circle class="electrons" id="circle88" cx="675" cy="300" r="3"></circle>
-        <circle class="electrons" id="circle89" cx="680" cy="250" r="3"></circle><circle class="electrons" id="circle90" cx="675" cy="280" r="3"></circle>
-        <circle class="electrons" id="circle91" cx="675" cy="340" r="3"></circle><circle class="electrons" id="circle92" cx="680" cy="310" r="3"></circle>
-        <circle class="electrons" id="circle93" cx="670" cy="240" r="3"></circle><circle class="electrons" id="circle94" cx="670" cy="325" r="3"></circle>
+        <circle class="electrons" id="circle73" cx="670" cy="240" r="3"></circle>
+        <circle class="electrons" id="circle74" cx="682" cy="210" r="3"></circle>
+        <circle class="electrons" id="circle75" cx="678" cy="260" r="3"></circle>
+        <circle class="electrons" id="circle76" cx="681" cy="170" r="3"></circle>
+        <circle class="electrons" id="circle77" cx="675" cy="270" r="3"></circle>
+        <circle class="electrons" id="circle78" cx="670" cy="190" r="3"></circle>
+        <circle class="electrons" id="circle79" cx="670" cy="180" r="3"></circle>
+        <circle class="electrons" id="circle80" cx="675" cy="140" r="3"></circle>
+        <circle class="electrons" id="circle81" cx="680" cy="170" r="3"></circle>
+        <circle class="electrons" id="circle82" cx="675" cy="120" r="3"></circle>
+        <circle class="electrons" id="circle83" cx="675" cy="220" r="3"></circle>
+        <circle class="electrons" id="circle84" cx="680" cy="240" r="3"></circle>
+        <circle class="electrons" id="circle85" cx="670" cy="200" r="3"></circle>
+        <circle class="electrons" id="circle86" cx="670" cy="150" r="3"></circle>
+        <circle class="electrons" id="circle87" cx="670" cy="230" r="3"></circle>
+        <circle class="electrons" id="circle88" cx="675" cy="300" r="3"></circle>
+        <circle class="electrons" id="circle89" cx="680" cy="250" r="3"></circle>
+        <circle class="electrons" id="circle90" cx="675" cy="280" r="3"></circle>
+        <circle class="electrons" id="circle91" cx="675" cy="340" r="3"></circle>
+        <circle class="electrons" id="circle92" cx="680" cy="310" r="3"></circle>
+        <circle class="electrons" id="circle93" cx="670" cy="240" r="3"></circle>
+        <circle class="electrons" id="circle94" cx="670" cy="325" r="3"></circle>
     </svg>
     <section id="buttons">
         <a class="animButtons" id="startAnimation" type="button">Lancer L'animation</a>
@@ -152,74 +224,61 @@
     <img src="pics/arrow-down.svg" alt="arrow down icon" id="arrowInstruction">
     <section id="content">
         <p id="mainContent">
-            Les fentes de Young (ou interférences de Young) désignent en physique une expérience qui 
-            consiste à faire interférer deux faisceaux de lumière issus d'une même source, en les faisant passer 
-            par deux petits trous percés dans un plan opaque. 
+            Les fentes de Young (ou interférences de Young) désignent en physique une expérience qui
+            consiste à faire interférer deux faisceaux de lumière issus d'une même source, en les faisant passer
+            par deux petits trous percés dans un plan opaque.
             <br> <br>
-            Cette expérience fut réalisée pour la première fois par Thomas Young en 1801 et permit de 
-            comprendre le comportement et la nature de la lumière. 
+            Cette expérience fut réalisée pour la première fois par Thomas Young en 1801 et permit de
+            comprendre le comportement et la nature de la lumière.
             <br> <br>
-            Sur un écran disposé en face des fentes de Young, on observe un motif de diffraction qui est une zone 
+            Sur un écran disposé en face des fentes de Young, on observe un motif de diffraction qui est une zone
             où s'alternent des franges sombres et illuminées. Le creux des vagues représente les parties somrbres,
             et les pics représente les parties illuminées.
         </p>
         <img src="pics/waveYoung.svg" alt="young's slits wave illustration">
     </section>
-<script type="text/javascript" src="script/darkMode.js"></script>
-<script type="text/javascript" src="script/menu.js"></script>
-<script type="text/javascript" src="script/fentesYoung.js"></script>
-<script type="text/javascript" src="script/scroll.js"></script>
+    <script type="text/javascript" src="./script/darkMode.js"></script>
+    <script type="text/javascript" src="./script/menu.js"></script>
+    <script type="text/javascript" src="./script/fentesYoung.js"></script>
+    <script type="text/javascript" src="./script/scroll.js"></script>
 </body>
 <footer>
-    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#59acff" fill-opacity="1" d="M0,64L120,74.7C240,85,480,107,720,112C960,117,1200,107,1320,101.3L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-    <text class="footerHeader" x="150" y="170">CREATEURS</text>
-    <text x="150" y="200">Ce site a été créé par</text>
-    <a href="https://github.com/jujutagad333">
-        <text class="links" x="150" y="225">@jujutagad333</text>
-    </a>
-    <text x="150" y="250">
-        et <a class="links" href="https://github.com/eli-ott">@eli-ott</a>
-    </text>
-    <text class="footerHeader" x="650" y="170">CONTACTEZ-NOUS</text>
-    <text x="650" y ="200">Vous voulez partager votre opinion </text>
-    <text x="650" y="225">à propos de se site, contactez-nous : </text>
-    <a href="mailto:eliottbidault@gmail.com">
-        <text class="links" x="650" y="250">eliottbidault@gmail.com</text>
-    </a>
-
-    <text class="footerHeader" x="1150" y="170">LANGAGE</text>
-    <text x="1150" y="200">Choissisez un langage : </text>
-    <!-- french flag -->
-    <svg id="frenchFlag" class="flags">
-        <rect x="1150" y="225" width="30" height="21" fill="#ED2939"/>
-        <rect x="1150" y="225" width="20" height="21" fill="#fff"/>
-        <rect x="1150" y="225" width="10" height="21" fill="#002395"/>
-    </svg>
-    <!-- english flag -->
-    <svg id="englishFlag" class="flags" x="1200" y="225" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40" width="31.333" height="21.333">
-        <defs><clipPath id="t"><path d="M30,15H60V30zM30,15V30H0zM30,15H0V0zM30,15V0H60z"/></clipPath></defs>
-        <rect width="60" height="40" style="fill:#00247d"/>
-        <g style="stroke:#ffffff;stroke-width:6.93225527;fill:none">
-            <path d="M0,0L60,40M60,0L0,40"/>
-            <path d="M0,0L60,30M60,0L0,30" style="stroke:#cf142b;stroke-width:4" clip-path="url(#t)" transform="scale(1,1.3333333)"/>
-            <path d="M30,0V40M0,20H60" style="stroke-width:11.55375878"/>
-            <path d="M30,0V40M0,20H60" style="stroke:#cf142b"/>
-        </g>
-    </svg>
-    <!-- spanish flag -->
-    <svg id="spanishFlag" class="flags" x="1250" y="225">
-        <rect width="33.333" height="7.111" y="0" fill="#c60b1e"/>
-        <rect width="33.333" height="8.111" y="6.111" fill="#ffc400"/>
-        <rect width="33.333" height="7.111" y="14.222" fill="#c60b1e"/>
-    </svg>
-    <!-- german flag -->
-    <svg id="germanFlag" class="flags" x="1300" y="225" width="33.333" height="25" viewBox="0 0 5 3">
-        <rect id="black_stripe" width="5" height="3" y="0" x="0" fill="#000"/>
-        <rect id="red_stripe" width="5" height="2" y="1" x="0" fill="#D00"/>
-        <rect id="gold_stripe" width="5" height="1" y="2" x="0" fill="#FFCE00"/>
-    </svg>    
-</svg>
-<script type="text/javascript" src="script/translation.js"></script>
+    <div id="content">
+        <div>
+            <p class="footerHeader">
+                Créateurs :
+            </p>
+            <p class="footerText">
+                Ce site a été créé par <br> <a href="https://github.com/eli-ott">@eli-ott</a> et <a
+                    href="https://github.com/jujutagad333">@jujutagad333</a>
+            </p>
+        </div>
+        <div>
+            <p class="footerHeader">
+                Contactez-nous :
+            </p>
+            <p class="footerText">
+                Pour plus d'information sur le site ou pour un contact profesionnel
+                vous pouvez envoyer un mail à l'adresse suivante : <br>
+                <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>
+            </p>
+        </div>
+        <div>
+            <p class="footerHeader">
+                Langue :
+            </p>
+            <p class="footerText">
+                Changer la langue :
+            <div id="allFlags">
+                <img src="./pics/franceFlag.svg" alt="french flag" class="flags" id="frenchFlag">
+                <img src="./pics/englishFlag.svg" alt="english flag" class="flags" id="englishFlag">
+                <img src="./pics/spanishFlag.svg" alt="spanish flag" class="flags" id="spanishFlag">
+                <img src="./pics/germanFlag.svg" alt="german flag" class="flags" id="germanFlag">
+            </div>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script/translation.js"></script>
 </footer>
+
 </html>

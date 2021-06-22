@@ -1,54 +1,54 @@
-section#intro{
+section#intro {
     height: 100%;
     width: 100%;
 }
-p#topLeftHeader{
+p#topLeftHeader {
     position: absolute;
-    font-family: header, 'Courier New', Courier, monospace;
+    font-family: header, "Courier New", Courier, monospace;
 
     font-size: 15vh;
     top: 10vh;
     right: 25vw;
 }
-p#bottomRightHeader{
+p#bottomRightHeader {
     position: absolute;
     font-style: italic;
     text-decoration: underline var(--lightBlue);
-    
+
     font-size: 10vh;
     top: 35vh;
     right: 10vw;
 }
-svg#atom{
+svg#atom {
     position: fixed;
 
     z-index: -1;
     top: 20vh;
     left: 10vw;
 }
-section#content{
+section#content {
     position: absolute;
 
     width: 50%;
-    margin-top: 55%;
+    top: 90vh;
     right: 0;
 }
 section#content > p#mainContent {
     font-family: contentFont;
     font-size: 2vh;
 }
-img#arrowInstruction{
+img#arrowInstruction {
     position: absolute;
     background: none;
-    
+
     bottom: 3vh;
     margin: 2vh;
     opacity: 1;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     transform: scaleY(1.1);
     -webkit-transform: scaleY(1.1);
     -moz-transform: scaleY(1.1);
@@ -58,12 +58,47 @@ img#arrowInstruction{
     animation: bounceArrow 2s ease infinite;
     -webkit-animation: bounceArrow 2s ease infinite;
 }
-@keyframes bounceArrow{
-    0%{ bottom: 3vh; }
-    50%{ bottom: 0; }
-    90%{ bottom: 3vh; }
-    100%{ bottom: 3vh; }
+@keyframes bounceArrow {
+    0% {
+        bottom: 3vh;
+    }
+    50% {
+        bottom: 0;
+    }
+    90% {
+        bottom: 3vh;
+    }
+    100% {
+        bottom: 3vh;
+    }
 }
-footer{
+footer {
     top: 200%;
+}
+
+@media screen and (max-width: 1224px) {
+    p#topLeftHeader {
+        font-size: 10vh;
+        top: 0;
+        left: 1vw;
+    }
+    p#bottomRightHeader {
+        font-size: 8vh;
+        top: 15vh;
+        left: 10vw;
+    }
+    svg#atom {
+        display: none;
+    }
+    section#content {
+        width: 95vw;
+        margin: 2.5vw;
+        top: 40vh;
+    }
+    section ~ #content > p#mainContent {
+        font-size: 2.5vh;
+    }
+    img#arrowInstruction {
+        display: none;
+    }
 }
