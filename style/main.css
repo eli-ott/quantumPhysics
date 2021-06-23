@@ -57,8 +57,6 @@ img.themeIcon {
     -moz-border-radius: 100vh;
     -ms-border-radius: 100vh;
     -o-border-radius: 100vh;
-
-    background: var(--backgroundColor);
 }
 img.themeIcon:hover {
     transform: rotate(360deg);
@@ -94,8 +92,6 @@ svg#burger {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-
-    background: var(--backgroundColor);
 }
 p#mainContent {
     background: none;

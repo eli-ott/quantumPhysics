@@ -82,3 +82,38 @@ hr::after{
 footer {
     top: 200%;
 }
+@media screen and (max-width: 469px) {
+    p#title {
+        left: 2vh;
+    }
+    section#content {
+        margin-top: 100%;
+    }
+    div.left {
+        flex-flow: column wrap;
+        width: 100vw;
+    }
+    div.right {
+        flex-flow: column wrap;
+        width: 100vw;
+    }
+    p.descriptions {
+        width: 95vw;
+        margin: 5vh 2.5vw;
+    }
+    img#schrodingerFormula {
+        width: 50vh;
+    }
+    img#superpositionEquation {
+        width: 50vh;
+    }
+    hr {
+        width: 100vw;
+    }
+    hr::after {
+        margin-left: 46.5vw;
+    }
+    footer {
+        top: 275%;
+    }
+}

@@ -1,46 +1,50 @@
-p#title{
+p#title {
     position: absolute;
     font-family: header;
     cursor: default;
     text-decoration: underline var(--lightBlue);
 
-    letter-spacing: .35vh;
+    letter-spacing: 0.35vh;
     font-size: 8vh;
     top: 0;
     left: 25vh;
 }
-section#content{
+section#content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 100%;
+    width: 100vw;
     margin: 0;
     margin-top: 15%;
 }
-div.left{
+div.left {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-div.right{
+div.right {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-p.content{
+p.content {
     font-size: 1.85vh;
     line-height: 4vh;
     width: 50%;
     margin: 5vh;
 }
-canvas{
+canvas {
     cursor: grab;
     cursor: -moz-grab;
     cursor: -webkit-grab;
+
+    width: 500px;
+    height: 250px;
+
     background: var(--backgroundColor);
 }
 canvas:active {
@@ -48,7 +52,7 @@ canvas:active {
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
 }
-hr{
+hr {
     border: none;
 
     width: 75vh;
@@ -58,21 +62,68 @@ hr{
 
     background: var(--color);
 }
-hr::after{
+hr::after {
     position: absolute;
 
     margin-top: -17.5px;
     margin-left: 36vh;
     width: 35px;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 
     background: var(--backgroundColor);
     content: url(../pics/atomHr.svg);
 }
-footer{
+footer {
     top: 400%;
+}
+@media screen and (max-width: 469px) {
+    p#title {
+        left: 1.5vh;
+    }
+    section#content {
+        flex-flow: column wrap;
+
+        margin-top: 75%;
+        margin-left: 0;
+    } 
+    div.right {
+        flex-flow: column wrap;
+    }
+    div.left {
+        flex-flow: column wrap;
+    }
+    p.content {
+        font-size: 2.25vh;
+        width: 95vw;
+        margin: 2vh 2.5vw;
+    }
+    canvas {
+        margin-left: -75px;
+    }
+    hr {
+        width: 100vw;
+        margin-left: 0;
+    }
+    hr::after {
+        margin-left: 46.5vw;
+    }
+    footer {
+        top: 725%;
+    }
+}
+@media screen and (min-width: 470px) and (max-width: 769px) {
+    p#title {
+        left: 3vh;
+    }
+    section#content {
+        margin-top: 30%;
+    } 
+    hr {
+        width: 100vw;
+        margin-left: 0;
+    }
 }
