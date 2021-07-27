@@ -13,12 +13,13 @@ const darkMode = () => {
     $(".mediumOrbitAtom").attr("fill", "#fcffeb");
     $("#core").attr("fill", "#fcffeb");
     $("#arrowInstruction").css("filter", "invert(100%)");
+    $(".equations").css("filter", "invert(100%)");
 
     //we change the moon icon for the sun
     $("#moon").fadeOut(250);
     setTimeout(() => { $("#moon").attr("src", "pics/sun.svg"); }, 250);
     $("#moon").fadeIn(250);
-    setTimeout(() => { $("#moon").attr("onclick", "lightMode()"); $("#moon").attr("id", "sun");}, 770);
+    setTimeout(() => { $("#moon").attr("onclick", "lightMode()"); $("#moon").attr("id", "sun"); }, 770);
 
     //we set a localStorage to remember the prefered theme by the user
     localStorage.setItem("theme", "dark");
@@ -39,6 +40,7 @@ const lightMode = () => {
     $(".mediumOrbitAtom").attr("fill", "#242424");
     $("#core").attr("fill", "#242424");
     $("#arrowInstruction").css("filter", "invert(0%)");
+    $(".equations").css("filter", "invert(0%)");
 
     //we change the sun icon for a moon icon 
     $("#sun").fadeOut(250);
@@ -51,4 +53,4 @@ const lightMode = () => {
 }
 
 //we check if the user has already choose between the dark and light mode to swith
-localStorage.getItem("theme") == "dark"? darkMode(): lightMode();
+localStorage.getItem("theme") == "dark" ? darkMode() : lightMode();
