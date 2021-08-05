@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/landingPage.css">
+    <link rel="stylesheet" href="./style/famousFormula.css">
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/footer.css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <title>Physique Quantique</title>
 </head>
 
@@ -57,63 +55,24 @@
             <a href="#">Les grandes figures</a>
             <a href="#">Principe d'incertitude</a>
             <a href="fentesYoung.html">Fentes d'Young</a>
-            <a href="ondeCorpuscule.html">Dualité onde-corpuscule</a>
-            <a href="famousFormula.html">Formules célèbres</a>
+            <a href="#">Dualité onde-corpuscule</a>
+            <a href="fentesYoung.html">Fentes d'Young</a>
         </div>
     </nav>
-    <section id="intro">
-        <p id="topLeftHeader">
-            Physique
-        </p>
-        <p id="bottomRightHeader">
-            Quantique
-        </p>
-        <!-- atom design -->
-        <svg id="atom" height="500" width="500">
-            <!-- large orbit and it's atoms  -->
-            <circle class="orbits" cx="250" cy="250" r="200" stroke-width="1" fill="none"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="50" cy="250" r="7" stroke-width="1"
-                fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="450" cy="250" r="7" stroke-width="1"
-                fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="250" cy="50" r="7" stroke-width="1"
-                fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="largeOrbitAtom" cx="250" cy="450" r="7" stroke-width="1"
-                fill="#242424"></circle>
-            <!-- medium orbit and it's atoms -->
-            <circle class="orbits" cx="250" cy="250" r="100" stroke-width="1" fill="none"></circle>
-            <circle transform="rotate(0, 250, 250)" class="mediumOrbitAtom" cx="180" cy="320" r="7" stroke-width="1"
-                fill="#242424"></circle>
-            <circle transform="rotate(0, 250, 250)" class="mediumOrbitAtom" cx="320" cy="180" r="7" stroke-width="1"
-                fill="#242424"></circle>
-            <!-- core of the atom -->
-            <circle id="core" cx="250" cy="250" r="10" stroke-width="1" fill="#242424"></circle>
-        </svg>
-    </section>
+
+    <p id="title">
+        Dualité onde-corpuscule
+    </p>
+
     <section id="content">
-        <p id="mainContent">
-            La physique quantique est l'appellation générale d'un ensemble de théories physiques nées au XXe
-            siècle qui décrivent le comportement des atomes et des particules et permettent d'élucider
-            certaines propriétés du rayonnement électromagnétique.
-            <br><br>
-            La physique quantique recouvre l'ensemble
-            des domaines de la physique où l'utilisation des lois de la mécanique quantique est une nécessité
-            pour comprendre les phénomènes en jeux.
-            <br><br>
-            La mécanique quantique est la théorie fondamentale des
-            particules de matière constituant les objets de l'univers et des champs de force animant ces objets.
-            <br><br>
-            Grâce à la physique quantique nous avons pu expliquer de nombreuses choses qui autrefois étaient
-            totalement inconnu. Par exemple l'énergie nucléaire ou même une toute nouvelle technologie, les
-            ordinateurs quantique. Ces deux exemples n'aurais jamais exister sans des connaissances précises
-            sur les atomes et leur fonctionnemment.
-        </p>
+        <canvas id="canvas"></canvas>
     </section>
-    <img src="pics/arrow-down.svg" alt="arrow down icon" id="arrowInstruction">
+
     <script type="text/javascript" src="./script/darkMode.js"></script>
     <script type="text/javascript" src="./script/menu.js"></script>
     <script type="text/javascript" src="./script/atomAnim.js"></script>
     <script type="text/javascript" src="./script/scroll.js"></script>
+    <script type="module" src="./script/ondeCorpuscule3D.js"></script>
 </body>
 <footer>
     <div id="content">
@@ -142,12 +101,12 @@
             </p>
             <p class="footerText">
                 Changer la langue :
-                <div id="allFlags">
-                    <img src="./pics/franceFlag.svg" alt="french flag" class="flags" id="frenchFlag">
-                    <img src="./pics/englishFlag.svg" alt="english flag" class="flags" id="englishFlag">
-                    <img src="./pics/spanishFlag.svg" alt="spanish flag" class="flags" id="spanishFlag">
-                    <img src="./pics/germanFlag.svg" alt="german flag" class="flags" id="germanFlag">
-                </div>
+            <div id="allFlags">
+                <img src="./pics/franceFlag.svg" alt="french flag" class="flags" id="frenchFlag">
+                <img src="./pics/englishFlag.svg" alt="english flag" class="flags" id="englishFlag">
+                <img src="./pics/spanishFlag.svg" alt="spanish flag" class="flags" id="spanishFlag">
+                <img src="./pics/germanFlag.svg" alt="german flag" class="flags" id="germanFlag">
+            </div>
             </p>
         </div>
     </div>

@@ -668,7 +668,7 @@ const changeLanguage = () => {
                 $("#linksParent a")[2].innerHTML = "Les grandes figures";
                 $("#linksParent a")[3].innerHTML = "Principe d'incertitude";
                 $("#linksParent a")[4].innerHTML = "Dualité onde-corpuscule";
-                $("#linksParent a")[5].innerHTML = "Formules célèbres";
+                $("#linksParent a")[5].innerHTML = "fentes d'Young";
 
                 $("#frenchFlag").trigger("click");
             } else if (localStorage.getItem("language") === "english") {
@@ -685,7 +685,7 @@ const changeLanguage = () => {
                 $("#linksParent a")[2].innerHTML = "The great figures";
                 $("#linksParent a")[3].innerHTML = "Uncertainty principle";
                 $("#linksParent a")[4].innerHTML = "Wave-particle duality";
-                $("#linksParent a")[5].innerHTML = "Famous formula";
+                $("#linksParent a")[5].innerHTML = "Young's slits";
 
                 $("#englishFalg").trigger("click");
             } else if (localStorage.getItem("language") === "spanish") {
@@ -702,7 +702,7 @@ const changeLanguage = () => {
                 $("#linksParent a")[2].innerHTML = "Las grandes figuras";
                 $("#linksParent a")[3].innerHTML = "Principio de incertidumbre";
                 $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
-                $("#linksParent a")[5].innerHTML = "Fórmula famosa";
+                $("#linksParent a")[5].innerHTML = "Hendiduras de Young";
 
                 $("#spanishFlag").trigger("click");
             } else if (localStorage.getItem("language") === "german") {
@@ -719,7 +719,7 @@ const changeLanguage = () => {
                 $("#linksParent a")[2].innerHTML = "Die tollen Figuren";
                 $("#linksParent a")[3].innerHTML = "Prinzip der Unsicherheit";
                 $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
-                $("#linksParent a")[5].innerHTML = "Berühmte Formeln";
+                $("#linksParent a")[5].innerHTML = "Youngs Schlitze";
 
                 $("#germanFlag").trigger("click");
             }
