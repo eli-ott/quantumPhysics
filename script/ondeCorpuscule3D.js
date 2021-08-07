@@ -25,7 +25,7 @@ const ambient = new THREE.AmbientLight(0xcecece, 0.5);
 ambient.position.set(1, 0, 0);
 scene.add(ambient);
 
-const blueLight = new THREE.DirectionalLight(0x55baf9, 1.5);
+const blueLight = new THREE.DirectionalLight(0x59acff, 1.5);
 blueLight.castShadow = true;
 blueLight.shadowDarkness = 0.5;
 blueLight.shadowCameraVisible = true;
@@ -35,7 +35,7 @@ blueLight.shadowCameraTop = 5;
 blueLight.shadowCameraBottom = -5;
 blueLight.position.set(0, 0, 5);
 
-const redLight = new THREE.DirectionalLight(0xff5c5c, 1.5);
+const redLight = new THREE.DirectionalLight(0xff6c4b, 1.5);
 redLight.castShadow = true;
 redLight.shadowDarkness = 0.5;
 redLight.shadowCameraVisible = true;

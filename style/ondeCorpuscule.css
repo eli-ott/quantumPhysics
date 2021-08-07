@@ -1,0 +1,35 @@
+section#content {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+
+    top: 30%;
+}
+
+section#content > img#move {
+    position: absolute;
+
+    right: 400px;
+    margin-top: -25%;
+    width: 2vh;
+}
+section#content > canvas {
+    cursor: grab;
+    background: none;
+    
+    width: 45%;
+}
+section#content > canvas:active {
+    cursor: grabbing;
+}
+section#content > p#mainContent {
+    background: none;
+
+    width: 45%;
+}
+
+footer {
+    top: 125%;
+}

@@ -15,7 +15,7 @@ section#content {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 100vw;
+    width: 100%;
     margin: 0;
     margin-top: 15%;
 }
@@ -34,7 +34,7 @@ div.right {
 p.content {
     font-size: 1.85vh;
     line-height: 4vh;
-    width: 50%;
+    width: 45%;
     margin: 5vh;
 }
 canvas {

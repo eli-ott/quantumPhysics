@@ -5,18 +5,6 @@ img#moon {
     left: 0;
     margin: 1vh;
 }
-p#title {
-    position: absolute;
-    cursor: default;
-    font-family: header;
-
-    letter-spacing: 0.35vh;
-    font-size: 8vh;
-    top: 0;
-    left: 25vh;
-
-    text-decoration: underline var(--lightBlue);
-}
 div.left {
     display: flex;
     flex-flow: row wrap;

@@ -188,7 +188,6 @@ const dalton = () => {
     }
     requestAnimationFrame(render);
 }
-dalton();
 
 const thomson = () => {
     const canvas = document.querySelector('#thomsonAtom');
@@ -246,7 +245,6 @@ const thomson = () => {
     }
     requestAnimationFrame(render);
 }
-thomson();
 
 const rutherford = () => {
     const canvas = document.querySelector('#rutherfordAtom');
@@ -332,7 +330,6 @@ const rutherford = () => {
     }
     requestAnimationFrame(electronsAnim);
 }
-rutherford();
 
 const bohr = () => {
     const canvas = document.querySelector('#bohrAtom');
@@ -436,4 +433,18 @@ const bohr = () => {
     }
     requestAnimationFrame(valenceElectronsAnim);
 }
-bohr();
+
+$(window).on("scroll", () => {
+    if (window.pageYOffset >= 250) {
+        dalton();
+    } 
+    if (window.pageYOffset >= 650) {
+        thomson();
+    } 
+    if (window.pageYOffset >= 850) {
+        rutherford();
+    } 
+    if (window.pageYOffset >= 1150) {
+        bohr();
+    }
+});
