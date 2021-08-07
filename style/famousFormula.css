@@ -1,3 +1,14 @@
+p#title {
+    position: absolute;
+    font-family: header;
+    cursor: default;
+    text-decoration: underline var(--lightBlue);
+
+    letter-spacing: 0.35vh;
+    font-size: 8vh;
+    top: 0;
+    left: 25vh;
+}
 img#moon {
     position: absolute;
 
