@@ -1,0 +1,51 @@
+p#title {
+    position: absolute;
+    font-family: header;
+    cursor: default;
+    text-decoration: underline var(--lightBlue);
+
+    letter-spacing: 0.35vh;
+    font-size: 8vh;
+    top: 0;
+    left: 25vh;
+}
+
+div#popup {
+    position: absolute;
+    
+    bottom: 1vh;
+    right: -40%;
+    padding: 0 1vh;
+    width: 37.5%;
+    height: 10.5%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+    background: var(--lightBlue);
+    animation: popupAppear .5s 0.5s ease-out forwards, popupHide .5s 5s ease-in forwards;
+    -webkit-animation: popupAppear .5s 0.5s ease-out forwards, popupHide .5s 5s ease-in forwards;
+}
+
+@keyframes popupAppear {
+    from {
+        right: -40%;
+    }
+    to {
+        right: 1vh;
+    }
+}
+@keyframes popupHide {
+    from {
+        right: 1vh;
+    }
+    to {
+        right: -40%;
+    }
+}
+
+footer {
+    top: 150%;
+}

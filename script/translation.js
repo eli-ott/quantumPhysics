@@ -294,6 +294,64 @@ const allText = {
             <br> <br>
             Es kann aber auch für seinen Zustand (erregt und nicht erregt), seinen Spin usw.`
         }
+    },
+    ondeCorpuscule: {
+        french: `En physique quantique une particule peut être représentée de deux différentes façons:
+        soit par une onde, soit par une particule. <br> Pour expliquer cela prenons l'exemple d'à côté.
+        Sur ce modèle 3D on peut observer un cylindre entouré de 2 murs. Sur ce murs on peut y voir 2
+        ombres, une prémière étant un carré, et une seconde étant un cercle, cela explique le fait qu'un objet (ici
+        un cylindre) puisse avoir deux.
+        façons différentes d'être perçu (ici un carré et un cercle). Grâce à cette représentation on peut expliquer
+        le fait qu'une particule
+        avoir deux états (ou représentation), soit une onde, soit une particule. Mais ces deux états sont liés entre
+        eux.
+        <br><br>
+        Cette dualité permet d'expliquer certains phénomènes qui autrefois parrassait totalement illogique, comme
+        par exemple le fonctionnement de la lumière. La lumière a 2 états, onde et particule. La longueur d'onde de 
+        la lumière permet de "représenter" sa couleur. Et le photon (particule de la lumière) lui joue un rôle dans
+        les atomes en entrant en collision avec un électron et lui donnant ainsi de l'énergie. `,
+        english: `In quantum physics a particle can be represented in two different ways:
+        either by a wave or by a particle. <br> To explain this let's take the example next door.
+        On this 3D model we can observe a cylinder surrounded by 2 walls. On this wall we can see 2
+        shadows, a first being a square, and a second being a circle, this explains the fact that an object (here
+        one cylinder) can have two.
+        different ways of being perceived (here a square and a circle). Thanks to this representation we can explain
+        the fact that a particle
+        have two states (or representation), either a wave or a particle. But these two states are linked between
+        them.
+        <br> <br>
+        This duality makes it possible to explain certain phenomena which formerly seemed totally illogical, such as
+        for example the operation of light. Light has 2 states, wave and particle. The wavelength of
+        the light makes it possible to "represent" its color. And the photon (particle of light) plays a role in
+        atoms by colliding with an electron and thus giving it energy.`,
+        spanish: `En física cuántica, una partícula se puede representar de dos formas diferentes:
+        ya sea por una onda o por una partícula. <br> Para explicar esto, tomemos el ejemplo de al lado.
+        En este modelo 3D podemos observar un cilindro rodeado por 2 paredes. En esta pared podemos ver 2
+        sombras, una primera es un cuadrado y una segunda es un círculo, esto explica el hecho de que un objeto (aquí
+        un cilindro) puede tener dos.
+        diferentes formas de ser percibido (aquí un cuadrado y un círculo). Gracias a esta representación podemos explicar
+        el hecho de que una partícula
+        tienen dos estados (o representación), ya sea una onda o una partícula. Pero estos dos estados están vinculados entre
+        ellos.
+        <br> <br>
+        Esta dualidad permite explicar ciertos fenómenos que antes parecían totalmente ilógicos, como
+        por ejemplo, el funcionamiento de la luz. La luz tiene 2 estados, onda y partícula. La longitud de onda de
+        la luz permite "representar" su color. Y el fotón (partícula de luz) juega un papel en
+        átomos al chocar con un electrón y así darle energía.`,
+        german: `In der Quantenphysik kann ein Teilchen auf zwei verschiedene Arten dargestellt werden:
+        entweder durch eine Welle oder durch ein Teilchen. <br> Um dies zu erklären, nehmen wir das Beispiel nebenan.
+        Auf diesem 3D-Modell können wir einen von 2 Wänden umgebenen Zylinder beobachten. An dieser Wand sehen wir 2
+        Schatten, wobei ein erster ein Quadrat und ein zweiter ein Kreis ist, erklärt dies die Tatsache, dass ein Objekt (hier
+        ein Zylinder) kann zwei haben.
+        verschiedene Wahrnehmungsweisen (hier ein Quadrat und ein Kreis). Dank dieser Darstellung können wir erklären
+        die Tatsache, dass ein Teilchen
+        haben zwei Zustände (oder Darstellungen), entweder eine Welle oder ein Teilchen. Aber diese beiden Staaten sind miteinander verbunden
+        Ihnen.
+        <br> <br>
+        Diese Dualität macht es möglich, bestimmte Phänomene zu erklären, die früher völlig unlogisch erschienen, wie z
+        zum Beispiel der Betrieb von Licht. Licht hat 2 Zustände, Welle und Teilchen. Die Wellenlänge von
+        das Licht ermöglicht es, seine Farbe "darzustellen". Und das Photon (Lichtteilchen) spielt dabei eine Rolle
+        Atome, indem sie mit einem Elektron kollidieren und ihm so Energie geben.`
     }
 }
 
@@ -720,6 +778,65 @@ const changeLanguage = () => {
                 $("#linksParent a")[3].innerHTML = "Prinzip der Unsicherheit";
                 $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
                 $("#linksParent a")[5].innerHTML = "Youngs Schlitze";
+
+                $("#germanFlag").trigger("click");
+            }
+            break;
+        case '/ondeCorpuscule.html':
+            if(localStorage.getItem('language') === 'french') {
+                $("#title").html("Dualité onde-corpuscule");
+
+                $("#mainContent").html(allText.ondeCorpuscule.french);
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Accueil";
+                $("#linksParent a")[1].innerHTML = "Modèle de l'atome";
+                $("#linksParent a")[2].innerHTML = "Les grandes figures";
+                $("#linksParent a")[3].innerHTML = "Principe d'incertitude";
+                $("#linksParent a")[4].innerHTML = "Fentes d'Young";
+                $("#linksParent a")[5].innerHTML = "Formules célèbres";
+
+                $("#frenchFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "english") {
+                $("#title").html("Wave-particle duality");      
+
+                $("#mainContent").html(allText.ondeCorpuscule.english);
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Home";
+                $("#linksParent a")[1].innerHTML = "Atom model";
+                $("#linksParent a")[2].innerHTML = "The great figures";
+                $("#linksParent a")[3].innerHTML = "Uncertainty principle";
+                $("#linksParent a")[4].innerHTML = "Young's slits";
+                $("#linksParent a")[5].innerHTML = "Famous formulas";
+
+                $("#englishFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "spanish") {
+                $("#title").html("Dualidad onda-partícula");
+
+                $("#mainContent").html(allText.ondeCorpuscule.spanish);
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Hogar";
+                $("#linksParent a")[1].innerHTML = "Modelo de átomo";
+                $("#linksParent a")[2].innerHTML = "Las grandes figuras";
+                $("#linksParent a")[3].innerHTML = "Principio de incertidumbre";
+                $("#linksParent a")[4].innerHTML = "Hendiduras de Young";
+                $("#linksParent a")[5].innerHTML = "Formulas famosas";
+
+                $("#spanishFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "german") {
+                $("#title").html("Wave-particle duality");
+
+                $("#mainContent").html(allText.ondeCorpuscule.german);
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Zuhause";
+                $("#linksParent a")[1].innerHTML = "Atommodell";
+                $("#linksParent a")[2].innerHTML = "Die tollen Figuren";
+                $("#linksParent a")[3].innerHTML = "Prinzip der Unsicherheit";
+                $("#linksParent a")[4].innerHTML = "Youngs Schlitze";
+                $("#linksParent a")[5].innerHTML = "Berühmte Formeln";
 
                 $("#germanFlag").trigger("click");
             }
