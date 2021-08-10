@@ -10,9 +10,85 @@ p#title {
     left: 25vh;
 }
 
-div#popup {
+section#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 5%;
+}
+section#content > div.photos {
+    cursor: default;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 350px;
+    margin: 10% 10% 0 10%;
+}
+div.photosContentBackground {
     position: absolute;
+
+    height: 350px;
+    width: 325px;
+    margin-top: -15px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    background: var(--color);
+}
+div.photosContentBackground > h3{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+
+    font-weight: 200;
+    font-size: 3.5vh;
     
+    color: var(--backgroundColor);
+}
+div.photosContentBackground > p {
+    text-align: left;
+
+    margin: 1vh;
+    line-height: 3.75vh;
+    font-size: inherit;
+
+    color: var(--backgroundColor);
+}
+div.photosContentBackground a {
+    color: var(--backgroundColor);
+}
+div.photosContentBackground.deploy {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+div.photos > p {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline var(--color);
+
+    font-size: inherit;
+}
+
+div#popup {
+    position: fixed;
+
     bottom: 1vh;
     right: -40%;
     padding: 0 1vh;
@@ -25,8 +101,8 @@ div#popup {
     -o-border-radius: 15px;
 
     background: var(--lightBlue);
-    animation: popupAppear .5s 0.5s ease-out forwards, popupHide .5s 5s ease-in forwards;
-    -webkit-animation: popupAppear .5s 0.5s ease-out forwards, popupHide .5s 5s ease-in forwards;
+    animation: popupAppear 0.5s 0.5s ease-out forwards, popupHide 0.5s 5s ease-in forwards;
+    -webkit-animation: popupAppear 0.5s 0.5s ease-out forwards, popupHide 0.5s 5s ease-in forwards;
 }
 
 @keyframes popupAppear {
@@ -47,5 +123,5 @@ div#popup {
 }
 
 footer {
-    top: 150%;
+    top: 225%;
 }
