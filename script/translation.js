@@ -352,6 +352,124 @@ const allText = {
         zum Beispiel der Betrieb von Licht. Licht hat 2 Zustände, Welle und Teilchen. Die Wellenlänge von
         das Licht ermöglicht es, seine Farbe "darzustellen". Und das Photon (Lichtteilchen) spielt dabei eine Rolle
         Atome, indem sie mit einem Elektron kollidieren und ihm so Energie geben.`
+    },
+    greatFigures: {
+        planck: {
+            french: `Vous avez peut être déjà entendu de Max Planck pour sa célèbre constante (voir page<a
+                href="./famousFormula.html"> formules célèbres</a>). Il est trop connu dans le
+            monde de la physique quantique car il a poser comme principe que l'énergie de la lumière était
+            proportionnelle à sa fréquence. Cela a aidé Einstein a determiné l'éxistence des photons.`,
+            english: `You may have already heard of Max Planck for his famous constant (see page <a
+                href = "./ famousFormula.html"> famous formulas </a>). He is too well known in the
+            world of quantum physics because he assumed that the energy of light was
+            proportional to its frequency. This helped Einstein determine the existence of photons.`,
+            spanish: `Es posible que ya haya oído hablar de Max Planck por su famosa constante (consulte la página <a
+                href = "./ famousFormula.html"> fórmulas famosas </a>). Es demasiado conocido en el
+            mundo de la física cuántica porque asumió que la energía de la luz era
+            proporcional a su frecuencia. Esto ayudó a Einstein a determinar la existencia de fotones.`,
+            german: `Sie haben vielleicht schon von Max Planck für seine berühmte Konstante gehört (siehe Seite <a
+                href = "./ FamousFormula.html"> berühmte Formeln </a>). Er ist zu bekannt in der
+            Welt der Quantenphysik, weil er annahm, dass die Energie des Lichts
+            proportional zu seiner Frequenz. Dies half Einstein, die Existenz von Photonen zu bestimmen.`
+        },
+        schrodinger: {
+            french: `Erwin Scröedinger est l'une des personnes les plus connu en physique quantique grâce a la fameuse
+            expérience du <span style="font-style: italic;">Chat de Schrödeinger</span> où il s'upposait que son
+            chat pouvait être à la fois mort et vivant en même temps. Il est aussi très connu grâce a son
+            équation: <span style="font-style: italic;"> l'équation d'évolution de la fonction d'onde</span>
+            (ou <span style="font-style: italic;">équation de Schröedinger</span>).`,
+            english: `Erwin Scröedinger is one of the most famous people in quantum physics thanks to the famous
+            experience of the <span style = "font-style: italic;"> Schrödeinger's cat </span> where he assumed that his
+            cat could be both dead and alive at the same time. He is also very well known thanks to his
+            equation: <span style = "font-style: italic;"> the evolution equation of the wave function </span>
+            (or <span style = "font-style: italic;"> Schröedinger equation </span>).`,
+            spanish: `Erwin Scröedinger es una de las personas más famosas de la física cuántica gracias al famoso
+            experiencia del <span style = "font-style: italic;"> gato de Schrödeinger </span> donde asumió que su
+            El gato puede estar vivo y muerto al mismo tiempo. También es muy conocido gracias a su
+            ecuación: <span style = "font-style: italic;"> la ecuación de evolución de la función de onda </span>
+            (o <span style = "font-style: italic;"> ecuación de Schröedinger </span>).`,
+            german: `Erwin Scröedinger ist dank des berühmten
+            Erfahrung mit <span style = "font-style: italic;"> Schrödeingers Katze </span> wo er annahm, dass seine
+            Katze kann gleichzeitig tot und lebendig sein. Er ist auch sehr bekannt dank seiner
+            Gleichung: <span style = "font-style: italic;"> die Evolutionsgleichung der Wellenfunktion </span>
+            (oder <span style = "font-style: italic;"> Schröedinger-Gleichung </span>).`
+        },
+        bohr: {
+            french: `Grâce à Niels Bohr nous avons aujourd'hui l'un des modèle d'atome le plus utilisé et l'un des plus
+            proche de la réalité (voir page <a href="./modelAtome.html">modèle de l'atome</a>). Il est aussi
+            très connu pour son débat avec Einstein autour de la physique quantique. Einsteins voualait
+            affaiblir
+            la théorie quantique, mais au fil du débat il n'a fait renforcer et clarifier les idées de Bohr.`,
+            english: `Thanks to Niels Bohr today we have one of the most used atom model and one of the most
+            close to reality (see page <a href="./modelAtome.html"> model of the atom </a>). It is also
+            well known for his debate with Einstein around quantum physics. Einsteins vowed
+            weaken
+            quantum theory, but as the debate progressed it did reinforce and clarify Bohr's ideas.`,
+            spanish: `Gracias a Niels Bohr hoy tenemos uno de los modelos de átomos más utilizados y uno de los más
+            cerca de la realidad (ver página <a href="./modelAtome.html"> modelo del átomo </a>). El también es
+            bien conocido por su debate con Einstein sobre la física cuántica. Einsteins juró
+            debilitar
+            teoría cuántica, pero a medida que avanzaba el debate reforzó y clarificó las ideas de Bohr.`,
+            german: `Dank Niels Bohr haben wir heute eines der am häufigsten verwendeten Atommodelle und eines der am meisten
+            nah an der Realität (siehe Seite <a href="./modelAtome.html"> Modell des Atoms </a>). Es ist auch
+            bekannt für seine Debatte mit Einstein über die Quantenphysik. Einsteins gelobt
+            schwächen
+            Quantentheorie, aber im Verlauf der Debatte verstärkte und klärte sie Bohrs Ideen.`
+        },
+        feynman: {
+            french: `Richard Feynman est un grand nom de la physique quantique. Il a effectué de
+            nombreux travaux sur l'électrodynamique quantique et l'interaction électromagnétique entre
+            les particules relativistes. Il a également développé les digrammes de Feynman permettant
+            de décrire les intéraction faibles.`,
+            english: `Richard Feynman is a big name in quantum physics. He performed
+            numerous works on quantum electrodynamics and the electromagnetic interaction between
+            relativistic particles. He also developed Feynman's digraphs allowing
+            to describe weak interactions.`,
+            spanish: `Richard Feynman es un gran nombre en física cuántica. El realizo
+            numerosos trabajos sobre electrodinámica cuántica y la interacción electromagnética entre
+            partículas relativistas. También desarrolló los dígrafos de Feynman que permiten
+            para describir interacciones débiles.`,
+            german: `Richard Feynman ist ein großer Name in der Quantenphysik. Er trat auf
+            zahlreiche Arbeiten zur Quantenelektrodynamik und der elektromagnetischen Wechselwirkung zwischen
+            relativistische Teilchen. Er entwickelte auch die Feynman-Digraphen, die es ermöglichen
+            schwache Wechselwirkungen beschreiben.`
+        },
+        heisenberg: {
+            french: `Werner Heinsenberg est l'un des fondateurs de la physique quantique. Il développa la première
+            formalisation de la mécanique quantique en 1925. Par la suite il deviendra d'autant plus célèbre
+            pour son principe d'incertitude (voir page <a href="./pricipeIncertitude.html">princpie
+            d'incertitude</a>). Il travaillera ensuite avec Mr. Pauli sur la théorie quantique des champs.`,
+            english: `Werner Heinsenberg is one of the founders of quantum physics. He developed the first
+            formalization of quantum mechanics in 1925. Subsequently it will become all the more famous
+            for its uncertainty principle (see page <a href="./pricipeIncertitude.html"> princpie
+            uncertainty </a>). He will then work with Mr. Pauli on quantum field theory.`,
+            spanish: `Werner Heinsenberg es uno de los fundadores de la física cuántica. Desarrolló el primer
+            formalización de la mecánica cuántica en 1925. Posteriormente se volverá aún más famoso
+            por su principio de incertidumbre (ver página <a href="./pricipeIncertitude.html"> princpie
+            incertidumbre </a>). Luego trabajará con Pauli en la teoría cuántica de campos.`,
+            german: `Werner Heinsenberg ist einer der Begründer der Quantenphysik. Er entwickelte das erste
+            Formalisierung der Quantenmechanik im Jahr 1925. In der Folge wird sie umso bekannter
+            für sein Unsicherheitsprinzip (siehe Seite <a href="./pricipeIncertitude.html"> princpie
+            Unsicherheit </a>). Anschließend wird er mit Herrn Pauli an der Quantenfeldtheorie arbeiten.`
+        },
+        pauli: {
+            french: `Wolfgang Pauli a énormement contribuer à la physique quantique grâce a son principe d'exclusion.
+            Ce principe d'exclusion dit les électrons appartenant à un même système ne peuvent pas se trouver
+            simultanément dans le même état quantique. Il est aussi célèbre pour son travail avec Werner Heisenberg
+            sur la théorie quantique des champs.`,
+            english: `Wolfgang Pauli has made a huge contribution to quantum physics thanks to his principle of exclusion.
+            This exclusion principle says electrons belonging to the same system cannot be found
+            simultaneously in the same quantum state. He is also famous for his work with Werner Heisenberg
+            on quantum field theory.`,
+            spanish: `Wolfgang Pauli ha hecho una gran contribución a la física cuántica gracias a su principio de exclusión.
+            Este principio de exclusión dice que los electrones que pertenecen al mismo sistema no se pueden encontrar
+            simultáneamente en el mismo estado cuántico. También es famoso por su trabajo con Werner Heisenberg.
+            sobre la teoría cuántica de campos.`,
+            german: `Wolfgang Pauli hat mit seinem Ausschlussprinzip einen großen Beitrag zur Quantenphysik geleistet.
+            Dieses Ausschlussprinzip besagt, dass Elektronen, die zu demselben System gehören, nicht gefunden werden können
+            gleichzeitig im gleichen Quantenzustand. Berühmt ist er auch für seine Arbeit mit Werner Heisenberg
+            zur Quantenfeldtheorie.`
+        }
     }
 }
 
@@ -783,7 +901,7 @@ const changeLanguage = () => {
             }
             break;
         case '/ondeCorpuscule.html':
-            if(localStorage.getItem('language') === 'french') {
+            if (localStorage.getItem('language') === 'french') {
                 $("#title").html("Dualité onde-corpuscule");
 
                 $("#mainContent").html(allText.ondeCorpuscule.french);
@@ -798,7 +916,7 @@ const changeLanguage = () => {
 
                 $("#frenchFlag").trigger("click");
             } else if (localStorage.getItem("language") === "english") {
-                $("#title").html("Wave-particle duality");      
+                $("#title").html("Wave-particle duality");
 
                 $("#mainContent").html(allText.ondeCorpuscule.english);
 
@@ -835,6 +953,85 @@ const changeLanguage = () => {
                 $("#linksParent a")[1].innerHTML = "Atommodell";
                 $("#linksParent a")[2].innerHTML = "Die tollen Figuren";
                 $("#linksParent a")[3].innerHTML = "Prinzip der Unsicherheit";
+                $("#linksParent a")[4].innerHTML = "Youngs Schlitze";
+                $("#linksParent a")[5].innerHTML = "Berühmte Formeln";
+
+                $("#germanFlag").trigger("click");
+            }
+            break;
+        case '/greatFigures.html':
+            if (localStorage.getItem('language') === 'french') {
+                $("#title").html("Les grandes figures");
+
+                $("#planck").html(allText.greatFigures.planck.french);
+                $("#schrodinger").html(allText.greatFigures.schrodinger.french);
+                $("#bohr").html(allText.greatFigures.bohr.french);
+                $("#feynman").html(allText.greatFigures.feynman.french);
+                $("#heisenberg").html(allText.greatFigures.heisenberg.french);
+                $("#pauli").html(allText.greatFigures.pauli.french);
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Accueil";
+                $("#linksParent a")[1].innerHTML = "Modèle de l'atome";
+                $("#linksParent a")[2].innerHTML = "Principe d'incertitude";
+                $("#linksParent a")[3].innerHTML = "Dualité onde-corpuscule";
+                $("#linksParent a")[4].innerHTML = "Fentes d'Young";
+                $("#linksParent a")[5].innerHTML = "Formules célèbres";
+
+                $("#frenchFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "english") {
+                $("#title").html("The great figures");
+
+                $("#planck").html(allText.greatFigures.planck.english);
+                $("#schrodinger").html(allText.greatFigures.schrodinger.english);
+                $("#bohr").html(allText.greatFigures.bohr.english);
+                $("#feynman").html(allText.greatFigures.feynman.english);
+                $("#heisenberg").html(allText.greatFigures.heisenberg.english);
+                $("#pauli").html(allText.greatFigures.pauli.english);
+
+                //we change the menu language 
+                $("#linksParent a")[0].innerHTML = "Home";
+                $("#linksParent a")[1].innerHTML = "Atom model";
+                $("#linksParent a")[2].innerHTML = "Uncertainty principle";
+                $("#linksParent a")[3].innerHTML = "Wave-particle duality";
+                $("#linksParent a")[4].innerHTML = "Young's slits";
+                $("#linksParent a")[5].innerHTML = "Famous formulas";
+
+                $("#englishFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "spanish") {
+                $("#title").html("Las grandes figuras");
+
+                $("#planck").html(allText.greatFigures.planck.spanish);
+                $("#schrodinger").html(allText.greatFigures.schrodinger.spanish);
+                $("#bohr").html(allText.greatFigures.bohr.spanish);
+                $("#feynman").html(allText.greatFigures.feynman.spanish);
+                $("#heisenberg").html(allText.greatFigures.heisenberg.spanish);
+                $("#pauli").html(allText.greatFigures.pauli.spanish);
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Hogar";
+                $("#linksParent a")[1].innerHTML = "Modelo de átomo";
+                $("#linksParent a")[2].innerHTML = "Principio de incertidumbre";
+                $("#linksParent a")[3].innerHTML = "Dualidad onda-partícula";
+                $("#linksParent a")[4].innerHTML = "Hendiduras de Young";
+                $("#linksParent a")[5].innerHTML = "Formulas famosas";
+
+                $("#spanishFlag").trigger("click");
+            } else if (localStorage.getItem("language") === "german") {
+                $("#title").html("Die großen Figuren");
+
+                $("#planck").html(allText.greatFigures.planck.german);
+                $("#schrodinger").html(allText.greatFigures.schrodinger.german);
+                $("#bohr").html(allText.greatFigures.bohr.german);
+                $("#feynman").html(allText.greatFigures.feynman.german);
+                $("#heisenberg").html(allText.greatFigures.heisenberg.german);
+                $("#pauli").html(allText.greatFigures.pauli.german);
+
+                //we change the menu language
+                $("#linksParent a")[0].innerHTML = "Zuhause";
+                $("#linksParent a")[1].innerHTML = "Atommodell";
+                $("#linksParent a")[3].innerHTML = "Prinzip der Unsicherheit";
+                $("#linksParent a")[2].innerHTML = "Welle-Teilchen-Dualität";
                 $("#linksParent a")[4].innerHTML = "Youngs Schlitze";
                 $("#linksParent a")[5].innerHTML = "Berühmte Formeln";
 

@@ -21,6 +21,9 @@ section#content {
 
 section#content > img#move {
     position: absolute;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 
     right: 450px;
     margin-top: -225px;
