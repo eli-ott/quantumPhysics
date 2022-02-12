@@ -473,6 +473,23 @@ const allText = {
     }
 }
 
+//we're initializing the localStorage language depending on the navigator language
+if(localStorage.getItem("language") == null){
+    if(navigator.language.includes('fr')){
+        localStorage.setItem("language", "french");
+        onsole.log("language set to french");
+    } else if(navigator.language.includes('en')){
+        localStorage.setItem("language", "english");
+        console.log("language set to english")
+    } else if(navigator.language.includes('es')){
+        localStorage.setItem("language", "spanish");
+        console.log('language set to spanish')
+    } else if(navigator.language.includes('de')){
+        localStorage.setItem("language", "german");
+        console.log("language set to german")
+    }
+}
+
 //we change the prefered language of the user
 $("#frenchFlag").on("click", () => {
     localStorage.setItem("language", "french");

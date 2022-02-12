@@ -32,7 +32,7 @@ section#content > div.photos {
 div.photosContentBackground {
     position: absolute;
 
-    height: 350px;
+    height: 450px;
     width: 325px;
     margin-top: -15px;
     transition: 0.3s;
@@ -62,7 +62,8 @@ div.photosContentBackground > p {
     text-align: left;
 
     margin: 1vh;
-    line-height: 3.75vh;
+    font-size: 2vh;
+    line-height: 24px;
     font-size: inherit;
 
     color: var(--backgroundColor);
@@ -123,5 +124,5 @@ div#popup {
 }
 
 footer {
-    top: 225%;
+    top: 125%;
 }

@@ -1,7 +1,6 @@
 //we define the height page when it's ready
 $(() => {
-    window.contentHeight =  parseInt($("footer").css("top")) - $("footer").height() ;
-    console.log(contentHeight);
+    window.contentHeight =  parseInt($("footer").css("top")) - $("footer").height();
 });
 
 //whe change the width of the div#progress when the user scroll
