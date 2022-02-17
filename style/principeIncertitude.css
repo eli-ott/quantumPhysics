@@ -17,7 +17,7 @@ section#content {
     position: absolute;
 
     width: 100%;
-    height: 60%;
+    height: 80%;    
     top: 30%;
 }
 section#content > p#mainContent {
@@ -29,7 +29,7 @@ section#content > div#animation {
     justify-content: space-around;
     align-items: center;
 
-    height: 75%;
+    height: 100%;
     width: 50%;
 }
 div#animation > div {
@@ -43,16 +43,20 @@ div#animation > div {
 div#animation > div > input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
 
     width: 40%;
+    padding: 0;
     border-radius: 100vh;
-    -webkit-border-radius: 100vh;
-    -moz-border-radius: 100vh;
-    -ms-border-radius: 100vh;
-    -o-border-radius: 100vh;
-    
+
+    color: var(--lightBlue);
     background: var(--color);
 }
-footer {
-    top: 125%;
+canvas#atomAnimation {
+    cursor: grab;
+}
+canvas#atomAnimation:active {
+    cursor: grabbing;
 }

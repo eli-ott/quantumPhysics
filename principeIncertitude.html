@@ -53,12 +53,13 @@
         </div>
         <!-- menu links to other pages -->
         <div id="linksParent">
-            <a href="modelAtome.html">Modèle de l'atome</a>
-            <a href="greatFigures.html">Les grandes figures</a>
-            <a href="principeIncertitude.html">Principe d'incertitude</a>
-            <a href="fentesYoung.html">Fentes d'Young</a>
-            <a href="ondeCorpuscule.html">Dualité onde-corpuscule</a>
-            <a href="famousFormula.html">Formules célèbres</a>
+            <a href="./index.html">Accueil</a>
+            <a href="./modelAtome.html">Modèle de l'atome</a>
+            <a href="./greatFigures.html">Les grandes figures</a>
+            <a href="./principeIncertitude.html">Principe d'incertitude</a>
+            <a href="./fentesYoung.html">Fentes d'Young</a>
+            <a href="./ondeCorpuscule.html">Dualité onde-corpuscule</a>
+            <a href="./famousFormula.html">Formules célèbres</a>
         </div>
     </nav>
     <p id="title">
@@ -71,25 +72,29 @@
             <br/> Par exemple la petite animation ci-contre représente la précision de la quantité de mouvement par rapport à position de la particule.
             <br/> Ce principe est très important pour expliquer les mouvements des particules et pour toutes sortes de calculs nécésitant de connaitre la poisition ou la vitesse d'une particule.
             <br/> Sachant cela nous pouvons dire qu'on ne pourra jamais avoir de valeurs précise des deux valeurs ce qui importse une incertitude toujours présente.
+            <br/> Pour mieux comprendre ce principe, l'animation ci-contre est plus parlante. Quand une des deux variables est sur 0 cela signifie que nous connaissons la valeur très précisément. 
+            <br/> Dans le cas contraire, quand la valeur est sur 100, la valeur est inconnu est de ce fait égale à l'infini.
+            <br/> Par exemple plus la particule est petite mieux nous connaissons sa position, et plus elle est rapide moins nous connaissons sa vitesse.
         </p>
         <div id="animation">
             <div>
                 <p>Position : &nbsp;&nbsp;&nbsp;&nbsp;</p>
                 <p>0 &nbsp;</p>
-                <input type="range" id="position" min="0" max="100" step="0.1" value="50">
+                <input type="range" id="position" min="0" max="100" step="1" value="50">
                 <p>&nbsp; 100</p>
             </div>
-            <div id="speedAnimation">
+            <div>
                 <p>Speed : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                 <p>0 &nbsp;</p>
-                <input type="range" id="speed" min="0" max="100" step="0.1" value="50">
+                <input type="range" id="speed" min="0" max="100" step="1" value="50">
                 <p>&nbsp; 100</p>
             </div>
+            <canvas id="atomAnimation"></canvas>
         </div>
     </section>
     <script type="text/javascript" src="./script/darkMode.js"></script>
     <script type="text/javascript" src="./script/menu.js"></script>
-    <script type="text/javascript" src="./script/principeIncertitude.js"></script>
+    <script type="module" src="./script/principeIncertitude.js"></script>
     <script type="text/javascript" src="./script/scroll.js"></script>
 </body>
 <footer>
