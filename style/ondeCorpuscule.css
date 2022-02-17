@@ -1,3 +1,8 @@
+body{
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+}
 p#title {
     position: absolute;
     font-family: header;
@@ -18,22 +23,6 @@ section#content {
 
     top: 30%;
 }
-
-section#content > img#move {
-    position: absolute;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-
-    right: 450px;
-    margin-top: -225px;
-    width: 2vh;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-}
 section#content > canvas {
     cursor: grab;
     background: none;
@@ -43,18 +32,8 @@ section#content > canvas {
 section#content > canvas:active {
     cursor: grabbing;
 }
-canvas:active ~ img#move {
-    opacity: 0;
-}
-canvas:not(:active) ~ img#move {
-    opacity: 1;
-}
 section#content > p#mainContent {
     background: none;
 
     width: 45%;
-}
-
-footer {
-    top: 125%;
 }

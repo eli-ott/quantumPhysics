@@ -129,7 +129,3 @@ section#content img[src = "pics/waveYoung.svg"]{
     width: 50%;
     margin-left: 15vh;
 }
-footer{
-    z-index: 1;
-    top: 180%;
-}

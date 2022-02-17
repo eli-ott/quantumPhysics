@@ -1,6 +1,10 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.129.0';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
 
+
+let atomColor = 0x505050;
+let backgroundColor = 0xfcffeb;
+
 const democrite = () => {
     const canvas = document.querySelector('#democriteAtom');
     const renderer = new THREE.WebGLRenderer({
@@ -8,7 +12,7 @@ const democrite = () => {
         alpha: true,
         antialias: true
     });
-    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setClearColor(backgroundColor, 1);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(500, 250);
 
@@ -29,11 +33,11 @@ const democrite = () => {
     scene.add(ambient);
 
     const rectangleGeometry = new THREE.BoxGeometry(2, 1, 1);
-    const rectangleMaterial = new THREE.MeshPhongMaterial({ color: 0x505050, wireframe: true });
+    const rectangleMaterial = new THREE.MeshPhongMaterial({ color: atomColor, wireframe: true });
     const rectangle = new THREE.Mesh(rectangleGeometry, rectangleMaterial);
     scene.add(rectangle);
 
-    let material = new THREE.MeshPhongMaterial({ color: 0x505050 });
+    let material = new THREE.MeshPhongMaterial({ color: atomColor });
 
     let sphereGeometry = new THREE.SphereGeometry(0.25, 35, 35, 0, Math.PI * 2, Math.PI * 2);
     let sphere = new THREE.Mesh(sphereGeometry, material);
@@ -102,7 +106,7 @@ const aristote = () => {
         antialias: true
     });
 
-    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setClearColor(backgroundColor, 1);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(500, 250);
 
@@ -123,7 +127,7 @@ const aristote = () => {
     scene.add(ambient);
 
     const geometry = new THREE.BoxGeometry(2, 1, 1);
-    const material = new THREE.MeshPhongMaterial({ color: 0x505050 });
+    const material = new THREE.MeshPhongMaterial({ color: atomColor });
     const cube = new THREE.Mesh(geometry, material);
 
     scene.add(cube);
@@ -151,7 +155,7 @@ const dalton = () => {
         antialias: true
     });
 
-    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setClearColor(backgroundColor, 1);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(500, 250);
 
@@ -196,7 +200,7 @@ const thomson = () => {
         alpha: true,
         antialias: TextTrackCue
     });
-    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setClearColor(backgroundColor, 1);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(500, 250);
 
@@ -217,7 +221,7 @@ const thomson = () => {
     scene.add(light, ambient);
 
     let sphereGeometry = new THREE.SphereGeometry(1, 20, 20, 0, Math.PI * 2, Math.PI * 2);
-    let sphereMaterial = new THREE.MeshBasicMaterial({ color: 0x505050, wireframe: true });
+    let sphereMaterial = new THREE.MeshBasicMaterial({ color: atomColor, wireframe: true });
     let sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     scene.add(sphere);
 
@@ -253,7 +257,7 @@ const rutherford = () => {
         alpha: true,
         antialias: true
     });
-    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setClearColor(backgroundColor, 1);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(500, 250);
 
@@ -275,7 +279,7 @@ const rutherford = () => {
     const group = new THREE.Group();
 
     let protonGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
-    let protonMaterial = new THREE.MeshPhongMaterial({ color: 0x505050 });
+    let protonMaterial = new THREE.MeshPhongMaterial({ color: atomColor });
     let proton = new THREE.Mesh(protonGeometry, protonMaterial);
     proton.position.set(-0.1, 0.01, 0);
     let proton2 = proton.clone()
@@ -338,7 +342,7 @@ const bohr = () => {
         alpha: true,
         antialias: true
     });
-    renderer.setClearColor(0xfcffeb, 1);
+    renderer.setClearColor(backgroundColor, 1);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(500, 250);
 
@@ -360,7 +364,7 @@ const bohr = () => {
     let group = new THREE.Group();
 
     let protonGeometry = new THREE.SphereGeometry(0.1, 35, 35, 0, Math.PI * 2, Math.PI * 2);
-    let protonMaterial = new THREE.MeshPhongMaterial({ color: 0x505050 });
+    let protonMaterial = new THREE.MeshPhongMaterial({ color: atomColor });
     let proton = new THREE.Mesh(protonGeometry, protonMaterial);
     proton.position.set(-0.1, 0.01, 0);
     let proton2 = proton.clone();
@@ -446,5 +450,39 @@ $(window).on("scroll", () => {
     } 
     if (window.pageYOffset >= 1150) {
         bohr();
+    }
+});
+
+//setting the right color when the page is ready
+$(() => {
+    if(localStorage.getItem("theme") == "dark") {
+        //changing the color variables
+        atomColor = 0x9f9f9f;
+        backgroundColor = 0x242424;
+
+        //calling the functions to apply the modifications
+        democrite(); aristote(); dalton(); thomson(); rutherford(); bohr();
+    } else if(localStorage.getItem("theme") == "light") {
+        atomColor = 0x505050;
+        backgroundColor = 0xfcffeb;
+
+        democrite(); aristote(); dalton(); thomson(); rutherford(); bohr();
+    }
+});
+
+//we check if the player enable the dark mode to change the color of the Three.js elements
+$(".themeIcon").on("click", () => {
+    if(localStorage.getItem("theme") == "dark") {
+        //changing the color variables
+        atomColor = 0x9f9f9f;
+        backgroundColor = 0x242424;
+
+        //calling the functions to apply the modifications
+        democrite(); aristote(); dalton(); thomson(); rutherford(); bohr();
+    } else if(localStorage.getItem("theme") == "light") {
+        atomColor = 0x505050;
+        backgroundColor = 0xfcffeb;
+
+        democrite(); aristote(); dalton(); thomson(); rutherford(); bohr();
     }
 });

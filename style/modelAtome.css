@@ -77,9 +77,6 @@ hr::after {
     background: var(--backgroundColor);
     content: url(../pics/atomHr.svg);
 }
-footer {
-    top: 400%;
-}
 @media screen and (max-width: 469px) {
     p#title {
         left: 1.5vh;
@@ -110,9 +107,6 @@ footer {
     }
     hr::after {
         margin-left: 46.5vw;
-    }
-    footer {
-        top: 725%;
     }
 }
 @media screen and (min-width: 470px) and (max-width: 769px) {
