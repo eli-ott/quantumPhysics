@@ -33,10 +33,6 @@ section#content {
     top: 90vh;
     right: 0;
 }
-section#content > p#mainContent {
-    font-family: contentFont;
-    font-size: 2vh;
-}
 img#arrowInstruction {
     position: absolute;
     background: none;
@@ -72,26 +68,95 @@ img#arrowInstruction {
         bottom: 3vh;
     }
 }
-footer {
-    top: 200%;
-}
 
-@media screen and (max-width: 1224px) {
+@media only screen and (max-width: 500px) {
     p#topLeftHeader {
-        font-size: 10vh;
-        top: 0;
-        left: 1vw;
+        font-size: 15vw;
+        top: 0vh;
+        left: 2.5vw;
     }
     p#bottomRightHeader {
-        font-size: 8vh;
-        top: 15vh;
-        left: 10vw;
-    }
+        font-size: 14vw;
+        top: 60vh;
+        right: 2.5vw;
+    }   
     svg#atom {
+        position: absolute;
+
+        left: 10vw;
+        top: 10vh;
+
+        transform: scale(0.65) translateX(-150px);
+        -webkit-transform: scale(0.65) translateX(-150px);
+        -moz-transform: scale(0.65) translateX(-150px);
+        -ms-transform: scale(0.65) translateX(-150px);
+        -o-transform: scale(0.65) translateX(-150px);
+    }
+    img#arrowInstruction {
         display: none;
     }
     section#content {
         width: 95vw;
+        left: 2.5vw;
+        right: 2.5vw;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+    p#topLeftHeader {
+        font-size: 10vh;
+        top: 0vh;
+        left: 2.5vw;
+    }
+    p#bottomRightHeader {
+        font-size: 9vh;
+        top: 65vh;
+        right: 2.5vw;
+    }   
+    svg#atom {
+        position: absolute;
+
+        left: 15vw;
+        right: 15vw;
+        top: 10vh;
+
+        transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+        -moz-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+        -o-transform: scale(0.75);
+    }
+    img#arrowInstruction {
+        display: none;
+    }
+    section#content {
+        width: 95vw;
+        left: 2.5vw;
+        right: 2.5vw;
+    }
+}
+@media only screen and (min-width: 851px) and (max-width: 1699px) {
+    p#topLeftHeader {
+        font-size: 10vh;
+        right: 20vw;
+        top: 5vh
+    }
+    p#bottomRightHeader {
+        font-size: 8vh;
+        top: 25vh;
+        right: 5vw;
+    }
+    svg#atom {
+        top: 0;
+        left: 1vw;
+
+        transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+        -moz-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+        -o-transform: scale(0.75);
+    }
+    section#content {
+        width: 50vw;
         margin: 2.5vw;
         top: 40vh;
     }
@@ -100,5 +165,14 @@ footer {
     }
     img#arrowInstruction {
         display: none;
+    }
+}
+@media screen and (min-width: 1700px) {
+    svg#atom {
+        transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -o-transform: scale(1.25);
     }
 }

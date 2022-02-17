@@ -109,6 +109,16 @@ nav > div#linksParent > a:hover::before {
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
 }
+nav > div#linksParent > a#currentPage {
+    color: #fcffeb;
+}
+nav > div#linksParent > a#currentPage::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
 
 @media screen and (max-width: 769px) {
     nav > div#menuLogo {

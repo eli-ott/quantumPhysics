@@ -5,6 +5,10 @@ let x2 = 23;
 
 $("#burger").on("click", () => {
     if ($("#burger").attr("class") != "display") {
+        //we change the background color of the themeIcon and the menuIcon
+        $("#burger").css("background-color", "#59acff");
+        $(".themeIcon").css("background-color", "#59acff");
+
         $("nav").css({ opacity: '1', zIndex: '9000' });
         $("#burger").attr("class", "display");
         $("div#linksParent a").css("display", "unset");
@@ -45,6 +49,10 @@ $("#burger").on("click", () => {
             $("#menuAtom").fadeIn(500)
         }, 750)
     } else {
+        //we change the background color of the themeIcon and the menuIcon
+        $("#burger").css("background-color", "var(--backgroundColor)");
+        $(".themeIcon").css("background-color", "var(--backgroundColor)");
+        
         $("#burger").attr("class", "retract");
 
         //we slowly increase the y2 position of the top line
@@ -81,4 +89,5 @@ $("#burger").on("click", () => {
         }, 750);
     }
 });
+
 $("div#linksParent a").css({ opacity: "0", display: "none" });
