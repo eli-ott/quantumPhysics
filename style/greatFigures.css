@@ -17,7 +17,7 @@ section#content {
     align-items: center;
 
     width: 100%;
-    margin-top: 5%;
+    margin-top: 7.5%;
 }
 section#content > div.photos {
     cursor: default;
@@ -90,11 +90,10 @@ div.photos > p {
 div#popup {
     position: fixed;
 
+    font-size: 15px;
     bottom: 1vh;
     right: -40%;
     padding: 0 1vh;
-    width: 37.5%;
-    height: 10.5%;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -104,6 +103,9 @@ div#popup {
     background: var(--lightBlue);
     animation: popupAppear 0.5s 0.5s ease-out forwards, popupHide 0.5s 5s ease-in forwards;
     -webkit-animation: popupAppear 0.5s 0.5s ease-out forwards, popupHide 0.5s 5s ease-in forwards;
+}
+div#popup > p.popupContent {
+    margin: .5vh 0;
 }
 
 @keyframes popupAppear {
@@ -120,5 +122,47 @@ div#popup {
     }
     to {
         right: -40%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    p#title {
+        left: 5vw;
+    }
+    section#content {
+        margin-top: 65%;
+    }
+    section#content > div.photos {
+        margin: 45% 10% 0 10%;
+    }
+    div.photos:last-child > img {
+        transform: scale(1.20);
+        -webkit-transform: scale(1.20);
+        -moz-transform: scale(1.20);
+        -ms-transform: scale(1.20);
+        -o-transform: scale(1.20);
+    }
+    div#popup {
+        width: 98vw;
+        font-size: 12px;
+        right: -100%;
+        padding: 0 1vw;
+    }
+
+    @keyframes popupAppear {
+        from {
+            right: -100%;
+        }
+        to {
+            right: 0;
+        }
+    }
+    @keyframes popupHide {
+        from {
+            right: 0;
+        }
+        to {
+            right: -100%;
+        }
     }
 }
