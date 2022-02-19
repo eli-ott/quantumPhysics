@@ -9,13 +9,6 @@ p#title {
     top: 0;
     left: 25vh;
 }
-img#moon {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    margin: 1vh;
-}
 div.left {
     display: flex;
     flex-flow: row wrap;
@@ -78,12 +71,12 @@ hr::after{
     background: var(--backgroundColor);
     content: url(../pics/atomHr.svg);
 }
-@media screen and (max-width: 469px) {
+@media only screen and (max-width: 500px) {
     p#title {
         left: 2vh;
     }
     section#content {
-        margin-top: 100%;
+        margin-top: 85%;
     }
     div.left {
         flex-flow: column wrap;
@@ -96,6 +89,7 @@ hr::after{
     p.descriptions {
         width: 95vw;
         margin: 5vh 2.5vw;
+        font-size: 2.25vh;
     }
     img#schrodingerFormula {
         width: 50vh;
