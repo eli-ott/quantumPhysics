@@ -47,10 +47,33 @@ nav > div#menuLogo {
     height: 100vh;
     width: 49vw;
 }
-nav > div#menuLogo > img { 
+nav > div#menuLogo > svg { 
     width: 20vh; 
 }
-
+nav > div#menuLogo > svg path { 
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1000;
+}
+nav > div#menuLogo > svg path.animateAtom {
+    animation: atomAnimation 4s linear 0s infinite alternate;
+}
+@keyframes atomAnimation {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    49%{
+        stroke-dashoffset: 1000;
+        stroke: #242424;
+    }
+    50%{
+        stroke-dashoffset: 1000;
+        stroke: #fcffeb;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke: #fcffeb;
+    }
+}
 nav > div#linksParent {
     display: flex;
     flex-flow: column wrap;

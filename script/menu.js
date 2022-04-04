@@ -3,8 +3,13 @@ let topY = 6;
 let bottomY = 18;
 let x2 = 23;
 
+let canAnimateAtom = false;
+
 $("#burger").on("click", () => {
     if ($("#burger").attr("class") != "display") {
+        //make the possibility to animate the atom when hovered
+        canAnimateAtom = true;
+
         //we change the background color of the themeIcon and the menuIcon
         $("#burger").css("background-color", "#59acff");
         $(".themeIcon").css("background-color", "#59acff");
@@ -49,6 +54,8 @@ $("#burger").on("click", () => {
             $("#menuAtom").fadeIn(500)
         }, 750)
     } else {
+        canAnimateAtom = false;
+
         //we change the background color of the themeIcon and the menuIcon
         $("#burger").css("background-color", "var(--backgroundColor)");
         $(".themeIcon").css("background-color", "var(--backgroundColor)");
@@ -91,3 +98,19 @@ $("#burger").on("click", () => {
 });
 
 $("div#linksParent a").css({ opacity: "0", display: "none" });
+
+//making the menu atom animation when hovered
+const menuAtomAnimation = () => {
+    if(canAnimateAtom) {
+        $("#menuAtom").off("mouseover");
+        $("#menuAtom path").attr('class', 'animateAtom');
+        console.log("animating");
+    } 
+    setTimeout(() => { 
+        $("#menuAtom path").removeAttr("class");
+        $("#menuAtom").on("mouseover", menuAtomAnimation);
+    }, 8500);
+}
+
+//activating the hovering animation
+$("#menuAtom").on("mouseover", menuAtomAnimation);
