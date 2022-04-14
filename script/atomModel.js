@@ -438,21 +438,6 @@ const bohr = () => {
     requestAnimationFrame(valenceElectronsAnim);
 }
 
-$(window).on("scroll", () => {
-    if (window.pageYOffset >= 250) {
-        dalton();
-    } 
-    if (window.pageYOffset >= 650) {
-        thomson();
-    } 
-    if (window.pageYOffset >= 850) {
-        rutherford();
-    } 
-    if (window.pageYOffset >= 1150) {
-        bohr();
-    }
-});
-
 //setting the right color when the page is ready
 $(() => {
     if(localStorage.getItem("theme") == "dark") {

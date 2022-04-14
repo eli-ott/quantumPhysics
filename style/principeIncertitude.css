@@ -60,3 +60,13 @@ canvas#atomAnimation {
 canvas#atomAnimation:active {
     cursor: grabbing;
 }
+
+@media only screen and (max-width: 500px) {
+    section#content {
+        flex-flow: column;
+
+        width: 95%;
+        top: 50%;
+        margin: 0 2.5%;
+    }
+}
