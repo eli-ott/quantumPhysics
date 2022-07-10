@@ -1,72 +1,106 @@
 p#title {
-    position: absolute;
-    font-family: header;
-    cursor: default;
-    text-decoration: underline var(--lightBlue);
+  position: absolute;
+  font-family: header;
+  cursor: default;
+  text-decoration: underline var(--lightBlue);
 
-    letter-spacing: 0.35vh;
-    font-size: 8vh;
-    top: 0;
-    left: 25vh;
+  letter-spacing: 0.35vh;
+  font-size: 8vh;
+  top: 0;
+  left: 25vh;
 }
 section#content {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
 
-    width: 100%;
-    height: 80%;    
-    top: 30%;
+  width: 100%;
+  height: 80%;
+  top: 30%;
 }
 section#content > p#mainContent {
-    width: 50%;
+  width: 50%;
 }
 section#content > div#animation {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
 
-    height: 100%;
-    width: 50%;
+  height: 100%;
+  width: 50%;
 }
 div#animation > div {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
+  width: 100%;
 }
 div#animation > div > input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    outline: none;
-    box-sizing: border-box;
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
 
-    width: 40%;
-    padding: 0;
-    border-radius: 100vh;
+  width: 40%;
+  padding: 0;
+  border-radius: 100vh;
 
-    color: var(--lightBlue);
-    background: var(--color);
+  color: var(--lightBlue);
+  background: var(--color);
 }
 canvas#atomAnimation {
-    cursor: grab;
+  cursor: grab;
 }
 canvas#atomAnimation:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
-@media only screen and (max-width: 500px) {
-    section#content {
-        flex-flow: column;
+@media screen and (max-width: 500px) {
+  section#content {
+    flex-flow: column;
 
-        width: 95%;
-        top: 50%;
-        margin: 0 2.5%;
-    }
+    width: 95%;
+    top: 75%;
+    margin: 0 2.5%;
+  }
+  section#content > p#mainContent {
+    position: relative;
+    width: 100%;
+  }
+  p#title {
+    left: 3vh;
+  }
+  hr {
+    width: 100vw;
+    margin-left: 0;
+  }
+  section#content > div#animation {
+    display: none;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 769px) {
+  section#content {
+    flex-flow: column;
+
+    width: 95%;
+    top: 75%;
+    margin: 0 2.5%;
+  }
+  section#content > p#mainContent {
+    position: relative;
+    width: 100%;
+  }
+  p#title {
+    left: 3vh;
+  }
+  section#content > div#animation {
+    height: 100%;
+    width: 100%;
+  }
 }
