@@ -37,3 +37,48 @@ section#content > p#mainContent {
 
     width: 45%;
 }
+
+@media screen and (max-width: 500px) {
+    section#content {
+      flex-flow: column;
+  
+      width: 95%;
+      top: 35%;
+      margin: 0 2.5%;
+    }
+    section#content > p#mainContent {
+      position: relative;
+      width: 100%;
+    }
+    p#title {
+      left: 3vh;
+    }
+    hr {
+      width: 100vw;
+      margin-left: 0;
+    }
+    section#content > canvas {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 501px) and (max-width: 769px) {
+    section#content {
+      flex-flow: column;
+  
+      width: 95%;
+      top: 45%;
+      margin: 0 2.5%;
+    }
+    section#content > p#mainContent {
+      position: relative;
+      width: 100%;
+    }
+    p#title {
+      left: 3vh;
+    }
+    section#content > canvas {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
