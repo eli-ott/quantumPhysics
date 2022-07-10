@@ -1,131 +1,187 @@
-p#title{
-    position: absolute;
-    font-family: header;
-    cursor: default;
-    
-    letter-spacing: .35vh;
-    font-size: 8vh;
-    top: 0;
-    right: 25vh;
-    
-    text-decoration: underline var(--lightBlue);
-}
-svg#fentes{
-    margin: 17vh 0 25vh 10vh;
-    margin-right: 0;
-    margin-bottom: 25vh;
-}
-circle.electrons{
-    display: none;
-}
-circle.shootingElectrons{
-    display: none;
-}
-section#buttons{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-    z-index: 500;
-    height: 100%;
-    width: 35%;
-    top: 0;
-    right: 0;
-}
-a.animButtons{
-    background: none;
-    font-family: content, 'Courier New', Courier, monospace;
-    text-align: center;
-    cursor: pointer;
-    pointer-events: visible;
-    
-    font-size: 2vh;
-    font-weight: 550;
-    width: 17vw;
-    height: 2vh;
-    padding: 2vh;
-    margin: -30vh 0 -30vh 10vh;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+p#title {
+  position: absolute;
+  font-family: header;
+  cursor: default;
 
-    border: solid var(--color) 2px;
+  letter-spacing: 0.35vh;
+  font-size: 8vh;
+  top: 0;
+  right: 25vh;
+
+  text-decoration: underline var(--lightBlue);
 }
-img#arrowInstruction{
-    position: absolute;
-    background: none;
-    
+svg#fentes {
+  margin: 17vh 0 25vh 10vh;
+  margin-right: 0;
+  margin-bottom: 25vh;
+}
+circle.electrons {
+  display: none;
+}
+circle.shootingElectrons {
+  display: none;
+}
+section#buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  z-index: 500;
+  height: 100%;
+  width: 35%;
+  top: 0;
+  right: 0;
+}
+a.animButtons {
+  background: none;
+  font-family: content, "Courier New", Courier, monospace;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: visible;
+
+  font-size: 2vh;
+  font-weight: 550;
+  width: 17vw;
+  height: 2vh;
+  padding: 2vh;
+  margin: -30vh 0 -30vh 10vh;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+
+  border: solid var(--color) 2px;
+}
+img#arrowInstruction {
+  position: absolute;
+  background: none;
+
+  bottom: 3vh;
+  left: 0;
+  margin: 2vh;
+  opacity: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transform: scaleY(1.1);
+  -webkit-transform: scaleY(1.1);
+  -moz-transform: scaleY(1.1);
+  -ms-transform: scaleY(1.1);
+  -o-transform: scaleY(1.1);
+
+  animation: bounceArrow 2s ease infinite;
+  -webkit-animation: bounceArrow 2s ease infinite;
+}
+@keyframes bounceArrow {
+  0% {
     bottom: 3vh;
-    left: 0;
-    margin: 2vh;
-    opacity: 1;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    transform: scaleY(1.1);
-    -webkit-transform: scaleY(1.1);
-    -moz-transform: scaleY(1.1);
-    -ms-transform: scaleY(1.1);
-    -o-transform: scaleY(1.1);
+  }
+  50% {
+    bottom: 0;
+  }
+  90% {
+    bottom: 3vh;
+  }
+  100% {
+    bottom: 3vh;
+  }
+}
+section#warning {
+  position: absolute;
 
-    animation: bounceArrow 2s ease infinite;
-    -webkit-animation: bounceArrow 2s ease infinite;
-}
-@keyframes bounceArrow{
-    0%{ bottom: 3vh; }
-    50%{ bottom: 0; }
-    90%{ bottom: 3vh; }
-    100%{ bottom: 3vh; }
-}
-section#warning{
-    position: absolute;
-    
-    right: 0;
-    bottom: 15%;
-    border-radius: 5px 0 0 5px;
-    -webkit-border-radius: 5px 0 0 5px;
-    -moz-border-radius: 5px 0 0 5px;
-    -ms-border-radius: 5px 0 0 5px;
-    -o-border-radius: 5px 0 0 5px;
+  right: 0;
+  bottom: 15%;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
 
-    border: solid var(--color) 1px;
+  border: solid var(--color) 1px;
 }
-section#warning p{
-    padding-left: 2vh;
-    padding-right: 2vh;
-    font-size: 1.5vh;
+section#warning p {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-size: 1.5vh;
 }
-section#content{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-gap: 15vh;
-    grid-template-rows: repeat(2, 0%);
+section#content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
 
-    z-index: -1;
-    height: 50%;
+  z-index: -1;
+  height: 50%;
+  width: 100%;
+}
+p#mainContent {
+  width: 100%;
+  margin-left: 5vh;
+}
+section#content img[src="pics/waveYoung.svg"] {
+  width: 25%;
+  margin: 0 15vh;
+}
+@media screen and (max-width: 500px) {
+  section#content {
+    flex-flow: column nowrap;
+    position: relative;
+
+    width: 95%;
+    height: 100%;
+    margin: 65% 2.5% 0 2.5%;
+  }
+  section#content > p#mainContent {
+    position: relative;
     width: 100%;
+    margin: 0;
+  }
+  section#content img[src="pics/waveYoung.svg"] {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  p#title {
+    left: 3vh;
+  }
+  svg#fentes,
+  a.animButtons,
+  #warning {
+    display: none;
+  }
 }
-p#mainContent{
-    grid-column: 1/2;
-    grid-row: 1/2;
+@media screen and (min-width: 501px) and (max-width: 1324px) {
+  section#content {
+    flex-flow: column nowrap;
+    position: relative;
 
-    width: 100%;
-    margin-left: 5vh;
-}
-section#content img[src = "pics/waveYoung.svg"]{
-    grid-column: 2/2;
-    grid-row: 2/2;
-    width: 50%;
-    margin-left: 15vh;
+    width: 95%;
+    height: 100%;
+    margin: 25% 2.5% 0 2.5%;
+  }
+  section#content > p#mainContent {
+    position: relative;
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  section#content img[src="pics/waveYoung.svg"] {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  p#title {
+    left: 3vh;
+  }
+  svg#fentes,
+  a.animButtons,
+  #warning {
+    display: none;
+  }
 }
