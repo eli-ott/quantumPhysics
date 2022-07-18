@@ -154,7 +154,8 @@ section#content img[src="pics/waveYoung.svg"] {
   }
   svg#fentes,
   a.animButtons,
-  #warning {
+  #warning,
+  img#arrowInstruction {
     display: none;
   }
 }
@@ -181,7 +182,8 @@ section#content img[src="pics/waveYoung.svg"] {
   }
   svg#fentes,
   a.animButtons,
-  #warning {
+  #warning,
+  img#arrowInstruction {
     display: none;
   }
 }
