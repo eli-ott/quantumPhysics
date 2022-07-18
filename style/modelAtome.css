@@ -121,6 +121,7 @@ hr::after {
     }
     section#content {
         margin-top: 30%;
+        width: 99.5vw;
     } 
     p.content {
         font-size: 2.25vh;
