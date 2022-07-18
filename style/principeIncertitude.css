@@ -65,6 +65,7 @@ canvas#atomAnimation:active {
   section#content {
     flex-flow: column;
 
+    height: 150%;
     width: 95%;
     top: 75%;
     margin: 0 2.5%;
