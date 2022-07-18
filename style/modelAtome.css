@@ -77,27 +77,26 @@ hr::after {
     background: var(--backgroundColor);
     content: url(../pics/atomHr.svg);
 }
-@media screen and (min-width: 470px) and (max-width: 769px) {
+@media only screen and (max-width: 500px) {
     p#title {
-        left: 3vh;
+        left: 1.5vh;
     }
     section#content {
         flex-flow: column wrap;
 
         margin-top: 75%;
         margin-left: 0;
-        width: 99.5vw;
     } 
-    p.content {
-        font-size: 2.25vh;
-        width: 95vw;
-        margin: 2vh 2.5vw;
-    }
     div.right {
         flex-flow: column wrap;
     }
     div.left {
         flex-flow: column wrap;
+    }
+    p.content {
+        font-size: 2.25vh;
+        width: 95vw;
+        margin: 2vh 2.5vw;
     }
     canvas {
         margin-left: -20vw;
@@ -114,5 +113,22 @@ hr::after {
     }
     hr::after {
         margin-left: 46.5vw;
+    }
+}
+@media screen and (min-width: 470px) and (max-width: 769px) {
+    p#title {
+        left: 3vh;
+    }
+    section#content {
+        margin-top: 30%;
+    } 
+    p.content {
+        font-size: 2.25vh;
+        width: 95vw;
+        margin: 2vh 2.5vw;
+    }
+    hr {
+        width: 100vw;
+        margin-left: 0;
     }
 }

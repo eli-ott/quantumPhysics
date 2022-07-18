@@ -72,6 +72,7 @@ canvas#atomAnimation:active {
   section#content > p#mainContent {
     position: relative;
     width: 100%;
+    top: 15vh;
   }
   p#title {
     left: 3vh;
@@ -95,6 +96,7 @@ canvas#atomAnimation:active {
   section#content > p#mainContent {
     position: relative;
     width: 100%;
+    top: 15vh;
   }
   p#title {
     left: 3vh;
