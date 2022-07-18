@@ -116,6 +116,9 @@ hr::after {
     }
 }
 @media screen and (min-width: 470px) and (max-width: 769px) {
+    div#progress {
+        display: none;
+    }
     p#title {
         left: 3vh;
     }
