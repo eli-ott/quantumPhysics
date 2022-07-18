@@ -111,8 +111,3 @@ p#mainContent {
     background: var(--lightBlue);
     color: var(--backgroundColor);
 }
-@media screen and (max-width: 769px) {
-    div#progress {
-        display: none;
-    }
-}
