@@ -484,7 +484,7 @@ const allText = {
         <br/> This principle says that the more we know the position of a particle, the less we can know its momentum (or velocity).
         <br/> For example, the small animation opposite represents the precision of the quantity of movement in relation to the position of the particle.
         <br/> This principle is very important to explain the movements of particles and for all kinds of calculations requiring to know the position or the speed of a particle.
-        <br/> Knowing this we can say that we can never have precise values ​​of the two values ​​which matters an always present uncertainty.
+        <br/> Knowing this we can say that we can never have precise values of the two values which matters an always present uncertainty.
         <br/> To better understand this principle, the animation opposite is more telling. When one of the two variables is on 0 it means that we know the value very precisely.
         <br/> Otherwise, when the value is on 100, the value is unknown and is therefore equal to infinity.
         <br/> For example the smaller the particle seems the better we know its position, and the faster it becomes the less we know its speed.`,
@@ -523,111 +523,6 @@ if (localStorage.getItem("language") == null) {
     console.log("language set to german");
   }
 }
-
-//we change the prefered language of the user
-$("#frenchFlag").on("click", () => {
-  localStorage.setItem("language", "french");
-
-  //we change the footer language
-  $(".footerHeader").eq(0).html("Créateurs : ");
-  $(".footerText").eq(0)
-    .html(`Ce site a été créé par <a href="https://github.com/eli-ott">@eli-ott</a>`);
-  $(".footerHeader").eq(1).html("Contactez-nous : ");
-  $(".footerText").eq(1)
-    .html(`Pour plus d'information sur ce site ou pour un contact profesionnel
-    vous pouvez envoyer un mail à l'adresse suivante : <br>
-    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
-  $(".footerHeader").eq(2).html("Langue :");
-  $(".footerText").eq(2).html("Changer la langue : ");
-
-  //we change the menu language
-  $("#linksParent a")[0].innerHTML = "Acceuil";
-  $("#linksParent a")[1].innerHTML = "Modèle de l'atome";
-  $("#linksParent a")[2].innerHTML = "Les grandes figures";
-  $("#linksParent a")[3].innerHTML = "Principe d'incertitude";
-  $("#linksParent a")[4].innerHTML = "Fentes d'Young";
-  $("#linksParent a")[5].innerHTML = "Dualité onde-corpuscule";
-  $("#linksParent a")[6].innerHTML = "Formule célèbres";
-
-  changeLanguage();
-});
-$("#englishFlag").on("click", () => {
-  localStorage.setItem("language", "english");
-
-  //we change the footer language
-  $(".footerHeader").eq(0).html("Creators : ");
-  $(".footerText").eq(0)
-    .html(`This site was created by <a href="https://github.com/eli-ott">@eli-ott</a>`);
-  $(".footerHeader").eq(1).html("Contact us : ");
-  $(".footerText").eq(1)
-    .html(`For more information about this site or for a professional contact you can send an email to the following address : <br>
-    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
-  $(".footerHeader").eq(2).html("Language :");
-  $(".footerText").eq(2).html("Change the language : ");
-
-  //we change the menu language
-  $("#linksParent a")[0].innerHTML = "Home";
-  $("#linksParent a")[1].innerHTML = "Atom model";
-  $("#linksParent a")[2].innerHTML = "The great figures";
-  $("#linksParent a")[3].innerHTML = "Uncertainty principle";
-  $("#linksParent a")[4].innerHTML = "Young's slits";
-  $("#linksParent a")[5].innerHTML = "Wave-particle duality";
-  $("#linksParent a")[6].innerHTML = "Famous formula";
-
-  changeLanguage();
-});
-$("#spanishFlag").on("click", () => {
-  localStorage.setItem("language", "spanish");
-
-  //we change the footer language
-  $(".footerHeader").eq(0).html("Creadores : ");
-  $(".footerText").eq(0)
-    .html(`Este sitio fue creado por <a href="https://github.com/eli-ott">@eli-ott</a>`);
-  $(".footerHeader").eq(1).html("Contáctenos : ");
-  $(".footerText").eq(1)
-    .html(`Para obtener más información sobre este sitio o para un contacto profesional
-    puede enviar un correo electrónico a la siguiente dirección : <br>
-    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
-  $(".footerHeader").eq(2).html("Idioma :");
-  $(".footerText").eq(2).html("Cambiar idioma : ");
-
-  //we change the menu language
-  $("#linksParent a")[0].innerHTML = "Página principal";
-  $("#linksParent a")[0].innerHTML = "Modelo de átomo";
-  $("#linksParent a")[1].innerHTML = "Las grandes figuras";
-  $("#linksParent a")[2].innerHTML = "Principio de incertidumbre";
-  $("#linksParent a")[3].innerHTML = "Hendiduras de Young";
-  $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
-  $("#linksParent a")[5].innerHTML = "Fórmula famosa";
-
-  changeLanguage();
-});
-$("#germanFlag").on("click", () => {
-  localStorage.setItem("language", "german");
-
-  //we change the footer language
-  $(".footerHeader").eq(0).html("Schöpfer : ");
-  $(".footerText").eq(0)
-    .html(`Diese Seite wurde erstellt von <a href="https://github.com/eli-ott">@eli-ott</a>`);
-  $(".footerHeader").eq(1).html("Kontaktiere uns : ");
-  $(".footerText").eq(1)
-    .html(`Für weitere Informationen auf dieser Seite oder für einen professionellen Kontakt
-    Sie können eine E-Mail an folgende Adresse senden : <br>
-    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
-  $(".footerHeader").eq(2).html("Sprache :");
-  $(".footerText").eq(2).html("Sprache ändern : ");
-
-  //we change the menu language
-  $("#linksParent a")[0].innerHTML = "Startseite";
-  $("#linksParent a")[0].innerHTML = "Atommodell";
-  $("#linksParent a")[1].innerHTML = "die großen Figuren";
-  $("#linksParent a")[2].innerHTML = "Unschärferelation";
-  $("#linksParent a")[3].innerHTML = "Schlitze von Young";
-  $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
-  $("#linksParent a")[5].innerHTML = "Berühmte Formel";
-
-  changeLanguage();
-});
 
 //we check which language is choose by the user
 const changeLanguage = () => {
@@ -988,3 +883,108 @@ const changeLanguage = () => {
   }
 };
 changeLanguage();
+
+//we change the prefered language of the user
+$("#frenchFlag").on("click", () => {
+  localStorage.setItem("language", "french");
+
+  //we change the footer language
+  $(".footerHeader").eq(0).html("Créateurs : ");
+  $(".footerText").eq(0)
+    .html(`Ce site a été créé par <a href="https://github.com/eli-ott">@eli-ott</a>`);
+  $(".footerHeader").eq(1).html("Contactez-nous : ");
+  $(".footerText").eq(1)
+    .html(`Pour plus d'information sur ce site ou pour un contact profesionnel
+    vous pouvez envoyer un mail à l'adresse suivante : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+  $(".footerHeader").eq(2).html("Langue :");
+  $(".footerText").eq(2).html("Changer la langue : ");
+
+  //we change the menu language
+  $("#linksParent a")[0].innerHTML = "Acceuil";
+  $("#linksParent a")[1].innerHTML = "Modèle de l'atome";
+  $("#linksParent a")[2].innerHTML = "Les grandes figures";
+  $("#linksParent a")[3].innerHTML = "Principe d'incertitude";
+  $("#linksParent a")[4].innerHTML = "Fentes d'Young";
+  $("#linksParent a")[5].innerHTML = "Dualité onde-corpuscule";
+  $("#linksParent a")[6].innerHTML = "Formule célèbres";
+
+  changeLanguage();
+});
+$("#englishFlag").on("click", () => {
+  localStorage.setItem("language", "english");
+
+  //we change the footer language
+  $(".footerHeader").eq(0).html("Creators : ");
+  $(".footerText").eq(0)
+    .html(`This site was created by <a href="https://github.com/eli-ott">@eli-ott</a>`);
+  $(".footerHeader").eq(1).html("Contact us : ");
+  $(".footerText").eq(1)
+    .html(`For more information about this site or for a professional contact you can send an email to the following address : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+  $(".footerHeader").eq(2).html("Language :");
+  $(".footerText").eq(2).html("Change the language : ");
+
+  //we change the menu language
+  $("#linksParent a")[0].innerHTML = "Home";
+  $("#linksParent a")[1].innerHTML = "Atom model";
+  $("#linksParent a")[2].innerHTML = "The great figures";
+  $("#linksParent a")[3].innerHTML = "Uncertainty principle";
+  $("#linksParent a")[4].innerHTML = "Young's slits";
+  $("#linksParent a")[5].innerHTML = "Wave-particle duality";
+  $("#linksParent a")[6].innerHTML = "Famous formula";
+
+  changeLanguage();
+});
+$("#spanishFlag").on("click", () => {
+  localStorage.setItem("language", "spanish");
+
+  //we change the footer language
+  $(".footerHeader").eq(0).html("Creadores : ");
+  $(".footerText").eq(0)
+    .html(`Este sitio fue creado por <a href="https://github.com/eli-ott">@eli-ott</a>`);
+  $(".footerHeader").eq(1).html("Contáctenos : ");
+  $(".footerText").eq(1)
+    .html(`Para obtener más información sobre este sitio o para un contacto profesional
+    puede enviar un correo electrónico a la siguiente dirección : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+  $(".footerHeader").eq(2).html("Idioma :");
+  $(".footerText").eq(2).html("Cambiar idioma : ");
+
+  //we change the menu language
+  $("#linksParent a")[0].innerHTML = "Página principal";
+  $("#linksParent a")[0].innerHTML = "Modelo de átomo";
+  $("#linksParent a")[1].innerHTML = "Las grandes figuras";
+  $("#linksParent a")[2].innerHTML = "Principio de incertidumbre";
+  $("#linksParent a")[3].innerHTML = "Hendiduras de Young";
+  $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
+  $("#linksParent a")[5].innerHTML = "Fórmula famosa";
+
+  changeLanguage();
+});
+$("#germanFlag").on("click", () => {
+  localStorage.setItem("language", "german");
+
+  //we change the footer language
+  $(".footerHeader").eq(0).html("Schöpfer : ");
+  $(".footerText").eq(0)
+    .html(`Diese Seite wurde erstellt von <a href="https://github.com/eli-ott">@eli-ott</a>`);
+  $(".footerHeader").eq(1).html("Kontaktiere uns : ");
+  $(".footerText").eq(1)
+    .html(`Für weitere Informationen auf dieser Seite oder für einen professionellen Kontakt
+    Sie können eine E-Mail an folgende Adresse senden : <br>
+    <a href="mailto:eliottbidault@gmail.com">eliottbidault@gmail.com</a>`);
+  $(".footerHeader").eq(2).html("Sprache :");
+  $(".footerText").eq(2).html("Sprache ändern : ");
+
+  //we change the menu language
+  $("#linksParent a")[0].innerHTML = "Startseite";
+  $("#linksParent a")[0].innerHTML = "Atommodell";
+  $("#linksParent a")[1].innerHTML = "die großen Figuren";
+  $("#linksParent a")[2].innerHTML = "Unschärferelation";
+  $("#linksParent a")[3].innerHTML = "Schlitze von Young";
+  $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
+  $("#linksParent a")[5].innerHTML = "Berühmte Formel";
+
+  changeLanguage();
+});
