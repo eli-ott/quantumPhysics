@@ -953,12 +953,12 @@ $("#spanishFlag").on("click", () => {
 
   //we change the menu language
   $("#linksParent a")[0].innerHTML = "Página principal";
-  $("#linksParent a")[0].innerHTML = "Modelo de átomo";
-  $("#linksParent a")[1].innerHTML = "Las grandes figuras";
-  $("#linksParent a")[2].innerHTML = "Principio de incertidumbre";
-  $("#linksParent a")[3].innerHTML = "Hendiduras de Young";
-  $("#linksParent a")[4].innerHTML = "Dualidad onda-partícula";
-  $("#linksParent a")[5].innerHTML = "Fórmula famosa";
+  $("#linksParent a")[1].innerHTML = "Modelo de átomo";
+  $("#linksParent a")[2].innerHTML = "Las grandes figuras";
+  $("#linksParent a")[3].innerHTML = "Principio de incertidumbre";
+  $("#linksParent a")[4].innerHTML = "Hendiduras de Young";
+  $("#linksParent a")[5].innerHTML = "Dualidad onda-partícula";
+  $("#linksParent a")[6].innerHTML = "Fórmula famosa";
 
   changeLanguage();
 });
