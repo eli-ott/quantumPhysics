@@ -526,6 +526,7 @@ if (localStorage.getItem("language") == null) {
 
 //we check which language is choose by the user
 const changeLanguage = () => {
+  console.log(window.location.pathname);
   switch (window.location.pathname) {
     case "/":
       //we are setting the current page for the css
