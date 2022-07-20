@@ -526,9 +526,8 @@ if (localStorage.getItem("language") == null) {
 
 //we check which language is choose by the user
 const changeLanguage = () => {
-  console.log(window.location.pathname);
   switch (window.location.pathname) {
-    case "/":
+    case "/quantumPhysics/":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(0).attr("id", "currentPage");
@@ -567,7 +566,7 @@ const changeLanguage = () => {
         $("#germanFlag").trigger("click");
       }
       break;
-    case "/index.html":
+    case "/quantumPhysics/index.html":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(0).attr("id", "currentPage");
@@ -606,7 +605,7 @@ const changeLanguage = () => {
         $("#germanFlag").trigger("click");
       }
       break;
-    case "/fentesYoung.html":
+    case "/quantumPhysics/fentesYoung.html":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(4).attr("id", "currentPage");
@@ -661,7 +660,7 @@ const changeLanguage = () => {
         $("#germanFlag").trigger("click");
       }
       break;
-    case "/modelAtome.html":
+    case "/quantumPhysics/modelAtome.html":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(1).attr("id", "currentPage");
@@ -712,7 +711,7 @@ const changeLanguage = () => {
         $("#germanFlag").trigger("click");
       }
       break;
-    case "/famousFormula.html":
+    case "/quantumPhysics/famousFormula.html":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(6).attr("id", "currentPage");
@@ -767,7 +766,7 @@ const changeLanguage = () => {
         $("#germanFlag").trigger("click");
       }
       break;
-    case "/ondeCorpuscule.html":
+    case "/quantumPhysics/ondeCorpuscule.html":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(5).attr("id", "currentPage");
@@ -798,7 +797,7 @@ const changeLanguage = () => {
         $("#germanFlag").trigger("click");
       }
       break;
-    case "/greatFigures.html":
+    case "/quantumPhysics/greatFigures.html":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(2).attr("id", "currentPage");
@@ -849,7 +848,7 @@ const changeLanguage = () => {
         $("#germanFlag").trigger("click");
       }
       break;
-    case "/principeIncertitude.html":
+    case "/quantumPhysics/principeIncertitude.html":
       //we are setting the current page for the css
       $("a#currentPage").removeAttr("id");
       $("#linksParent a").eq(3).attr("id", "currentPage");
