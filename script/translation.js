@@ -979,12 +979,12 @@ $("#germanFlag").on("click", () => {
 
   //we change the menu language
   $("#linksParent a")[0].innerHTML = "Startseite";
-  $("#linksParent a")[0].innerHTML = "Atommodell";
-  $("#linksParent a")[1].innerHTML = "die großen Figuren";
-  $("#linksParent a")[2].innerHTML = "Unschärferelation";
-  $("#linksParent a")[3].innerHTML = "Schlitze von Young";
-  $("#linksParent a")[4].innerHTML = "Welle-Teilchen-Dualität";
-  $("#linksParent a")[5].innerHTML = "Berühmte Formel";
+  $("#linksParent a")[1].innerHTML = "Atommodell";
+  $("#linksParent a")[2].innerHTML = "die großen Figuren";
+  $("#linksParent a")[3].innerHTML = "Unschärferelation";
+  $("#linksParent a")[4].innerHTML = "Schlitze von Young";
+  $("#linksParent a")[5].innerHTML = "Welle-Teilchen-Dualität";
+  $("#linksParent a")[6].innerHTML = "Berühmte Formel";
 
   changeLanguage();
 });
