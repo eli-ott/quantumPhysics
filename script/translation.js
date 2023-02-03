@@ -189,7 +189,7 @@ const allText = {
     },
   greatFigures: {
     planck: {
-      french: `Vous avez peut être déjà entendu de Max Planck pour sa célèbre constante (voir page<a
+      french: `Vous avez peut être déjà entendu parler de Max Planck pour sa célèbre constante (voir page<a
                 href="./famousFormula.html"> formules célèbres</a>). Il est trop connu dans le
             monde de la physique quantique car il a poser comme principe que l'énergie de la lumière était
             proportionnelle à sa fréquence. Cela a aidé Einstein a determiné l'éxistence des photons.`,
