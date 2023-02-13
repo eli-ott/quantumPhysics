@@ -277,7 +277,7 @@ const allText = {
 if (localStorage.getItem("language") == null) {
   if (navigator.language.includes("fr")) {
     localStorage.setItem("language", "french");
-    onsole.log("language set to french");
+    console.log("language set to french");
   } else if (navigator.language.includes("en")) {
     localStorage.setItem("language", "english");
     console.log("language set to english");
